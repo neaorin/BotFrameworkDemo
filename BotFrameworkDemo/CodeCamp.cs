@@ -14,7 +14,7 @@ namespace BotFrameworkDemo
         static CodeCamp()
         {
             Sessions = new List<Session>();
-            Speakers = new List<Speaker>();
+            Speakers = new List<Speaker>();            
 
             var json = File.ReadAllText(HttpContext.Current.Server.MapPath(@"~/codecamp.json"));
             var jobj = JObject.Parse(json);
@@ -24,17 +24,35 @@ namespace BotFrameworkDemo
             foreach (var speakerItem in jobj["speakers"])
                 Speakers.Add(JsonConvert.DeserializeObject<Speaker>(speakerItem.ToString()));
 
+            json = File.ReadAllText(HttpContext.Current.Server.MapPath(@"~/topics.json"));
+            Topics = JsonConvert.DeserializeObject<List<Topic>>(json);
         }
 
         public static List<Session> Sessions { get; }
 
         public static List<Speaker> Speakers { get; }
 
-        public static IEnumerable<Session> FindSessions(string speakerName = null, string topic = null)
+        public static List<Topic> Topics { get; }
+
+        public static IEnumerable<Session> FindSessions(string speakerName = null, string[] topics = null, LevelTypes level = LevelTypes.Any)
         {
             return CodeCamp.Sessions
-                .Where(s => String.IsNullOrEmpty(speakerName) || s.Speakers.ContainIgnoreCase(speakerName))
-                .Where(s => String.IsNullOrEmpty(topic) || s.Title.ContainsIgnoreCase(topic) || s.Description.ContainsIgnoreCase(topic));
+                .Where(s =>
+                    String.IsNullOrEmpty(speakerName) 
+                    || s.Speakers.ContainIgnoreCase(speakerName))
+
+                .Where(s =>
+                    topics == null 
+                    || (topics.ContainIgnoreCase("misc") && s.AllTracks == true) 
+                    || s.Title.ContainsIgnoreCase(topics) 
+                    || s.Description.ContainsIgnoreCase(topics))
+
+                .Where(s => 
+                    level == LevelTypes.None 
+                    || level == LevelTypes.Any 
+                    || s.Level.ContainsIgnoreCase(level.ToString()))
+                .OrderBy(s => s.StartTime)
+                .Take(10);
         }
 
         public static IEnumerable<Speaker> FindSpeakers(string speakerName)
@@ -72,7 +90,7 @@ namespace BotFrameworkDemo
 
         public string ToDisplayString()
         {
-            return $"*{Title}* -- **{Speakers.ToCsvString()}** (*{Track}, {StartTime.ToString("HH:mm")}*)";
+            return $"**{Title}** -- *{Speakers.ToCsvString()}* (*{Track}, {StartTime.ToString("HH:mm")}*)";
         }
     }
 
@@ -99,12 +117,45 @@ namespace BotFrameworkDemo
 
     }
 
+    [Serializable]
+    public class Topic
+    {
+        [JsonProperty("name")]
+        public string Name;
+
+        [JsonProperty("terms")]
+        public string[] Terms;
+    }
+
+    [Serializable]
+    public enum LevelTypes
+    {
+        None,
+        Any,
+        Beginner,
+        Intermediate,
+        Experienced,
+        Advanced
+    }
+
     public static class StringExtensionMethods
     {
         public static bool ContainsIgnoreCase(this string containerString, string str)
         {
             return containerString != null && str != null &&
                 containerString.ToLowerInvariant().Contains(str.ToLowerInvariant());
+        }
+
+        public static bool ContainsIgnoreCase(this string containerString, params string[] str)
+        {
+            if (containerString == null || str == null)
+                return false;
+            foreach (var s in str)
+            {
+                if (containerString.ContainsIgnoreCase(s))
+                    return true;
+            }
+            return false;
         }
 
         public static bool ContainIgnoreCase(this IEnumerable<string> containerStrings, string str)
@@ -124,5 +175,7 @@ namespace BotFrameworkDemo
 
             return buf.ToString();
         }
+
+
     }
 }

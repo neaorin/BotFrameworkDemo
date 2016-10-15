@@ -52,17 +52,30 @@ namespace BotFrameworkDemo
                             default:
                                 await context.PostAsync($"I've found {speakers.Count()} speakers named {speakerName}.");
 
-                                var options = new SessionSelectionOptions() { CandidateSpeakers = speakers.ToArray() };
-                                var sessionDialog = new FormDialog<SessionSelectionOptions>(
-                                    options,
-                                    SessionSelectionOptions.BuildForm,
+                                var options1 = new SessionSelectionOptions() { CandidateSpeakers = speakers.ToArray() };
+                                var sessionDialog1 = new FormDialog<SessionSelectionOptions>(
+                                    options1,
+                                    SessionSelectionOptions.BuildFormForSpeakerDisambiguation,
                                     FormOptions.PromptInStart
                                     );
 
-                                context.Call(sessionDialog, SearchFormComplete);
+                                context.Call(sessionDialog1, SearchFormComplete);
 
                                 break;
                         }
+
+                        break;
+
+                    case "Topic":
+                        var topic = entity.Entity;
+                        var options = new SessionSelectionOptions() { Topic = topic };
+                        var sessionDialog = new FormDialog<SessionSelectionOptions>(
+                            options,
+                            SessionSelectionOptions.BuildFormForGeneralSearch,
+                            FormOptions.PromptInStart
+                            );
+
+                        context.Call(sessionDialog, SearchFormComplete);
 
                         break;
 
@@ -71,6 +84,18 @@ namespace BotFrameworkDemo
                         context.Wait(MessageReceived);
                         break;
                 }
+            }
+            else
+            {
+                // general session search
+                var options = new SessionSelectionOptions();
+                var sessionDialog = new FormDialog<SessionSelectionOptions>(
+                    options,
+                    SessionSelectionOptions.BuildFormForGeneralSearch,
+                    FormOptions.PromptInStart
+                    );
+
+                context.Call(sessionDialog, SearchFormComplete);
             }
         }
 
@@ -95,11 +120,6 @@ namespace BotFrameworkDemo
             var state = await result;
             await SessionSelectionOptions.SearchSessionsAndPostResults(context, state);
             context.Wait(MessageReceived);
-        }
-
-        internal static IDialog<SessionSelectionOptions> MakeRootDialog()
-        {
-            return Chain.From(() => FormDialog.FromForm(SessionSelectionOptions.BuildForm));
         }
 
         public static string WelcomeMessage = @"**Hi!** I'm the **CodeCamp Bot (beta)**, it's nice to meet you :)
@@ -140,8 +160,9 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
 
         public string SpeakerName;
         public string Topic;
+        public LevelTypes Level;
 
-        public static IForm<SessionSelectionOptions> BuildForm()
+        public static IForm<SessionSelectionOptions> BuildFormForSpeakerDisambiguation()
         {
             return new FormBuilder<SessionSelectionOptions>()
                 .Field(new FieldReflector<SessionSelectionOptions>(nameof(SpeakerName))
@@ -159,11 +180,34 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
                 .Build();
         }
 
+        public static IForm<SessionSelectionOptions> BuildFormForGeneralSearch()
+        {
+            return new FormBuilder<SessionSelectionOptions>()
+                .Field(new FieldReflector<SessionSelectionOptions>(nameof(Topic))
+                            .SetActive((state) => state.Topic != null)
+                            .SetType(null)
+                            .SetDefine(async (state, field) =>
+                            {
+                                foreach (var topic in CodeCamp.Topics)
+                                    field
+                                        .AddDescription(topic.Name, topic.Name)
+                                        .AddTerms(topic.Name, topic.Terms.ToArray());
+                                return true;
+                            })
+                            )
+                .Field(new FieldReflector<SessionSelectionOptions>(nameof(Level))
+                            .SetActive((state) => !state.Topic.ContainsIgnoreCase("misc"))
+                        )
+                .Build();
+        }
+
         public static async Task SearchSessionsAndPostResults(IDialogContext context, SessionSelectionOptions state)
         {
             string message = "Sorry, I can't understand what type of session you're looking for.";
+            var topic = CodeCamp.Topics.Where(t => t.Name.ContainsIgnoreCase(state.Topic)).FirstOrDefault();
+
             // perform the session search
-            var sessions = CodeCamp.FindSessions(state.SpeakerName, state.Topic);
+            var sessions = CodeCamp.FindSessions(state.SpeakerName, topic?.Terms, state.Level);
             if (sessions.Count() > 0)
             {
                 message = $"I've found the following sessions:\n";

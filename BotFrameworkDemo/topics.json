@@ -1,0 +1,38 @@
+﻿[
+  {
+    "name": "Javascript",
+    "terms": [ "javascript","js","ecmascript","es6","es2016","es5","typescript" ]
+  },
+  {
+    "name": ".NET",
+    "terms": [ "net", "c#", "csharp", "netframework", "netcore" ]
+  },
+  {
+    "name": "Databases",
+    "terms": [ "database", "sql", "oracle", "mysql", "mongodb" ]
+  },
+  {
+    "name": "React",
+    "terms": [ "react", "reactjs", "flux", "redux", "jsx" ]
+  },
+  {
+    "name": "Java",
+    "terms": [ "java", "jre", "j2ee", "netbeans", "spring" ]
+  },
+  {
+    "name": "Agile",
+    "terms": [ "agile", "scrum", "kanban", "management" ]
+  },
+  {
+    "name": "Testing",
+    "terms": [ "testing", "selenium", "unittest" ]
+  },
+  {
+    "name": "Mobile",
+    "terms": [ "mobile", "android", "droid", "ios", "iphone", "xamarin", "swift", "objectivec" ]
+  },
+  {
+    "name": "Misc",
+    "terms": [ "misc" ]
+  }
+]
