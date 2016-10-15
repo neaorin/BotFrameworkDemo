@@ -16,7 +16,6 @@ namespace BotFrameworkDemo
     [Serializable]
     public class CodeCampDialog : LuisDialog<string>
     {
-
         [LuisIntent("None")]
         [LuisIntent("")]
         public async Task None(IDialogContext context, LuisResult result)
@@ -75,6 +74,22 @@ namespace BotFrameworkDemo
             }
         }
 
+        [LuisIntent("Help")]
+        public async Task Help(IDialogContext context, LuisResult result)
+        {
+            await context.PostAsync(WelcomeMessage);
+
+            context.Wait(this.MessageReceived);
+        }
+
+        [LuisIntent("About")]
+        public async Task About(IDialogContext context, LuisResult result)
+        {
+            await context.PostAsync(AboutMessage);
+
+            context.Wait(this.MessageReceived);
+        }
+
         private async Task SearchFormComplete(IDialogContext context, IAwaitable<SessionSelectionOptions> result)
         {
             var state = await result;
@@ -86,6 +101,33 @@ namespace BotFrameworkDemo
         {
             return Chain.From(() => FormDialog.FromForm(SessionSelectionOptions.BuildForm));
         }
+
+        public static string WelcomeMessage = @"**Hi!** I'm the **CodeCamp Bot (beta)**, it's nice to meet you :)
+
+I can tell you all about what's going on at our CodeCamp event in **Iasi** on **October 22nd**. 
+
+Here are some examples of things you can ask me: 
+* *When is **Florin Cardasim** speaking?*
+* *Are there any sessions on **React**?*
+* *Is anybody from **Microsoft** doing a session?*
+* *Just help me choose some sessions!*
+
+You can also type **help** to see this message again.
+
+To find out more about me, type **about**.";
+
+        public static string AboutMessage = @"I'm the **CodeCamp Bot v0.11 (beta)**
+
+I'm built using Microsoft's [Bot Framework](https://dev.botframework.com/).  
+
+[LUIS](https://www.luis.ai/) helps me get better and better at being able to talk to people.
+
+The [Azure Cloud](https://azure.microsoft.com/) gives me the juice I need to keep going.
+
+My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You can report any issues [here](https://github.com/neaorin/BotFrameworkDemo/issues).
+
+*-- Sorin Peste (sorinpe at microsoft dot com)*
+";
 
     }
 
@@ -124,9 +166,9 @@ namespace BotFrameworkDemo
             var sessions = CodeCamp.FindSessions(state.SpeakerName, state.Topic);
             if (sessions.Count() > 0)
             {
-                message = $"I've found the following sessions:";
+                message = $"I've found the following sessions:\n";
                 foreach (var session in sessions)
-                    message += $"\n{session}";
+                    message += $"* {session.ToDisplayString()}\n";
             }
             else
             {

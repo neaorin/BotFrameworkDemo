@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Web;
 
 namespace BotFrameworkDemo
@@ -69,9 +70,9 @@ namespace BotFrameworkDemo
         [JsonProperty("track")]
         public string Track { get; set; }
 
-        public override string ToString()
+        public string ToDisplayString()
         {
-            return $"{Speakers[0]} -- {Title}";
+            return $"*{Title}* -- **{Speakers.ToCsvString()}** (*{Track}, {StartTime.ToString("HH:mm")}*)";
         }
     }
 
@@ -110,6 +111,18 @@ namespace BotFrameworkDemo
         {
             return containerStrings != null && str != null &&
                 containerStrings.Where(s => s.ContainsIgnoreCase(str)).FirstOrDefault() != null;
+        }
+
+        public static string ToCsvString(this IEnumerable<string> strings)
+        {
+            if (strings == null)
+                return null;
+         
+            var buf = new StringBuilder();
+            foreach (var s in strings)
+                buf.AppendFormat("{0}{1}", buf.Length == 0 ? String.Empty : ", ", s);
+
+            return buf.ToString();
         }
     }
 }

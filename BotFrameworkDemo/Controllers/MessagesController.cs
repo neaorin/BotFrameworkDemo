@@ -45,6 +45,10 @@ namespace BotFrameworkDemo
                 // Handle conversation state changes, like members being added and removed
                 // Use Activity.MembersAdded and Activity.MembersRemoved and Activity.Action for info
                 // Not available in all channels
+                if (message.MembersAdded.Count > 0)
+                {
+                    return message.CreateReply(CodeCampDialog.WelcomeMessage);
+                }
             }
             else if (message.Type == ActivityTypes.ContactRelationUpdate)
             {
