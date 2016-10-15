@@ -118,7 +118,7 @@ namespace BotFrameworkDemo
         [LuisIntent("Greeting")]
         public async Task Greeting(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync("Well, hello! Try typing **help** or **find a session**");
+            await context.PostAsync("Well, hello!");
 
             context.Wait(this.MessageReceived);
         }
