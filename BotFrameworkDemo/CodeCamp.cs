@@ -90,7 +90,14 @@ namespace BotFrameworkDemo
 
         public string ToDisplayString()
         {
-            return $"**{Title}** -- *{Speakers.ToCsvString()}* (*{Track}, {StartTime.ToString("HH:mm")}*)";
+            return String.Format("{0}{1}{2} ({3}{4}{5})",
+                Title.HtmlDecode().Bold(),
+                Speakers?.Length > 0 ? " -- " : String.Empty,
+                Speakers.ToCsvString(),
+                Track.Accent(),
+                Track != null ? "," : String.Empty,
+                StartTime.ToString("HH:mm").Accent()
+                );
         }
     }
 
@@ -175,6 +182,22 @@ namespace BotFrameworkDemo
 
             return buf.ToString();
         }
+
+        public static string HtmlDecode(this string str)
+        {
+            return str?.Replace("&amp;", "&");
+        }
+
+        public static string Bold(this string str)
+        {
+            return str != null ? $"**{str}**" : null;
+        }
+
+        public static string Accent(this string str)
+        {
+            return str != null ? $"*{str}*" : null;
+        }
+
 
 
     }

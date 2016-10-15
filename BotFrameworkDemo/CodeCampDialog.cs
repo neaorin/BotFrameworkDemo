@@ -20,7 +20,7 @@ namespace BotFrameworkDemo
         [LuisIntent("")]
         public async Task None(IDialogContext context, LuisResult result)
         {
-            string message = $"I am sorry, I did not understand you. Why don't you try typing 'find a session'?";
+            string message = $"I am sorry, I did not understand you. Why don't you try typing **help** or **find a session**?";
             await context.PostAsync(message);
             context.Wait(MessageReceived);
         }
@@ -115,6 +115,14 @@ namespace BotFrameworkDemo
             context.Wait(this.MessageReceived);
         }
 
+        [LuisIntent("Greeting")]
+        public async Task Greeting(IDialogContext context, LuisResult result)
+        {
+            await context.PostAsync("Well, hello! Try typing **help** or **find a session**");
+
+            context.Wait(this.MessageReceived);
+        }
+
         private async Task SearchFormComplete(IDialogContext context, IAwaitable<SessionSelectionOptions> result)
         {
             var state = await result;
@@ -151,8 +159,6 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
 
     }
 
-    public enum SpeakerNames { Sorin, Gigi, Alex };
-
     [Serializable]
     public class SessionSelectionOptions
     {
@@ -184,7 +190,7 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
         {
             return new FormBuilder<SessionSelectionOptions>()
                 .Field(new FieldReflector<SessionSelectionOptions>(nameof(Topic))
-                            .SetActive((state) => state.Topic != null)
+                            .SetActive((state) => String.IsNullOrWhiteSpace(state.Topic))
                             .SetType(null)
                             .SetDefine(async (state, field) =>
                             {
