@@ -32,12 +32,12 @@ Follow these steps to set up your own copy of this bot:
 7. Go to [Microsoft Bot Framework](https://dev.botframework.com/) portal and [register a new bot](https://dev.botframework.com/bots/new), then you can enable it for Skype and any other channels you like.
 
 8. To make your bot accessible by other users, you need to:
-* Deploy the `BotFrameworkDemo` web application to a public website host - for example [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/). Here is [a tutorial](https://azure.microsoft.com/en-us/documentation/articles/web-sites-dotnet-get-started/).
-* Update the `Web.config` file of the project to reflect the correct `BotId`, `MicrosoftAppId` and `MicrosoftAppPassword` for the bot you have registered.
+    * Deploy the `BotFrameworkDemo` web application to a public website host - for example [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/). Here is [a tutorial](https://azure.microsoft.com/en-us/documentation/articles/web-sites-dotnet-get-started/).
+    * Update the `Web.config` file of the project to reflect the correct `BotId`, `MicrosoftAppId` and `MicrosoftAppPassword` for the bot you have registered.
 
-    ![](images/webconfig.png)
+        ![](images/webconfig.png)
 
-* Publish the bot from the [Microsoft Bot Framework](https://dev.botframework.com/) portal.
+    * Publish the bot from the [Microsoft Bot Framework](https://dev.botframework.com/) portal.
 
 
 
