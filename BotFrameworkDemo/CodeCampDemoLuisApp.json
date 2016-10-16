@@ -8,6 +8,9 @@
       "name": "About"
     },
     {
+      "name": "AddToSchedule"
+    },
+    {
       "name": "FindSession"
     },
     {
@@ -17,7 +20,16 @@
       "name": "Help"
     },
     {
+      "name": "ListSchedule"
+    },
+    {
       "name": "None"
+    },
+    {
+      "name": "RemoveFromSchedule"
+    },
+    {
+      "name": "SessionInfo"
     }
   ],
   "entities": [
@@ -32,7 +44,9 @@
     }
   ],
   "composites": [],
-  "bing_entities": [],
+  "bing_entities": [
+    "number"
+  ],
   "actions": [],
   "model_features": [],
   "regex_features": [],
@@ -361,6 +375,76 @@
           "endPos": 3
         }
       ]
+    },
+    {
+      "text": "12",
+      "intent": "SessionInfo",
+      "entities": []
+    },
+    {
+      "text": "display 45",
+      "intent": "SessionInfo",
+      "entities": []
+    },
+    {
+      "text": "13",
+      "intent": "SessionInfo",
+      "entities": []
+    },
+    {
+      "text": "show 56",
+      "intent": "SessionInfo",
+      "entities": []
+    },
+    {
+      "text": "save",
+      "intent": "AddToSchedule",
+      "entities": []
+    },
+    {
+      "text": "save 8",
+      "intent": "AddToSchedule",
+      "entities": []
+    },
+    {
+      "text": "add 10",
+      "intent": "AddToSchedule",
+      "entities": []
+    },
+    {
+      "text": "add 13 to schedule",
+      "intent": "AddToSchedule",
+      "entities": []
+    },
+    {
+      "text": "add schedule",
+      "intent": "AddToSchedule",
+      "entities": []
+    },
+    {
+      "text": "schedule",
+      "intent": "ListSchedule",
+      "entities": []
+    },
+    {
+      "text": "show schedule",
+      "intent": "ListSchedule",
+      "entities": []
+    },
+    {
+      "text": "display my schedule",
+      "intent": "ListSchedule",
+      "entities": []
+    },
+    {
+      "text": "remove 22",
+      "intent": "RemoveFromSchedule",
+      "entities": []
+    },
+    {
+      "text": "delete 11 from schedule",
+      "intent": "RemoveFromSchedule",
+      "entities": []
     }
   ]
 }
