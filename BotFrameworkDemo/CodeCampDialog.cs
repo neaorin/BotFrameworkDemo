@@ -139,9 +139,9 @@ namespace BotFrameworkDemo
             context.Wait(MessageReceived);
         }
 
-        public static string WelcomeMessage = @"**Hi!** I'm the **CodeCamp Bot (beta)**, it's nice to meet you :)
+        public static string WelcomeMessage = @"**Hi!** I'm the **Codecamp Romania Bot (beta)**, it's nice to meet you :)
 
-I can tell you all about what's going on at our next [CodeCamp event](http://iasi.codecamp.ro/) in **Iasi** on **October 22nd**. 
+I can tell you all about what's going on at our next [Codecamp Romania event](http://iasi.codecamp.ro/) in **Iasi** on **October 22nd**. 
 
 Here are some examples of things you can ask me: 
 
@@ -154,7 +154,7 @@ You can also type **help** to see this message again.
 
 To find out more about me, type **about**.";
 
-        public static string AboutMessage = @"I'm the **CodeCamp Bot v0.11 (beta)**
+        public static string AboutMessage = @"I'm the **[Codecamp Romania](http://www.codecamp.ro/) Bot v0.11 (beta)**
 
 
 I'm built using Microsoft's [Bot Framework](https://dev.botframework.com/).  
@@ -227,7 +227,7 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
 
             // perform the session search
             var sessions = CodeCamp.FindSessions(state.SpeakerName == null ? null : new string[] {state.SpeakerName}
-                ,topic?.Terms, state.CompanyName, state.Level);
+                ,topic != null ? topic.Terms : new string[] { state.Topic }, state.CompanyName, state.Level);
             if (sessions.Count() > 0)
             {
                 message = $"I've found the following sessions:\n";
