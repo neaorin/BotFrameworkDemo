@@ -144,7 +144,8 @@ namespace BotFrameworkDemo
             var message = "Currently, I can't find any sessions in your schedule.";
             string[] scheduleSessionsList;
 
-            if (context.UserData.TryGetValue("schedule", out scheduleSessionsList))
+            if (context.UserData.TryGetValue("schedule", out scheduleSessionsList)
+                && scheduleSessionsList?.Length > 0)
             {
                 message = "Here is your current schedule. Type **remove n** to remove the session at index **n**:\n";
                 var sessions = scheduleSessionsList.Select(sl => CodeCamp.Sessions.FirstOrDefault(s => s.Id == sl)).ToArray();
