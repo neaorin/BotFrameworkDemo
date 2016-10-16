@@ -118,7 +118,7 @@ namespace BotFrameworkDemo
         [LuisIntent("Greeting")]
         public async Task Greeting(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync("Well, hello!");
+            await context.PostAsync("Well, hello! Try typing **help** or **find a session**.");
 
             context.Wait(this.MessageReceived);
         }
@@ -132,9 +132,10 @@ namespace BotFrameworkDemo
 
         public static string WelcomeMessage = @"**Hi!** I'm the **CodeCamp Bot (beta)**, it's nice to meet you :)
 
-I can tell you all about what's going on at our CodeCamp event in **Iasi** on **October 22nd**. 
+I can tell you all about what's going on at our next [CodeCamp event](http://iasi.codecamp.ro/) in **Iasi** on **October 22nd**. 
 
 Here are some examples of things you can ask me: 
+
 * *When is **Florin Cardasim** speaking?*
 * *Are there any sessions on **React**?*
 * *Is anybody from **Microsoft** doing a session?*
@@ -146,6 +147,7 @@ To find out more about me, type **about**.";
 
         public static string AboutMessage = @"I'm the **CodeCamp Bot v0.11 (beta)**
 
+
 I'm built using Microsoft's [Bot Framework](https://dev.botframework.com/).  
 
 [LUIS](https://www.luis.ai/) helps me get better and better at being able to talk to people.
@@ -153,6 +155,7 @@ I'm built using Microsoft's [Bot Framework](https://dev.botframework.com/).
 The [Azure Cloud](https://azure.microsoft.com/) gives me the juice I need to keep going.
 
 My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You can report any issues [here](https://github.com/neaorin/BotFrameworkDemo/issues).
+
 
 *-- Sorin Peste (sorinpe at microsoft dot com)*
 ";
