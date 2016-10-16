@@ -114,7 +114,8 @@ namespace BotFrameworkDemo
             var message = "Sorry, don't know what session you're trying to see.";
             int sessionIndex = -1;
 
-            if (int.TryParse(result?.Entities[0]?.Entity, out sessionIndex))
+            if (result.Entities != null && result.Entities.Count > 0
+                && int.TryParse(result?.Entities[0].Entity, out sessionIndex))
             {                
                 string[] sessionsList;
 
@@ -124,7 +125,116 @@ namespace BotFrameworkDemo
                     {
                         var session = CodeCamp.Sessions.FirstOrDefault(s => s.Id == sessionsList[sessionIndex - 1]);
                         if (session != null)
+                        {
                             message = session.ToLongDisplayString();
+                            context.ConversationData.SetValue("sessionId", session.Id);
+                            message += "Type **add** to add this session to your schedule.";
+                        }
+                    }
+                }
+            }
+
+            await context.PostAsync(message);
+            context.Wait(this.MessageReceived);
+        }
+
+        [LuisIntent("ListSchedule")]
+        public async Task ListSchedule(IDialogContext context, LuisResult result)
+        {
+            var message = "Currently, I can't find any sessions in your schedule.";
+            string[] scheduleSessionsList;
+
+            if (context.UserData.TryGetValue("schedule", out scheduleSessionsList))
+            {
+                message = "Here is your current schedule. Type **remove n** to remove the session at index **n**:\n";
+                var sessions = scheduleSessionsList.Select(sl => CodeCamp.Sessions.FirstOrDefault(s => s.Id == sl)).ToArray();
+
+                message += SessionSelectionOptions.GetSessionsListDisplayMessage(sessions);
+
+                // save info about sessions
+                context.ConversationData.SetValue("sessionsList", sessions.Select(s => s.Id).ToArray());
+            }
+
+            await context.PostAsync(message);
+            context.Wait(this.MessageReceived);
+        }
+
+        [LuisIntent("AddToSchedule")]
+        public async Task AddToSchedule(IDialogContext context, LuisResult result)
+        {
+            var message = "I can't find the session you want me to add to your schedule.";
+            int sessionIndex = -1;
+            string sessionId = null;
+            string[] sessionsList, scheduleSessionsList;
+
+            if (result.Entities != null && result.Entities.Count > 0
+                && int.TryParse(result?.Entities[0]?.Entity, out sessionIndex))
+            {
+                // user wants to add a specific session from a list of sessions
+                if (context.ConversationData.TryGetValue("sessionsList", out sessionsList))
+                {
+                    if (sessionIndex > 0 && sessionIndex <= sessionsList.Count())
+                        sessionId = sessionsList[sessionIndex - 1];
+                }
+            }
+            else
+            {
+                // user didn't specify a session index, we must be looking at a specific session
+                context.ConversationData.TryGetValue("sessionId", out sessionId);
+            }
+
+            if (sessionId != null)
+            {
+                if (!context.UserData.TryGetValue("schedule", out scheduleSessionsList))
+                {
+                    scheduleSessionsList = new string[] { };
+                }
+
+                if (!scheduleSessionsList.Contains(sessionId))
+                {
+                    scheduleSessionsList = scheduleSessionsList.Union(new string[] { sessionId }).ToArray();
+                    // reorder the sessions by start time and re-save
+                    var sessions = scheduleSessionsList.Select(sl => CodeCamp.Sessions.FirstOrDefault(s => s.Id == sl))
+                        .OrderBy(s => s.StartTime).ToArray();
+                    scheduleSessionsList = sessions.Select(s => s.Id).ToArray();
+
+                    context.UserData.SetValue("schedule", scheduleSessionsList);
+
+                    await context.PostAsync("I've added the session to your schedule.");
+                    await ListSchedule(context, result);
+                    return;
+                }
+                else
+                {
+                    message = "That session is already in your schedule.";
+                }
+            }
+
+            await context.PostAsync(message);
+            context.Wait(this.MessageReceived);
+        }
+
+        [LuisIntent("RemoveFromSchedule")]
+        public async Task RemoveFromSchedule(IDialogContext context, LuisResult result)
+        {
+            var message = "I can't find the session you want me to remove. Try specifying its schedule index, like **remove 2**.";
+            int sessionIndex = -1;
+            string[] scheduleSessionsList;
+
+            if (result.Entities != null && result.Entities.Count > 0
+                && int.TryParse(result?.Entities[0]?.Entity, out sessionIndex))
+            {
+                if (context.UserData.TryGetValue("schedule", out scheduleSessionsList))
+                {
+                    if (sessionIndex > 0 && sessionIndex <= scheduleSessionsList.Count())
+                    {
+                        scheduleSessionsList = scheduleSessionsList.Except(
+                            new string[] { scheduleSessionsList[sessionIndex - 1] }).ToArray();
+                        context.UserData.SetValue("schedule", scheduleSessionsList);
+
+                        await context.PostAsync("I've removed the session from your schedule.");
+                        await ListSchedule(context, result);
+                        return;
                     }
                 }
             }
@@ -261,9 +371,8 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
             if (sessions.Count() > 0)
             {
                 message = $"I've found some sessions. To see more details about a session, type its number.\n";
-                for (int i = 0; i < sessions.Count(); i++) {
-                    message += $"{i+1}. {sessions[i].ToShortDisplayString()}\n";
-                }
+                message += $"Or, type **add n** to add the session at index **n** to your schedule.\n";
+                message += GetSessionsListDisplayMessage(sessions);
 
                 // save info about sessions
                 context.ConversationData.SetValue("sessionsList", sessions.Select(s => s.Id).ToArray());
@@ -273,6 +382,14 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
                 message = $"Sorry, I can't find any sessions of interest for you.";
             }
             await context.PostAsync(message);
+        }
+
+        internal static string GetSessionsListDisplayMessage(Session[] sessions)
+        {
+            var message = "";
+            for (int i = 0; i < sessions.Count(); i++)
+                message += $"{i + 1}. {sessions[i].ToShortDisplayString()}\n";
+            return message;
         }
 
     }

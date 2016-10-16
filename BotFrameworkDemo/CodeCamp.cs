@@ -123,7 +123,8 @@ namespace BotFrameworkDemo
 
 **Venue**: {2}, {3} - {4}
 
-**Description**: {5}",
+**Description**: {5}
+",
                 Title.HtmlDecode(),
                 Speakers.ToCsvString(),
                 Track,
