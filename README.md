@@ -41,7 +41,7 @@ Follow these steps to set up your own copy of this bot:
 
 
 
-You can post any issues you find with this bot right inside the [Issues](./issues/) section of this GitHub repo.
+You can post any issues you find with this bot right inside the Issues section of this GitHub repo.
 
 ## Have fun!
 
