@@ -223,11 +223,16 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
         public static async Task SearchSessionsAndPostResults(IDialogContext context, SessionSelectionOptions state)
         {
             string message = "Sorry, I can't understand what type of session you're looking for.";
+
+            var speakerName = state.SpeakerName == null ? null : new string[] { state.SpeakerName };
+
             var topic = CodeCamp.Topics.Where(t => t.Name.ContainsIgnoreCase(state.Topic)).FirstOrDefault();
+            var topicValues = (topic == null ?
+                                String.IsNullOrWhiteSpace(state.Topic) ? null : new string[] { state.Topic }
+                                : topic.Terms);
 
             // perform the session search
-            var sessions = CodeCamp.FindSessions(state.SpeakerName == null ? null : new string[] {state.SpeakerName}
-                ,topic != null ? topic.Terms : new string[] { state.Topic }, state.CompanyName, state.Level);
+            var sessions = CodeCamp.FindSessions(speakerName, topicValues, state.CompanyName, state.Level);
             if (sessions.Count() > 0)
             {
                 message = $"I've found the following sessions:\n";
