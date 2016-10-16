@@ -1,0 +1,366 @@
+{
+  "luis_schema_version": "1.3.0",
+  "name": "CodeCampDemoFinal",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "About"
+    },
+    {
+      "name": "FindSession"
+    },
+    {
+      "name": "Greeting"
+    },
+    {
+      "name": "Help"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Company"
+    },
+    {
+      "name": "Speaker"
+    },
+    {
+      "name": "Topic"
+    }
+  ],
+  "composites": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "get me all the sessions on javascript",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Topic",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "get me all javascript sessions",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Topic",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "when is gabi enea speaking",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "when is sorin peste speaking",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find sessions by sorin",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "when is florin cardasim speaking",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "get me all c# sessions",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Topic",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "when is sorin speaking",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "when is sorin speaking?",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "when is sorin peste speaking?",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "about",
+      "intent": "About",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "what are gabi enea's sessions?",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what are gabi enea 's sessions?",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "get me sorin's sessions",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find a session",
+      "intent": "FindSession",
+      "entities": []
+    },
+    {
+      "text": "are there any sessions on react?",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Topic",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "any sessions on javascript?",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Topic",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "when is adrian speaking",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "when is cardasim speaking",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "when is rialdi speaking",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find sessions",
+      "intent": "FindSession",
+      "entities": []
+    },
+    {
+      "text": "help me choose some session",
+      "intent": "FindSession",
+      "entities": []
+    },
+    {
+      "text": "sorin",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "is anybody from microsoft speaking?",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Company",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "is anyone from adobe doing a session?",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Company",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "who is speaking from tivo?",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Company",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "any speakers from strongbytes?",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Company",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "is anybody from tivo speaking",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Company",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "is raffaele rialdi speaking?",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Speaker",
+          "startPos": 1,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "just help me find some sessions",
+      "intent": "FindSession",
+      "entities": []
+    },
+    {
+      "text": "anybody presenting from tivo?",
+      "intent": "FindSession",
+      "entities": [
+        {
+          "entity": "Company",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    }
+  ]
+}

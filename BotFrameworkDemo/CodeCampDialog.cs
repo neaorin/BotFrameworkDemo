@@ -159,9 +159,9 @@ To find out more about me, type **about**.";
 
 I'm built using Microsoft's [Bot Framework](https://dev.botframework.com/).  
 
-[LUIS](https://www.luis.ai/) helps me get better and better at being able to talk to people.
+[LUIS](https://www.luis.ai/) helps me get better and better at talking to people.
 
-The [Azure Cloud](https://azure.microsoft.com/) gives me the juice I need to keep going.
+The [Azure Cloud](https://azure.microsoft.com/) provides the juice I need to keep going.
 
 My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You can report any issues [here](https://github.com/neaorin/BotFrameworkDemo/issues).
 
