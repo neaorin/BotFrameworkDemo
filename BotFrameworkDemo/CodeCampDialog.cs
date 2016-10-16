@@ -79,6 +79,15 @@ namespace BotFrameworkDemo
 
                         break;
 
+                    case "Company":
+                        var company = entity.Entity;
+                    
+                        await SessionSelectionOptions.SearchSessionsAndPostResults(
+                            context, new SessionSelectionOptions() { CompanyName = company });
+                        context.Wait(MessageReceived);
+
+                        break;
+
                     default:
                         await context.PostAsync("Sorry, I can't understand what type of session you're looking for.");
                         context.Wait(MessageReceived);
@@ -137,7 +146,7 @@ I can tell you all about what's going on at our next [CodeCamp event](http://ias
 Here are some examples of things you can ask me: 
 
 * *When is **Florin Cardasim** speaking?*
-* *Are there any sessions on **React**?*
+* *Are there any sessions on **Agile**?*
 * *Is anybody from **Microsoft** doing a session?*
 * *Just help me choose some sessions!*
 
@@ -168,6 +177,7 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
         public Speaker[] CandidateSpeakers { get; set; }
 
         public string SpeakerName;
+        public string CompanyName;
         public string Topic;
         public LevelTypes Level;
 
@@ -216,7 +226,8 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
             var topic = CodeCamp.Topics.Where(t => t.Name.ContainsIgnoreCase(state.Topic)).FirstOrDefault();
 
             // perform the session search
-            var sessions = CodeCamp.FindSessions(state.SpeakerName, topic?.Terms, state.Level);
+            var sessions = CodeCamp.FindSessions(state.SpeakerName == null ? null : new string[] {state.SpeakerName}
+                ,topic?.Terms, state.CompanyName, state.Level);
             if (sessions.Count() > 0)
             {
                 message = $"I've found the following sessions:\n";

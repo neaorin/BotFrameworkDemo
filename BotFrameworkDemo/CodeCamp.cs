@@ -34,12 +34,19 @@ namespace BotFrameworkDemo
 
         public static List<Topic> Topics { get; }
 
-        public static IEnumerable<Session> FindSessions(string speakerName = null, string[] topics = null, LevelTypes level = LevelTypes.Any)
+        public static IEnumerable<Session> FindSessions(string[] speakerNames = null, string[] topics = null, string companyName = null, LevelTypes level = LevelTypes.Any)
         {
+            var localSpeakerNames = speakerNames;
+            if (!String.IsNullOrWhiteSpace(companyName))
+            {
+                localSpeakerNames = Speakers.Where(k => k.Company.ContainsIgnoreCase(companyName)).Select(k => k.Name).ToArray();
+            }
+
             return CodeCamp.Sessions
                 .Where(s =>
-                    String.IsNullOrEmpty(speakerName) 
-                    || s.Speakers.ContainIgnoreCase(speakerName))
+                    localSpeakerNames == null 
+                    || localSpeakerNames.Length == 0
+                    || s.Speakers.ContainIgnoreCase(localSpeakerNames))
 
                 .Where(s =>
                     topics == null 
@@ -51,6 +58,7 @@ namespace BotFrameworkDemo
                     level == LevelTypes.None 
                     || level == LevelTypes.Any 
                     || s.Level.ContainsIgnoreCase(level.ToString()))
+
                 .OrderBy(s => s.StartTime)
                 .Take(10);
         }
@@ -169,6 +177,18 @@ namespace BotFrameworkDemo
         {
             return containerStrings != null && str != null &&
                 containerStrings.Where(s => s.ContainsIgnoreCase(str)).FirstOrDefault() != null;
+        }
+
+        public static bool ContainIgnoreCase(this IEnumerable<string> containerStrings, params string[] str)
+        {
+            if (containerStrings == null || str == null)
+                return false;
+            foreach (var s in str)
+            {
+                if (containerStrings.ContainIgnoreCase(s))
+                    return true;
+            }
+            return false;
         }
 
         public static string ToCsvString(this IEnumerable<string> strings)
