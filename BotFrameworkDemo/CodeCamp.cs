@@ -26,6 +26,10 @@ namespace BotFrameworkDemo
 
             json = File.ReadAllText(HttpContext.Current.Server.MapPath(@"~/topics.json"));
             Topics = JsonConvert.DeserializeObject<List<Topic>>(json);
+
+            // add id for each session - Title for now
+            foreach (var session in Sessions)
+                session.Id = session.Title;
         }
 
         public static List<Session> Sessions { get; }
@@ -96,7 +100,10 @@ namespace BotFrameworkDemo
         [JsonProperty("track")]
         public string Track { get; set; }
 
-        public string ToDisplayString()
+        [JsonIgnore]
+        public string Id { get; set; }
+
+        public string ToShortDisplayString()
         {
             return String.Format("{0}{1}{2} ({3}{4}{5})",
                 Title.HtmlDecode().Bold(),
@@ -105,6 +112,24 @@ namespace BotFrameworkDemo
                 Track.Accent(),
                 Track != null ? "," : String.Empty,
                 StartTime.ToString("HH:mm").Accent()
+                );
+        }
+
+        public string ToLongDisplayString()
+        {
+            return String.Format(@"**Title**: {0}
+
+**Speakers**: {1}
+
+**Venue**: {2}, {3} - {4}
+
+**Description**: {5}",
+                Title.HtmlDecode(),
+                Speakers.ToCsvString(),
+                Track,
+                StartTime.ToString("HH:mm"),
+                EndTime.ToString("HH:mm"),
+                Description
                 );
         }
     }

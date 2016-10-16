@@ -108,6 +108,31 @@ namespace BotFrameworkDemo
             }
         }
 
+        [LuisIntent("SessionInfo")]
+        public async Task SessionInfo(IDialogContext context, LuisResult result)
+        {
+            var message = "Sorry, don't know what session you're trying to see.";
+            int sessionIndex = -1;
+
+            if (int.TryParse(result?.Entities[0]?.Entity, out sessionIndex))
+            {                
+                string[] sessionsList;
+
+                if (context.ConversationData.TryGetValue("sessionsList", out sessionsList))
+                {
+                    if (sessionIndex > 0 && sessionIndex <= sessionsList.Count())
+                    {
+                        var session = CodeCamp.Sessions.FirstOrDefault(s => s.Id == sessionsList[sessionIndex - 1]);
+                        if (session != null)
+                            message = session.ToLongDisplayString();
+                    }
+                }
+            }
+
+            await context.PostAsync(message);
+            context.Wait(this.MessageReceived);
+        }
+
         [LuisIntent("Help")]
         public async Task Help(IDialogContext context, LuisResult result)
         {
@@ -232,12 +257,16 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
                                 : topic.Terms);
 
             // perform the session search
-            var sessions = CodeCamp.FindSessions(speakerName, topicValues, state.CompanyName, state.Level);
+            var sessions = CodeCamp.FindSessions(speakerName, topicValues, state.CompanyName, state.Level).ToArray();
             if (sessions.Count() > 0)
             {
-                message = $"I've found the following sessions:\n";
-                foreach (var session in sessions)
-                    message += $"* {session.ToDisplayString()}\n";
+                message = $"I've found some sessions. To see more details about a session, type its number.\n";
+                for (int i = 0; i < sessions.Count(); i++) {
+                    message += $"{i+1}. {sessions[i].ToShortDisplayString()}\n";
+                }
+
+                // save info about sessions
+                context.ConversationData.SetValue("sessionsList", sessions.Select(s => s.Id).ToArray());
             }
             else
             {
