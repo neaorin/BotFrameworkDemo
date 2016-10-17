@@ -12,7 +12,7 @@ Follow these steps to set up your own copy of this bot:
 
 1. Clone this repository.
 
-2. Log onto [LUIS.ai](http://luis.ai) and [import an application](https://www.luis.ai/Help/Index#ImportingApps) by using the `CodeCampDemo/CodeCampDemoLuisApp.json` file.
+2. Log onto [LUIS.ai](http://luis.ai) and [import an application](https://www.luis.ai/Help/Index#ImportingApps) by using the `CodeCampDemo/CodeCampDemoLuisApp.json` file. Then [Train](https://www.luis.ai/Help/Index#Training) and [Publish](https://www.luis.ai/Help/Index#PublishingModel) your model.
 
 3. Open the `BotFrameworkDemo.sln` solution file in Visual Studio 2015 or later.
 
