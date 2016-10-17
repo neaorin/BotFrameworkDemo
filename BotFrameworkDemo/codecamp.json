@@ -191,6 +191,13 @@
       "displayOrder": 4
     },
     {
+      "name": "Business Angels Romania",
+      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/103-BusinessAngelsRomania.png",
+      "websiteUrl": "http://www.businessangelsromania.ro",
+      "sponsorshipPackage": "Media Partners",
+      "displayOrder": 5
+    },
+    {
       "name": "Tabara de testare",
       "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/10-tabaradetestare.png",
       "websiteUrl": "http://www.meetup.com/Tabara-de-Testare-Iasi/",
@@ -207,7 +214,7 @@
     {
       "name": "Project Management Society",
       "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/28-PMSocietyLogo.jpg",
-      "websiteUrl": "https://www.facebook.com/groups/IasiPMSociety/",
+      "websiteUrl": "https://www.facebook.com/groups/ProjectManagementSociety/",
       "sponsorshipPackage": "Partner Communities",
       "displayOrder": 3
     },
@@ -350,6 +357,13 @@
       "websiteUrl": "http://gardenerjazz.ro/",
       "sponsorshipPackage": "Partner Communities",
       "displayOrder": 23
+    },
+    {
+      "name": "Game Design and Development Iasi",
+      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/102-GDDI_white.png",
+      "websiteUrl": "https://www.facebook.com/groups/gdd.fii/",
+      "sponsorshipPackage": "Partner Communities",
+      "displayOrder": 24
     },
     {
       "name": "Appsbroker",
@@ -571,7 +585,7 @@
           "endTime": "09:00:00",
           "allTracks": true,
           "track": null,
-          "title": "Registration &amp; Welcome coffee ",
+          "title": "Registration & Welcome coffee ",
           "description": null,
           "speakers": null,
           "speakingLang": null,
@@ -647,28 +661,6 @@
           "startTime": "11:00:00",
           "endTime": "11:45:00",
           "allTracks": false,
-          "track": "Room 7",
-          "title": "The Comfort Zone Myth ",
-          "description": "It didn’t take too much time to understand there isn’t a lot of science in what many managers, coaches or leaders preach. At first, I was surprised. Soon, I understood that most of the literature in the personal development field doesn’t serve the readers, but the authors. What does it mean to step out of the comfort zone? Is there any good reason to do so? This is a talk about performance through safety and happiness. ",
-          "speakers": [ "FĂTULESCU Corneliu Constantin" ],
-          "speakingLang": "Romanian",
-          "level": "Advanced"
-        },
-        {
-          "startTime": "11:00:00",
-          "endTime": "11:45:00",
-          "allTracks": false,
-          "track": "Room 6",
-          "title": "Cum să fii autentic",
-          "description": "Fii tu însuți dar nu fi un porc. Fii spontan dar nu strica prin jur. Riscă, dar nu fi naiv. Supără, dar nu prea mult. Fă ce vrei, dar fă și niște bani. \r\n\r\nDincolo de igiena conviețuirii și a profesionalismului, ceva comunicare, puțină empatie și niște inteligență emoțională, dăm de un strat mai profund al unui conflict constant între cine credem că suntem și cum ne văd alții, între ce am vrea și ce avem. Tensiunea asta ne poate consuma, ne poate șterge, ne poate transforma în niște plictisitori, sau ne poate face să explodăm în fața altora în cele mai neașteptate momente. Cum o transformăm în ceva util, cum o folosim ca să ajungem departe?\r\n\r\nAutenticitatea nu e o destinație, e un drum. Despre leadership, despre superficialitatea autenticității facile și nu numai. ",
-          "speakers": [ "Andrei Postolache" ],
-          "speakingLang": "Romanian",
-          "level": "Experienced"
-        },
-        {
-          "startTime": "11:00:00",
-          "endTime": "11:45:00",
-          "allTracks": false,
           "track": "Room 11",
           "title": "Discovering the SOLID principles in Coaching",
           "description": "Let’s explore a new universe, coaching, by taking advantage of the acronym SOLID that defines the five basic object-oriented design principles. We’ll see what Single Responsibility means in coaching, what is Open and what Closed, and how would Liskov, Interface Segregation and Dependency Inversion translate or how they would apply in coaching. \r\nLet’s discuss how we could use these principles in our teams with people oriented design.",
@@ -684,6 +676,17 @@
           "title": "History of AJAX",
           "description": "A short time-travel adventure around the AJAX term and concept to understand what it is, what it did to the IT community and the WWW movement and last but not least how it came to life.",
           "speakers": [ "Marius Tulbure" ],
+          "speakingLang": "Romanian",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "11:00:00",
+          "endTime": "11:45:00",
+          "allTracks": false,
+          "track": "Room 6",
+          "title": "The Elements of Influence: A Generational Assessment of Leadership and Power",
+          "description": " We will dive in one of the newest surveys run by Center for Leadership Studies - The Elements of Influence: A Generational Assessment of Leadership and Power. The workshop will focus on leadership as any attempt to influence. Leadership behavior is one of the primary driving forces for productivity, engagement and retention. ",
+          "speakers": [ "Adrian Rîndaşu" ],
           "speakingLang": "Romanian",
           "level": "Intermediate"
         },
@@ -708,6 +711,17 @@
           "speakers": [ "Raluca Apostol" ],
           "speakingLang": "English",
           "level": "Beginner"
+        },
+        {
+          "startTime": "11:00:00",
+          "endTime": "11:45:00",
+          "allTracks": false,
+          "track": "Room 7",
+          "title": "How to fix a broken Scrum?",
+          "description": "Even the Product Owner does not believe in the product vision. The team has many unfinished PBIs at the end of each Sprint. Technical debt is growing. There is no visibility on the progress. The team is overburdened. Despite the considerable effort, the product is not bringing the expected value.\r\nIf some of these smells are recognized in a Scrum team it could be the right moment for a change. Let’s discuss together how to treat such situations.   \r\n",
+          "speakers": [ "Vasile Putină" ],
+          "speakingLang": "Romanian",
+          "level": "Intermediate"
         },
         {
           "startTime": "12:00:00",
@@ -736,8 +750,8 @@
           "endTime": "12:45:00",
           "allTracks": false,
           "track": "Room 8",
-          "title": "Us &amp; Them",
-          "description": "[TODO]\r\nGanduri si experiente legate de interactiunea \"castei\" programatorilor cu restul participantilor in spatiului lucrativ.\r\nSchimbarea paradigmei si consecinte.\r\n\r\nPrima parte (20-25 min) legata de soft skill, a doua parte exemplificare a dezvoltarii aceastui skill si rezultatul in platforma Sinapsi.",
+          "title": "Us & Them",
+          "description": "Ganduri si experiente legate de interactiunea \"castei\" programatorilor cu restul participantilor in spatiului lucrativ.\r\nSchimbarea paradigmei si consecinte.\r\n\r\nPrima parte (20-25 min) legata de soft skill, a doua parte exemplificare a dezvoltarii aceastui skill si rezultatul in platforma Sinapsi.",
           "speakers": [ "Catalin Darie" ],
           "speakingLang": "Romanian",
           "level": "Beginner"
@@ -779,10 +793,10 @@
           "startTime": "12:00:00",
           "endTime": "12:45:00",
           "allTracks": false,
-          "track": "Room 5",
-          "title": "Game Design: Satisfaction vs Frustration",
-          "description": "It is important, when designing experiences for video games, to ensure that the players never feel frustration. On the contrary, the player should gain a feeling of satisfaction from overcoming the obstacles presented by the Game Designer.\r\n\r\nTogether, we will determine what exactly differentiates the two types of experiences and analyze some practical examples of good and bad practices from the games industry. ",
-          "speakers": [ "Alexandru Birzanu" ],
+          "track": "Room 6",
+          "title": "How to survive in a VUCA World",
+          "description": "The notion of VUCA was introduced by the U.S. Army War College to describe the more volatile, uncertain, complex, and ambiguous, multilateral world which resulted from the end of the Cold War.\r\n\r\nAll our skills are growing obsolete as quickly as organizations change in this volatile, unpredictable landscape. \r\n\r\nWhat competences are relevant now? What competences will be relevant in a few years?\r\n\r\nHow will you be able to counter volatility, uncertainty, complexity, and ambiguity with vision, understanding, clarity, and agility?\r\n",
+          "speakers": [ "Ciprian Ouatu" ],
           "speakingLang": "Romanian",
           "level": "Intermediate"
         },
@@ -790,10 +804,10 @@
           "startTime": "12:00:00",
           "endTime": "12:45:00",
           "allTracks": false,
-          "track": "Room 6",
-          "title": "The Elements of Influence: A Generational Assessment of Leadership and Power",
-          "description": " We will dive in one of the newest surveys run by Center for Leadership Studies - The Elements of Influence: A Generational Assessment of Leadership and Power. The workshop will focus on leadership as any attempt to influence. Leadership behavior is one of the primary driving forces for productivity, engagement and retention. ",
-          "speakers": [ "Adrian Rîndaşu" ],
+          "track": "Room 5",
+          "title": "Game Design: Satisfaction vs Frustration",
+          "description": "It is important, when designing experiences for video games, to ensure that the players never feel frustration. On the contrary, the player should gain a feeling of satisfaction from overcoming the obstacles presented by the Game Designer.\r\n\r\nTogether, we will determine what exactly differentiates the two types of experiences and analyze some practical examples of good and bad practices from the games industry. ",
+          "speakers": [ "Alexandru Birzanu" ],
           "speakingLang": "Romanian",
           "level": "Intermediate"
         },
@@ -867,6 +881,17 @@
           "startTime": "13:00:00",
           "endTime": "13:45:00",
           "allTracks": false,
+          "track": "Room 6",
+          "title": "Drupal CMS - the starters guide.",
+          "description": "Ever heard about Drupal and want to find if is it worth start using/learning it? This session will cover a quick overview about D7 platform including the key components and modules which will help you get started to develop your  projects faster and easier. Will dive a little bit into the code structure and try to build something custom by ourselves and interact with the Drupal framework functions and finally will end-up with Q&A session.",
+          "speakers": [ "Sorin Boistean" ],
+          "speakingLang": "English",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "13:00:00",
+          "endTime": "13:45:00",
+          "allTracks": false,
           "track": "Room 8",
           "title": "Innovation in business",
           "description": "Cum inoveaza un business romanesc pe mai multe segmente: marketing, creativitate, technologie, hardware. ",
@@ -884,17 +909,6 @@
           "speakers": [ "Florin Cardasim" ],
           "speakingLang": "English",
           "level": "Experienced"
-        },
-        {
-          "startTime": "13:00:00",
-          "endTime": "13:45:00",
-          "allTracks": false,
-          "track": "Room 6",
-          "title": "How to survive in a VUCA World",
-          "description": "The notion of VUCA was introduced by the U.S. Army War College to describe the more volatile, uncertain, complex, and ambiguous, multilateral world which resulted from the end of the Cold War.\r\n\r\nAll our skills are growing obsolete as quickly as organizations change in this volatile, unpredictable landscape. \r\n\r\nWhat competences are relevant now? What competences will be relevant in a few years?\r\n\r\nHow will you be able to counter volatility, uncertainty, complexity, and ambiguity with vision, understanding, clarity, and agility?\r\n",
-          "speakers": [ "Ciprian Ouatu" ],
-          "speakingLang": "Romanian",
-          "level": "Intermediate"
         },
         {
           "startTime": "13:00:00",
@@ -934,11 +948,11 @@
           "endTime": "13:45:00",
           "allTracks": false,
           "track": "Room 9",
-          "title": "Let's React and Redux",
-          "description": "We will learn together React and Redux",
+          "title": "React and Redux with Redux-Minimal",
+          "description": "We will learn about React and Redux and find out about the starter-kit Redux-Minimal",
           "speakers": [ "Catalin Luntraru" ],
           "speakingLang": "Romanian",
-          "level": "Intermediate"
+          "level": "Beginner"
         },
         {
           "startTime": "13:00:00",
@@ -1032,17 +1046,6 @@
           "startTime": "15:00:00",
           "endTime": "15:45:00",
           "allTracks": false,
-          "track": "Room 6",
-          "title": "Risk mitigation and building trust with cryptocurrencies",
-          "description": "We will start with a brief history of currencies, an overview of how the current monetary system works and then we will talk about the blockchain technology behind cryptocurrencies, Bitcoin included",
-          "speakers": [ "Ciprian Hodorogea" ],
-          "speakingLang": "Romanian",
-          "level": "Intermediate"
-        },
-        {
-          "startTime": "15:00:00",
-          "endTime": "15:45:00",
-          "allTracks": false,
           "track": "Room 1",
           "title": ".NET Core: from architecture to code",
           "description": "The new .NET Core is a new open-source flavor of the .NET Framework with several ambitious goals such as running cross-platform, making deployment straightforward and gaining the ability to run side-by-side with other app and/or framework releases.\r\nIn this first presentation we will walk through the changes introduced in .NET Core and getting familiar with the new tools.",
@@ -1056,7 +1059,7 @@
           "allTracks": false,
           "track": "Room 5",
           "title": "Developing Multiplayer Games in Unity3D",
-          "description": "This session's aim is to give an overview of implementing multiplayer in Unity3D.\r\nSome highlights:\r\n- multiplayer solutions analysis.\r\n- chosing the right solution for the needs of the game.\r\n- fast implementation using existing libraries.\r\n- possible problems that may appear &amp; how to solve them.\r\n- actual demo from one of the games I've created.\r\n",
+          "description": "This session's aim is to give an overview of implementing multiplayer in Unity3D.\r\nSome highlights:\r\n- multiplayer solutions analysis.\r\n- chosing the right solution for the needs of the game.\r\n- fast implementation using existing libraries.\r\n- possible problems that may appear & how to solve them.\r\n- actual demo from one of the games I've created.\r\n",
           "speakers": [ "Adrian Popovici" ],
           "speakingLang": "Romanian",
           "level": "Intermediate"
@@ -1067,10 +1070,21 @@
           "allTracks": false,
           "track": "Room 3",
           "title": "Generation C: Using Code Generation to make software development more fun",
-          "description": "Ever had a really great idea, but when you started implementing it you got discouraged by the 'boring parts' of software development? \r\nCode Generation is a really cool way to automate the boring (or even complex) parts of our development life so that we can get to the really interesting bits faster. And it can do so much more...",
+          "description": "Ever had a really great idea, but when you started implementing it you got discouraged by the 'boring parts' of software development? \r\nCode Generation is a really cool way to automate the tedious (or even complex) parts of our development life so that we can get to the really interesting bits faster. And it can do so much more...",
           "speakers": [ "Patrice Brend'amour" ],
           "speakingLang": "English",
           "level": "Advanced"
+        },
+        {
+          "startTime": "15:00:00",
+          "endTime": "15:45:00",
+          "allTracks": false,
+          "track": "Room 6",
+          "title": "How to touch your cellphone with passion",
+          "description": "Finger up, finger down, move the finger, one finger on the phone, 2 fingers, more fingers, all of them can touch the same phone. \r\nLet’s make the user happy by offering an awesome interaction with his phone in our apps.\r\nWe will discuss about The Android Touch System and it’s pitfalls, Touch Event Framework, Custom Touch Handling and some Gestures.\r\nFor sure it will be a fun session for the mobile developers on Android and not only",
+          "speakers": [ "Mircea Serediuc (Tzury)" ],
+          "speakingLang": "Romanian",
+          "level": "Beginner"
         },
         {
           "startTime": "15:00:00",
@@ -1142,20 +1156,9 @@
           "startTime": "16:00:00",
           "endTime": "16:45:00",
           "allTracks": false,
-          "track": "Room 6",
-          "title": "Drupal CMS - the starters guide.",
-          "description": "Ever heard about Drupal and want to find if is it worth start using/learning it? This session will cover a quick overview about D7 platform including the key components and modules which will help you get started to develop your  projects faster and easier. Will dive a little bit into the code structure and try to build something custom by ourselves and interact with the Drupal framework functions and finally will end-up with Q&amp;A session.",
-          "speakers": [ "Sorin Boistean" ],
-          "speakingLang": "English",
-          "level": "Intermediate"
-        },
-        {
-          "startTime": "16:00:00",
-          "endTime": "16:45:00",
-          "allTracks": false,
           "track": "Room 1",
           "title": "Exploring .NET Core Application Models",
-          "description": "The experienced .NET developers may wonder what are the use cases that best justify the adoption of .NET Core. In this session we starts giving a look to the available .NET Core application models such as the one used for classic ASP.NET applications. Then we will see other very interesting scenarios like .NET Core web services in a docker environment, or interoperating with nodejs.",
+          "description": "The experienced .NET developers may wonder what are the use cases that best justify the adoption of .NET Core. In this session we starts giving a look to the available .NET Core application models such as the one used for classic ASP.NET applications. Then we will see other very interesting scenarios like .NET Core web services in a docker environment, interoperate with nodejs and more.",
           "speakers": [ "Raffaele Rialdi" ],
           "speakingLang": "English",
           "level": "Intermediate"
@@ -1220,7 +1223,7 @@
           "endTime": "17:45:00",
           "allTracks": false,
           "track": "Room 1",
-          "title": "Serverless computing - How to fire your Sysadmin and and run your code in a scalable and secure environment",
+          "title": "Serverless computing - How to fire your Sysadmin and run your code in a scalable and secure environment",
           "description": "The future of cloud is serverless computing. All of the major cloud providers are going all-in on this new “serverless\" paradigm. Amazon Web Service’s Lambda, Google’s Cloud Functions, IBM’s OpenWhisk, and now Azure’s Functions. This session will cover the basic principles of implementing serverless architectures and zoom into Microsoft's offering in this space: Azure Functions.",
           "speakers": [ "Silviu Niculita" ],
           "speakingLang": "English",
@@ -1241,11 +1244,33 @@
           "startTime": "17:00:00",
           "endTime": "17:45:00",
           "allTracks": false,
+          "track": "Room 2",
+          "title": "Cum să fii autentic",
+          "description": "Fii tu însuți dar nu fi un porc. Fii spontan dar nu strica prin jur. Riscă, dar nu fi naiv. Supără, dar nu prea mult. Fă ce vrei, dar fă și niște bani. \r\n\r\nDincolo de igiena conviețuirii și a profesionalismului, ceva comunicare, puțină empatie și niște inteligență emoțională, dăm de un strat mai profund al unui conflict constant între cine credem că suntem și cum ne văd alții, între ce am vrea și ce avem. Tensiunea asta ne poate consuma, ne poate șterge, ne poate transforma în niște plictisitori, sau ne poate face să explodăm în fața altora în cele mai neașteptate momente. Cum o transformăm în ceva util, cum o folosim ca să ajungem departe?\r\n\r\nAutenticitatea nu e o destinație, e un drum. Despre leadership, despre superficialitatea autenticității facile și nu numai. ",
+          "speakers": [ "Andrei Postolache" ],
+          "speakingLang": "Romanian",
+          "level": "Experienced"
+        },
+        {
+          "startTime": "17:00:00",
+          "endTime": "17:45:00",
+          "allTracks": false,
           "track": "Room 11",
           "title": "Using Gamification in Team Management ",
-          "description": "Gamification is used by companies to create involvement of clients, but also employees. It is known that when it comes to millennials, employee motivation has to do a lot with the working environment &amp; personal development. My presentation is focused on how to apply gamification in the working environment and what are the consequences at team level.",
+          "description": "Gamification is used by companies to create involvement of clients, but also employees. It is known that when it comes to millennials, employee motivation has to do a lot with the working environment & personal development. My presentation is focused on how to apply gamification in the working environment and what are the consequences at team level.",
           "speakers": [ "BERTEA ARMAND" ],
           "speakingLang": "English",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "17:00:00",
+          "endTime": "17:45:00",
+          "allTracks": false,
+          "track": "Room 3",
+          "title": "Risk mitigation and building trust with cryptocurrencies",
+          "description": "We will start with a brief history of currencies, an overview of how the current monetary system works and then we will talk about the blockchain technology behind cryptocurrencies, Bitcoin included",
+          "speakers": [ "Ciprian Hodorogea" ],
+          "speakingLang": "Romanian",
           "level": "Intermediate"
         },
         {
@@ -1296,17 +1321,6 @@
           "startTime": "17:00:00",
           "endTime": "17:45:00",
           "allTracks": false,
-          "track": "Room 6",
-          "title": "How to touch your cellphone with passion",
-          "description": "Finger up, finger down, move the finger, one finger on the phone, 2 fingers, more fingers, all of them can touch the same phone. \r\nLet’s make the user happy by offering an awesome interaction with his phone in our apps.\r\nWe will discuss about The Android Touch System and it’s pitfalls, Touch Event Framework, Custom Touch Handling and some Gestures.\r\nFor sure it will be a fun session for the mobile developers on Android and not only",
-          "speakers": [ "Mircea Serediuc (Tzury)" ],
-          "speakingLang": "Romanian",
-          "level": "Beginner"
-        },
-        {
-          "startTime": "17:00:00",
-          "endTime": "17:45:00",
-          "allTracks": false,
           "track": "Room 8",
           "title": "And Then There's the Question of Money",
           "description": "Startup funding and cash flow planning. How much do you really need? For what? Are your needs real, do you know how to ask for funding? This talk aims for a down to earth approach on what can really happen to you here and now, not by Silicon Valley recipes.",
@@ -1330,7 +1344,7 @@
           "endTime": "22:00:00",
           "allTracks": true,
           "track": null,
-          "title": "Cocktail &amp; Business Networking - Partners, Speakers, Special Guests ",
+          "title": "Cocktail & Business Networking - Partners, Speakers, Special Guests ",
           "description": null,
           "speakers": null,
           "speakingLang": null,
@@ -1341,7 +1355,7 @@
           "endTime": "05:00:00",
           "allTracks": true,
           "track": null,
-          "title": "The entire CodeCamp community - After party - downtown ",
+          "title": "The entire CodeCamp community - After party - Rock'n'rolla Iași",
           "description": null,
           "speakers": null,
           "speakingLang": null,
@@ -1426,10 +1440,10 @@
     {
       "name": "Patrice Brend'amour",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/85-DF07179B-632E-45C1-8372-24A0D62B1900.JPG",
-      "company": "CompuGroup Medical Software GmbH",
+      "company": "CompuGroup Medical SE",
       "companyWebsiteUrl": "http://cgm.com",
       "jobTitle": "Product Manager G3",
-      "bio": "I’m the Product Manager for the CGM G3 Foundation. In the last few years, I’ve been focusing on creating developer tools and libraries (e.g. a code generation system, a database proxy) as well as automation in general (e.g. Continuous Delivery and automated testing, automatically scaling cloud applications) and security. I’m also a strong voice for the open source movement and not only contribute to/run several projects but also try to inspire others to adopt the open source mindset",
+      "bio": "I’m a Product Manager for the CGM G3 Foundation. In the last few years, I’ve been focusing on creating developer tools and libraries (e.g. a code generation system, a database proxy) as well as automation in general (e.g. Continuous Delivery and automated testing, automatically scaling cloud applications) and security. I’m also a strong voice for the open source movement and not only contribute to/run several projects but also try to inspire others to adopt the open source mindset",
       "displayOrder": 8
     },
     {
@@ -1456,7 +1470,7 @@
       "company": "Introspecials",
       "companyWebsiteUrl": "http://introspecials.com",
       "jobTitle": "Trainer at Introspecials",
-      "bio": "I’m a co-founder and trainer at Introspecials with a focus on modern organizations, leadership, agility, lean, learning, culture and communication.\r\n\r\nMy previous experience is that of a business leader with P&amp;L responsibilities for Endava’s 300 people strong Iasi business unit, of which I was the first employee.\r\n\r\nI’ve been a speaker at various local, national and international conferences, on various leadership topics.\r\n\r\nMy original background is in software development and architecture.",
+      "bio": "I’m a co-founder and trainer at Introspecials with a focus on modern organizations, leadership, agility, lean, learning, culture and communication.\r\n\r\nMy previous experience is that of a business leader with P&L responsibilities for Endava’s 300 people strong Iasi business unit, of which I was the first employee.\r\n\r\nI’ve been a speaker at various local, national and international conferences, on various leadership topics.\r\n\r\nMy original background is in software development and architecture.",
       "displayOrder": 6
     },
     {
@@ -1464,7 +1478,7 @@
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/16-Florin.Cardasim.png.jpg",
       "company": "Strongbytes",
       "companyWebsiteUrl": "http://www.strongbytes.ro",
-      "jobTitle": "IT Trainer &amp; Consultant",
+      "jobTitle": "IT Trainer & Consultant",
       "bio": "Florin is a software architect and Agile coach. Beyond his technical skills, he gained a broad experience as a trainer for companies and speaker in conferences and community events.\r\nPassionate by technology and by working with people to grow amazing things. Focused on people, quality and on-time delivery, while carefully looking to foster innovation and unleash the fun out of the software development.",
       "displayOrder": 1
     },
@@ -1474,7 +1488,7 @@
       "company": "GDD Iasi",
       "companyWebsiteUrl": "https://www.facebook.com/groups/gdd.fii/?__mref=message_bubble",
       "jobTitle": "Software Developer",
-      "bio": "By day a software developer. By night a game developer. It's probably Adrian.\r\n\r\nHe took game development as a hobby 10 years ago and never backed down\r\n\r\nWhile still working on a normal job his aim is to make game games as a living. On this note he released one game on Steam and working on another title which got greenlit as well.\r\n \r\n",
+      "bio": "By day a software developer. By night a game developer. It's probably Adrian.\r\n\r\nHe took game development as a hobby 10 years ago and never backed down\r\n\r\nWhile still working on a normal job his aim is to make games as a living. On this note he released one game on Steam and working on another title which got greenlit as well.\r\n \r\n",
       "displayOrder": 0
     },
     {
@@ -1483,7 +1497,7 @@
       "company": "EDUROM",
       "companyWebsiteUrl": "http://www.edurom.ro/",
       "jobTitle": "Managing Partner",
-      "bio": "Adrian co founded Edurom in 2002. Since then, he developed and delivered training and consultancy programs for various companies in the software development industry. He is running Belbin &amp; Situational Leadership trainings for the IT&amp;C clients of Edurom.",
+      "bio": "Adrian co founded Edurom in 2002. Since then, he developed and delivered training and consultancy programs for various companies in the software development industry. He is running Belbin & Situational Leadership trainings for the IT&C clients of Edurom.",
       "displayOrder": 0
     },
     {
@@ -1554,7 +1568,7 @@
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/44-armand.PNG",
       "company": "BRANDWEB",
       "companyWebsiteUrl": "https://www.brandweb.ro",
-      "jobTitle": "CTO &amp; Co-founder",
+      "jobTitle": "CTO & Co-founder",
       "bio": "Armand co-founded Brandweb in 2005, when he was still a student. Since then he experienced working with different front-end and back-end technologies. Passionate about making things work through code, he's also a different kind of a manager when it comes to dealing with teams. Using his sense of humor and creativity he is always looking for new ways to stimulate a friendly working environment.",
       "displayOrder": 0
     },
@@ -1600,7 +1614,7 @@
       "company": "Q Web Solutions",
       "companyWebsiteUrl": "http://www.sinapsi.ro",
       "jobTitle": "Programmer",
-      "bio": "Enterprise ASP.NET based applications \r\n    - BPM\r\n    - workflow / rule based applications.\r\n    - auto-generated user interfaces, web application user interfaces paradigm &amp; ergonomics.\r\n\r\nSpecialties: BPM, application frameworks, rule based applications, web applications ergonomy",
+      "bio": "Enterprise ASP.NET based applications \r\n    - BPM\r\n    - workflow / rule based applications.\r\n    - auto-generated user interfaces, web application user interfaces paradigm & ergonomics.\r\n\r\nSpecialties: BPM, application frameworks, rule based applications, web applications ergonomy",
       "displayOrder": 0
     },
     {
@@ -1608,7 +1622,7 @@
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/106-cata.jpg",
       "company": "Catalin",
       "companyWebsiteUrl": "http://www.catalin-luntraru.com/",
-      "jobTitle": "Full Stack Developer",
+      "jobTitle": "Full Stack Developer, 11 years XP",
       "bio": "I'm a senior full stack developer (lamp + html/css/js + server) with 11 years experience. For a while now I moved to front-end with react and redux",
       "displayOrder": 0
     },
@@ -1618,7 +1632,7 @@
       "company": "Fortech",
       "companyWebsiteUrl": "http://www.fortech.ro",
       "jobTitle": "Senior Software Architect",
-      "bio": "Catalin holds a B.Sc. in the field of Informatics, gained at the “Al .I. Cuza” University from Iasi. He has over 18 years’ experience in the IT industry (in various areas such as team management, architecture, design, coding - mainly Java projects for finance &amp; telecom area - both JEE and SpringFramework). During his career in IT, he gained several certifications and awards, such as: Scrum Alliance / Certified Scrum Master in 2014, Oracle Certified Master, Java EE 5 Enterprise Architect in 2013,",
+      "bio": "Catalin holds a B.Sc. in the field of Informatics, gained at the “Al .I. Cuza” University from Iasi. He has over 18 years’ experience in the IT industry (in various areas such as team management, architecture, design, coding - mainly Java projects for finance & telecom area - both JEE and SpringFramework). During his career in IT, he gained several certifications and awards, such as: Scrum Alliance / Certified Scrum Master in 2014, Oracle Certified Master, Java EE 5 Enterprise Architect in 2013,",
       "displayOrder": 0
     },
     {
@@ -1682,15 +1696,6 @@
       "companyWebsiteUrl": null,
       "jobTitle": "Head of Test Engineering",
       "bio": "I'm a test enthusiast for about 10 years.",
-      "displayOrder": 0
-    },
-    {
-      "name": "FĂTULESCU Corneliu Constantin",
-      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/36-Cornel FĂTULESCU.jpg",
-      "company": "AgileHub",
-      "companyWebsiteUrl": "http://agilehub.ro/",
-      "jobTitle": "co-founder AgileHub",
-      "bio": "Co-founder of AgileHub, ScriuCod and CTO @Pentalog, blogger @www.cornel.fatulescu.ro, Cornel FĂTULESCU is a passionate Father and Agile Coach. With more than 18 exciting years in the IT world, Cornel ventures promotes safety, love and compassion in everyone’s journey to excellence. \r\nAs an agile advocate, he optimized business value delivered within various large scale organizations by implementing XP, Scrum, Kanban, LeSS. ",
       "displayOrder": 0
     },
     {
@@ -1923,8 +1928,17 @@
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/83-680319_10200844242935431_1566479260_o.jpg",
       "company": "GDD Iași",
       "companyWebsiteUrl": "https://www.facebook.com/groups/gdd.fii",
-      "jobTitle": "Teacher &amp; GameDev Enthusiast",
+      "jobTitle": "Teacher & GameDev Enthusiast",
       "bio": "A teacher, entrepreneur and game development enthusiast, Vasile now spends most of his time preparing the new Game Design and Development course, to be held in Spring 2017 at the Faculty of Computer Science, \"Alexandru Ioan Cuza\" University of Iași. \r\n\r\nVasile is a teacher since 2004.  For seven years he was managing partner of a mobile software development company, where he tried his hands on building a game development team.",
+      "displayOrder": 0
+    },
+    {
+      "name": "Vasile Putină",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/99-vasile.putina.jpg",
+      "company": "AgileHub",
+      "companyWebsiteUrl": "http://agilehub.ro/",
+      "jobTitle": "Agile Coach.  Agile transition program coordinator.",
+      "bio": "His passion for agility and coaching has helped many teams and clients to maximize the value delivered to end users. Being 16 years in IT, he managed to achieve a multilateral vision of this field through experience as lecturer, programmer in different languages, Scrum Master, manager, agile trainer and coach. In his opinion, agility is about people and their ability to overcome the limits being guided by a set of values.",
       "displayOrder": 0
     },
     {
@@ -1950,7 +1964,7 @@
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/93-DSC03492-V2.jpg",
       "company": "Appsbroker Consulting Ltd",
       "companyWebsiteUrl": "http://www.appsbroker.com/",
-      "jobTitle": "Cloud App Configurator &amp; Support Specialist",
+      "jobTitle": "Cloud App Configurator & Support Specialist",
       "bio": "- Application Configurator \r\n- New technology enthusiast",
       "displayOrder": 0
     },

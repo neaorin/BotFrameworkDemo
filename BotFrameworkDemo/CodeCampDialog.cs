@@ -362,7 +362,7 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
 
             var speakerName = state.SpeakerName == null ? null : new string[] { state.SpeakerName };
 
-            var topic = CodeCamp.Topics.Where(t => t.Name.ContainsIgnoreCase(state.Topic)).FirstOrDefault();
+            var topic = CodeCamp.Topics.Where(t => t.Name.Equals(state.Topic, StringComparison.InvariantCultureIgnoreCase)).FirstOrDefault();
             var topicValues = (topic == null ?
                                 String.IsNullOrWhiteSpace(state.Topic) ? null : new string[] { state.Topic }
                                 : topic.Terms);

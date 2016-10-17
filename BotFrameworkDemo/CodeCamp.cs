@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Web;
 
 namespace BotFrameworkDemo
@@ -45,6 +46,7 @@ namespace BotFrameworkDemo
             {
                 localSpeakerNames = Speakers.Where(k => k.Company.ContainsIgnoreCase(companyName)).Select(k => k.Name).ToArray();
             }
+            var topicsRegex = topics?.GetWholeWordsRegex();
 
             return CodeCamp.Sessions
                 .Where(s =>
@@ -55,8 +57,8 @@ namespace BotFrameworkDemo
                 .Where(s =>
                     topics == null 
                     || (topics.ContainIgnoreCase("misc") && s.AllTracks == true) 
-                    || s.Title.ContainsIgnoreCase(topics) 
-                    || s.Description.ContainsIgnoreCase(topics))
+                    || s.Title.RegexMatch(topicsRegex) 
+                    || s.Description.RegexMatch(topicsRegex))
 
                 .Where(s => 
                     level == LevelTypes.None 
@@ -199,6 +201,14 @@ namespace BotFrameworkDemo
             return false;
         }
 
+        public static bool RegexMatch(this string containerString, string regex)
+        {
+            if (containerString == null || regex == null)
+                return false;
+
+            return Regex.IsMatch(containerString, regex, RegexOptions.IgnoreCase);
+        }
+
         public static bool ContainIgnoreCase(this IEnumerable<string> containerStrings, string str)
         {
             return containerStrings != null && str != null &&
@@ -244,7 +254,17 @@ namespace BotFrameworkDemo
             return str != null ? $"*{str}*" : null;
         }
 
+        public static string GetWholeWordsRegex(this string[] str)
+        {
+            if (str == null || str.Length == 0)
+                return String.Empty;
 
+            StringBuilder buf = new StringBuilder();
+            foreach (var s in str)
+                buf.AppendFormat("{0}{1}", buf.Length == 0 ? String.Empty : "|", s);
+
+            return @"\b(" + buf.ToString() + @")\b";
+        }
 
     }
 }
