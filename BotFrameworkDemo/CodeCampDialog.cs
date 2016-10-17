@@ -270,8 +270,15 @@ namespace BotFrameworkDemo
 
         private async Task SearchFormComplete(IDialogContext context, IAwaitable<SessionSelectionOptions> result)
         {
-            var state = await result;
-            await SessionSelectionOptions.SearchSessionsAndPostResults(context, state);
+            try
+            {
+                var state = await result;
+                await SessionSelectionOptions.SearchSessionsAndPostResults(context, state);
+            }
+            catch (FormCanceledException<SessionSelectionOptions>)
+            {
+                await context.PostAsync("Sorry I couldn't help you with that one. Care to try again? I'll try to do better this time.");
+            }
             context.Wait(MessageReceived);
         }
 
@@ -308,6 +315,7 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
     }
 
     [Serializable]
+    [Template(TemplateUsage.NotUnderstood, "Try again, I don't get \"{0}\". Or, type **quit**.")]
     public class SessionSelectionOptions
     {
         public Speaker[] CandidateSpeakers { get; set; }
@@ -352,7 +360,7 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
                             )
                 .Field(new FieldReflector<SessionSelectionOptions>(nameof(Level))
                             .SetActive((state) => !state.Topic.ContainsIgnoreCase("misc"))
-                        )
+                        )                        
                 .Build();
         }
 
