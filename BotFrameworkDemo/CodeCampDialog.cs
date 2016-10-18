@@ -7,6 +7,7 @@ using Microsoft.Bot.Connector;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
@@ -128,7 +129,7 @@ namespace BotFrameworkDemo
                         {
                             message = session.ToLongDisplayString();
                             context.ConversationData.SetValue("sessionId", session.Id);
-                            message += "Type **add** to add this session to your schedule.";
+                            message += "\nType **add** to add this session to your schedule.";
                         }
                     }
                 }
@@ -147,13 +148,13 @@ namespace BotFrameworkDemo
             if (context.UserData.TryGetValue("schedule", out scheduleSessionsList)
                 && scheduleSessionsList?.Length > 0)
             {
-                message = "Here is your current schedule. Type **remove n** to remove the session at index **n**:\n";
+                message = "Here is your current schedule.\n";
                 var sessions = scheduleSessionsList.Select(sl => CodeCamp.Sessions.FirstOrDefault(s => s.Id == sl)).ToArray();
 
                 message += SessionSelectionOptions.GetSessionsListDisplayMessage(sessions);
-
-                // save info about sessions
-                context.ConversationData.SetValue("sessionsList", sessions.Select(s => s.Id).ToArray());
+                message += "Type **remove n** to remove the session at index **n**.";
+                 // save info about sessions
+                 context.ConversationData.SetValue("sessionsList", sessions.Select(s => s.Id).ToArray());
             }
 
             await context.PostAsync(message);
@@ -379,9 +380,9 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
             var sessions = CodeCamp.FindSessions(speakerName, topicValues, state.CompanyName, state.Level).ToArray();
             if (sessions.Count() > 0)
             {
-                message = $"I've found some sessions. To see more details about a session, type its number.\n";
-                message += $"Or, type **add n** to add the session at index **n** to your schedule.\n";
+                message = $"I've found some sessions.\n";
                 message += GetSessionsListDisplayMessage(sessions);
+                message += $"To see more details about a session, type its number.\nOr, type **add n** to add the session at index **n** to your schedule.";
 
                 // save info about sessions
                 context.ConversationData.SetValue("sessionsList", sessions.Select(s => s.Id).ToArray());
@@ -395,10 +396,11 @@ My source code is [on GitHub](https://github.com/neaorin/BotFrameworkDemo). You 
 
         internal static string GetSessionsListDisplayMessage(Session[] sessions)
         {
-            var message = "";
+            var message = new StringBuilder();
             for (int i = 0; i < sessions.Count(); i++)
-                message += $"{i + 1}. {sessions[i].ToShortDisplayString()}\n";
-            return message;
+                message.Append($"{i + 1}. {sessions[i].ToShortDisplayString()}\n");
+            message.Append("\n");
+            return message.ToString();
         }
 
     }
