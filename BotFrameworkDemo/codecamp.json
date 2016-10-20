@@ -1,6 +1,6 @@
 ﻿{
   "refId": 2,
-  "title": "Codecamp Iasi, Autumn Edition 2016",
+  "title": "Codecamp Iasi, Autumn 2016",
   "startDate": "2016-10-22T00:00:00",
   "endDate": "2016-10-22T00:00:00",
   "venue": {
@@ -240,8 +240,8 @@
       "displayOrder": 6
     },
     {
-      "name": "TechFest Cluj",
-      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/76-clujtechfest.png",
+      "name": "TechFest",
+      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/105-techfest.jpg",
       "websiteUrl": "http://www.techacademy.ro/",
       "sponsorshipPackage": "Partner Communities",
       "displayOrder": 6
@@ -417,7 +417,7 @@
     {
       "name": "NTT Data",
       "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/91-91-NTT-DATA-descriptor-R-color.png",
-      "websiteUrl": "http://www.nttdata.com",
+      "websiteUrl": "http://www.nttdata.ro",
       "sponsorshipPackage": "PLATINUM",
       "displayOrder": 8
     },
@@ -427,6 +427,13 @@
       "websiteUrl": "http://www.ea.com/",
       "sponsorshipPackage": "PLATINUM",
       "displayOrder": 9
+    },
+    {
+      "name": "Casa Auto Iasi",
+      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/104-casa-auto.jpg",
+      "websiteUrl": "http://www.casaautoiasi.ro/",
+      "sponsorshipPackage": "PLATINUM",
+      "displayOrder": 10
     },
     {
       "name": "KineticFIT",
@@ -665,7 +672,7 @@
           "title": "Discovering the SOLID principles in Coaching",
           "description": "Let’s explore a new universe, coaching, by taking advantage of the acronym SOLID that defines the five basic object-oriented design principles. We’ll see what Single Responsibility means in coaching, what is Open and what Closed, and how would Liskov, Interface Segregation and Dependency Inversion translate or how they would apply in coaching. \r\nLet’s discuss how we could use these principles in our teams with people oriented design.",
           "speakers": [ "Raluca Breaur" ],
-          "speakingLang": "Romanian",
+          "speakingLang": "English",
           "level": "Experienced"
         },
         {
@@ -722,6 +729,17 @@
           "speakers": [ "Vasile Putină" ],
           "speakingLang": "Romanian",
           "level": "Intermediate"
+        },
+        {
+          "startTime": "11:00:00",
+          "endTime": "11:45:00",
+          "allTracks": false,
+          "track": "Room 8",
+          "title": "Go big or ... just enjoy it",
+          "description": "Bootstrapping, startup accelerator, venture capital investment, unicorns ... or lifestyle business?",
+          "speakers": [ "Razvan Girmacea" ],
+          "speakingLang": "Romanian",
+          "level": "Beginner"
         },
         {
           "startTime": "12:00:00",
@@ -805,11 +823,11 @@
           "endTime": "12:45:00",
           "allTracks": false,
           "track": "Room 5",
-          "title": "Game Design: Satisfaction vs Frustration",
-          "description": "It is important, when designing experiences for video games, to ensure that the players never feel frustration. On the contrary, the player should gain a feeling of satisfaction from overcoming the obstacles presented by the Game Designer.\r\n\r\nTogether, we will determine what exactly differentiates the two types of experiences and analyze some practical examples of good and bad practices from the games industry. ",
-          "speakers": [ "Alexandru Birzanu" ],
-          "speakingLang": "Romanian",
-          "level": "Intermediate"
+          "title": "Could WebGL shape the future of game development?",
+          "description": "The WebGL API enables developers to leverage the graphic hardware acceleration power to create complex 3D games and applications in Javascript. Will the extended support across browsers and the emerging WebGL frameworks  change the way games are made? Let's find out together!",
+          "speakers": [ "Bogdan Apostol" ],
+          "speakingLang": "English",
+          "level": "Beginner"
         },
         {
           "startTime": "12:00:00",
@@ -881,6 +899,17 @@
           "startTime": "13:00:00",
           "endTime": "13:45:00",
           "allTracks": false,
+          "track": "Room 3",
+          "title": "Kafka Streams: New kid in stream processing town",
+          "description": "We’d like to share with you our (rather short) experience with Kafka Streams, the new Java library for building distributed stream processing apps using Apache Kafka.\r\nWe’ll try to explain the concepts behind it, work through some examples and point out some important features and shortcomings.",
+          "speakers": [ "Maria Abramiuc", "Iulian Tanasescu" ],
+          "speakingLang": "Romanian",
+          "level": "Experienced"
+        },
+        {
+          "startTime": "13:00:00",
+          "endTime": "13:45:00",
+          "allTracks": false,
           "track": "Room 6",
           "title": "Drupal CMS - the starters guide.",
           "description": "Ever heard about Drupal and want to find if is it worth start using/learning it? This session will cover a quick overview about D7 platform including the key components and modules which will help you get started to develop your  projects faster and easier. Will dive a little bit into the code structure and try to build something custom by ourselves and interact with the Drupal framework functions and finally will end-up with Q&A session.",
@@ -906,9 +935,20 @@
           "track": "Room 11",
           "title": "Driving (on) the Architecture Runway with SAFe",
           "description": "Driving (on) the Architecture Runway with SAFe",
-          "speakers": [ "Florin Cardasim" ],
+          "speakers": [ "Florin Cardasim", "Corina Cilibiu" ],
           "speakingLang": "English",
           "level": "Experienced"
+        },
+        {
+          "startTime": "13:00:00",
+          "endTime": "13:45:00",
+          "allTracks": false,
+          "track": "Room 5",
+          "title": "Developing Multiplayer Games in Unity3D",
+          "description": "This session's aim is to give an overview of implementing multiplayer in Unity3D.\r\nSome highlights:\r\n- multiplayer solutions analysis.\r\n- chosing the right solution for the needs of the game.\r\n- fast implementation using existing libraries.\r\n- possible problems that may appear & how to solve them.\r\n- actual demo from one of the games I've created.\r\n",
+          "speakers": [ "Adrian Popovici" ],
+          "speakingLang": "Romanian",
+          "level": "Intermediate"
         },
         {
           "startTime": "13:00:00",
@@ -920,17 +960,6 @@
           "speakers": [ "Bogdan Sorescu", "Vlad Puescu" ],
           "speakingLang": "Romanian",
           "level": "Intermediate"
-        },
-        {
-          "startTime": "13:00:00",
-          "endTime": "13:45:00",
-          "allTracks": false,
-          "track": "Room 5",
-          "title": "Could WebGL shape the future of game development?",
-          "description": "The WebGL API enables developers to leverage the graphic hardware acceleration power to create complex 3D games and applications in Javascript. Will the extended support across browsers and the emerging WebGL frameworks  change the way games are made? Let's find out together!",
-          "speakers": [ "Bogdan Apostol" ],
-          "speakingLang": "English",
-          "level": "Beginner"
         },
         {
           "startTime": "13:00:00",
@@ -953,17 +982,6 @@
           "speakers": [ "Catalin Luntraru" ],
           "speakingLang": "Romanian",
           "level": "Beginner"
-        },
-        {
-          "startTime": "13:00:00",
-          "endTime": "13:45:00",
-          "allTracks": false,
-          "track": "Room 3",
-          "title": "Optimizing soft-surface simulations",
-          "description": "The session will start with the basic intuition for naive simulation of soft surfaces. With that covered the conversation will progress to commonly used optimization strategies and discussing their upsides, downsides and uses in various industries.",
-          "speakers": [ "Radu Danciu" ],
-          "speakingLang": "Romanian",
-          "level": "Intermediate"
         },
         {
           "startTime": "13:00:00",
@@ -1003,11 +1021,11 @@
           "endTime": "15:45:00",
           "allTracks": false,
           "track": "Room 7",
-          "title": "Bringing change:  patterns and people ",
-          "description": "In the last few years more and more comapnies begin their journey in Changing the way they work, trying to be more productive, more client-orietend, more pro-active, to offer a better environment for their employees. More and more companies start their journey in the Agile Transformation.\r\n\r\nThough each company has its own specific challenges and needs, some issues are raised:\r\n  - Can there be some common patterns and actions they need to take in order to  get where they need? \r\n  - Where do they actually want to get to? \r\n  - What do they want to transition into?\r\n  - What are the steps they need to have in mind \r\n  - What kind of people they need to focus on to move move the company forward?\r\n  - How can those steps be implemented?\r\n\r\nIn this talk, based on my experience, I will focus on the patters for change, the teams a company needs to create and the profile of people that can move these teams and actions that need to be taken to advance in the desired direction.  ",
-          "speakers": [ "Camelia Codarcea" ],
-          "speakingLang": "English",
-          "level": "Experienced"
+          "title": "Failure is when you desire what you don't need",
+          "description": "Understand the fundamental differences between desires and needs and how they impact our professional and personal lives. Learn from industry stories and experiences how to focus on real results rather than talking about them. Discover practical ways to understand our behavior as well as the behavior of our colleagues, clients or friends. Finally, learn how to manage needs and avoid failure.",
+          "speakers": [ "Vlad Ungureanu" ],
+          "speakingLang": "Romanian",
+          "level": "Intermediate"
         },
         {
           "startTime": "15:00:00",
@@ -1016,19 +1034,8 @@
           "track": "Room 2",
           "title": "Scoring continuous delivery and A/B testing with a multi-tenancy technique",
           "description": "We will be demo-ing a way of achieving continuous delivery and setup your Java web application for A/B testing using a technique that relies on the multi-tenancy ability of an application. How to achieve a fast multi-tenant setup will be part of the demo too, so things will be quite cool, we hope!",
-          "speakers": [ "Florin Asăvoaie", "Daniel Brânzea" ],
+          "speakers": [ "Florin Asăvoaie" ],
           "speakingLang": "English",
-          "level": "Experienced"
-        },
-        {
-          "startTime": "15:00:00",
-          "endTime": "15:45:00",
-          "allTracks": false,
-          "track": "Room 4",
-          "title": "Kafka Streams: New kid in stream processing town",
-          "description": "We’d like to share with you our (rather short) experience with Kafka Streams, the new Java library for building distributed stream processing apps using Apache Kafka.\r\nWe’ll try to explain the concepts behind it, work through some examples and point out some important features and shortcomings.",
-          "speakers": [ "Maria Abramiuc", "Iulian Tanasescu" ],
-          "speakingLang": "Romanian",
           "level": "Experienced"
         },
         {
@@ -1057,23 +1064,23 @@
           "startTime": "15:00:00",
           "endTime": "15:45:00",
           "allTracks": false,
-          "track": "Room 5",
-          "title": "Developing Multiplayer Games in Unity3D",
-          "description": "This session's aim is to give an overview of implementing multiplayer in Unity3D.\r\nSome highlights:\r\n- multiplayer solutions analysis.\r\n- chosing the right solution for the needs of the game.\r\n- fast implementation using existing libraries.\r\n- possible problems that may appear & how to solve them.\r\n- actual demo from one of the games I've created.\r\n",
-          "speakers": [ "Adrian Popovici" ],
-          "speakingLang": "Romanian",
-          "level": "Intermediate"
-        },
-        {
-          "startTime": "15:00:00",
-          "endTime": "15:45:00",
-          "allTracks": false,
           "track": "Room 3",
           "title": "Generation C: Using Code Generation to make software development more fun",
           "description": "Ever had a really great idea, but when you started implementing it you got discouraged by the 'boring parts' of software development? \r\nCode Generation is a really cool way to automate the tedious (or even complex) parts of our development life so that we can get to the really interesting bits faster. And it can do so much more...",
           "speakers": [ "Patrice Brend'amour" ],
           "speakingLang": "English",
           "level": "Advanced"
+        },
+        {
+          "startTime": "15:00:00",
+          "endTime": "15:45:00",
+          "allTracks": false,
+          "track": "Room 4",
+          "title": "Making a global available and scalable application in 45 minutes",
+          "description": "Using Appsbroker's Appsflow, that integrates Google Cloud services, we will be able to create in real time a  globally available and scalable application in 45 minutes. ",
+          "speakers": [ "Vlad Onutu" ],
+          "speakingLang": "Romanian",
+          "level": "Experienced"
         },
         {
           "startTime": "15:00:00",
@@ -1101,6 +1108,17 @@
           "startTime": "15:00:00",
           "endTime": "15:45:00",
           "allTracks": false,
+          "track": "Room 5",
+          "title": "Optimizing soft-surface simulations",
+          "description": "The session will start with the basic intuition for naive simulation of soft surfaces. With that covered the conversation will progress to commonly used optimization strategies and discussing their upsides, downsides and uses in various industries.",
+          "speakers": [ "Radu Danciu" ],
+          "speakingLang": "Romanian",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "15:00:00",
+          "endTime": "15:45:00",
+          "allTracks": false,
           "track": "Room 8",
           "title": "Down the rabbit hole",
           "description": "The purpose of this session is to share my experiences about entrepreneurship, failure and success.\r\n\r\nIt will be an open and interactive discussion where we will have the chance to talk about your ideas and how to grow them.",
@@ -1112,21 +1130,21 @@
           "startTime": "16:00:00",
           "endTime": "16:45:00",
           "allTracks": false,
-          "track": "Room 7",
-          "title": "Failure is when you desire what you don't need",
-          "description": "Understand the fundamental differences between desires and needs and how they impact our professional and personal lives. Learn from industry stories and experiences how to focus on real results rather than talking about them. Discover practical ways to understand our behavior as well as the behavior of our colleagues, clients or friends. Finally, learn how to manage needs and avoid failure.",
-          "speakers": [ "Vlad Ungureanu" ],
-          "speakingLang": "Romanian",
+          "track": "Room 3",
+          "title": "Where did the dinosaurs failed in strategic planning?",
+          "description": "You have for sure asked your boss at least once \"Where are we heading to?\" or \"What is our strategy?\". That comes from from our human urge to have a meaning, a purpose. Organizations have tried to answer that question in a very systematic way, coming down from VMS statements to project planning. And most of them failed. They have failed to convince people, not on a rational level, but more on the emotional one. \r\n\r\nWhat if there is way to make this work? Could we have missed it because we looked too far ahead instead of the present? Can there a be recipe that is 3.9 Mio years old?",
+          "speakers": [ "Marius Lupu" ],
+          "speakingLang": "English",
           "level": "Intermediate"
         },
         {
           "startTime": "16:00:00",
           "endTime": "16:45:00",
           "allTracks": false,
-          "track": "Room 3",
-          "title": "Where did the dinosaurs failed in strategic planning?",
-          "description": "You have for sure asked your boss at least once \"Where are we heading to?\" or \"What is our strategy?\". That comes from from our human urge to have a meaning, a purpose. Organizations have tried to answer that question in a very systematic way, coming down from VMS statements to project planning. And most of them failed. They have failed to convince people, not on a rational level, but more on the emotional one. \r\n\r\nWhat if there is way to make this work? Could we have missed it because we looked too far ahead instead of the present? Can there a be recipe that is 3.9 Mio years old?",
-          "speakers": [ "Marius Lupu" ],
+          "track": "Room 4",
+          "title": "Polymorphism: from design patterns to bytecode",
+          "description": "This talk focuses on polymorphism, from its high-level usefulness in designing reusable software components, down to its implementation details in various programming languages and compilers. We will start by discussing several design problems which are elegantly tackled by design patterns that are based on polymorphism, and then propose implementations in the Haxe programming language. We will then look at the generated code in C++ and Java, investigate the corresponding assembly and bytecode, and try to understand how and why polymorphism works.",
+          "speakers": [ "Ovidiu Gheorghies" ],
           "speakingLang": "English",
           "level": "Intermediate"
         },
@@ -1178,12 +1196,12 @@
           "startTime": "16:00:00",
           "endTime": "16:45:00",
           "allTracks": false,
-          "track": "Room 4",
-          "title": "Making a global available and scalable application in 45 minutes",
-          "description": "Using Appsbroker's Appsflow, that integrates Google Cloud services, we will be able to create in real time a  globally available and scalable application in 45 minutes. ",
-          "speakers": [ "Vlad Onutu" ],
+          "track": "Room 7",
+          "title": "You've not enough requirements",
+          "description": "If you've ever played any strategy game, you'll know that you can't do anything without minerals (resources). I , sometimes, look at software as a strategy game, there is a lot of planning involved, you start small and build it incrementally, using minerals of different forms, like workers (programmers), offensive (BA, PO), defensive (software testers) and very important, requirements.\r\n\r\nIn a strategy game it is a bit easier to know when you're on the wrong path, you get a message “You've not enough minerals”, in software development you get bad sprints, unsatisfied clients, extra work, wrong expectations and unhappy teams.\r\n\r\nHave you ever made a plan of attack and found out, half way, that you're the one “being attacked”? It all came down to your resources: not enough workers, not enough offense / defense or, crucially, not all requirements for your plan.\r\n\r\nI would like to share with you how you can deal with missing resources, how to better create your strategy, my approach on winning the game, a useful check-list of actionable practical knowledge, BUT, also a set of cheats that will help you win the game.",
+          "speakers": [ "Ariciuc Razvan" ],
           "speakingLang": "Romanian",
-          "level": "Experienced"
+          "level": "Intermediate"
         },
         {
           "startTime": "16:00:00",
@@ -1211,10 +1229,21 @@
           "startTime": "16:00:00",
           "endTime": "16:45:00",
           "allTracks": false,
+          "track": "Room 6",
+          "title": "How to handle \"Difficult Personalities\" at Work (Part 1)",
+          "description": "Knowing how to interact with your colleagues in difficult situations will define you in your professional life. In this two-part workshop we will see an overview of various difficult personality types, and work on identifying and managing them at work. After the workshop you will be better prepared to avoid conflicts and maintain a pleasant work environment.",
+          "speakers": [ "Petronela State" ],
+          "speakingLang": "Romanian",
+          "level": "Beginner"
+        },
+        {
+          "startTime": "16:00:00",
+          "endTime": "16:45:00",
+          "allTracks": false,
           "track": "Room 8",
-          "title": "West by North East - A short story of mistakes and fuckups",
-          "description": "Sunt în poziția ingrată de a asculta startup-urile în fiecare zi. De multe ori sunt un psiholog de fondatori, în funcția de mea de jurnalist. Urmărind ecosistemul local, vreau să vorbesc despre câteva greșeli pe care le-am identificat la tinerii antreprenori, despre cum să ieși din provincie și să ajungi în exterior, despre cum să ajungi la investitori și ce caută ei. Mă bazez pe principiul \"no bullshit, please\". ",
-          "speakers": [ "Vlad Andriescu" ],
+          "title": "I have an idea. How do I become Elon Musk?",
+          "description": "...or Steve Jobs, or Mark Zuckerberg or whomever your delusions tell you to. Learn about the magic recipe that helps you become the greatest startup founder of them all, in one week, without putting in actual hard work, or leaving your job, and or smashing your piggybank. Free 100%, money back guarantee!",
+          "speakers": [ "Marius Ursache" ],
           "speakingLang": "Romanian",
           "level": "Intermediate"
         },
@@ -1228,17 +1257,6 @@
           "speakers": [ "Silviu Niculita" ],
           "speakingLang": "English",
           "level": "Beginner"
-        },
-        {
-          "startTime": "17:00:00",
-          "endTime": "17:45:00",
-          "allTracks": false,
-          "track": "Room 4",
-          "title": "Polymorphism: from design patterns to bytecode",
-          "description": "This talk focuses on polymorphism, from its high-level usefulness in designing reusable software components, down to its implementation details in various programming languages and compilers. We will start by discussing several design problems which are elegantly tackled by design patterns that are based on polymorphism, and then propose implementations in the Haxe programming language. We will then look at the generated code in C++ and Java, investigate the corresponding assembly and bytecode, and try to understand how and why polymorphism works.",
-          "speakers": [ "Ovidiu Gheorghies" ],
-          "speakingLang": "English",
-          "level": "Intermediate"
         },
         {
           "startTime": "17:00:00",
@@ -1267,8 +1285,8 @@
           "endTime": "17:45:00",
           "allTracks": false,
           "track": "Room 3",
-          "title": "Risk mitigation and building trust with cryptocurrencies",
-          "description": "We will start with a brief history of currencies, an overview of how the current monetary system works and then we will talk about the blockchain technology behind cryptocurrencies, Bitcoin included",
+          "title": "Îți asumi riscul să nu riști?",
+          "description": "O scurtă istorie a valutelor și o descriere a principiilor care guvernează actualul sistem monetar vor crea contextul necesar pentru prezentarea modului în care funcționează Bitcoin. În continuare va depinde de noi să găsim echilibrul între riscuri și oportunități în deciziile pe care le luăm.",
           "speakers": [ "Ciprian Hodorogea" ],
           "speakingLang": "Romanian",
           "level": "Intermediate"
@@ -1299,17 +1317,6 @@
           "startTime": "17:00:00",
           "endTime": "17:45:00",
           "allTracks": false,
-          "track": "Room 7",
-          "title": "You've not enough requirements",
-          "description": "If you've ever played any strategy game, you'll know that you can't do anything without minerals (resources). I , sometimes, look at software as a strategy game, there is a lot of planning involved, you start small and build it incrementally, using minerals of different forms, like workers (programmers), offensive (BA, PO), defensive (software testers) and very important, requirements.\r\n\r\nIn a strategy game it is a bit easier to know when you're on the wrong path, you get a message “You've not enough minerals”, in software development you get bad sprints, unsatisfied clients, extra work, wrong expectations and unhappy teams.\r\n\r\nHave you ever made a plan of attack and found out, half way, that you're the one “being attacked”? It all came down to your resources: not enough workers, not enough offense / defense or, crucially, not all requirements for your plan.\r\n\r\nI would like to share with you how you can deal with missing resources, how to better create your strategy, my approach on winning the game, a useful check-list of actionable practical knowledge, BUT, also a set of cheats that will help you win the game.",
-          "speakers": [ "Ariciuc Razvan" ],
-          "speakingLang": "Romanian",
-          "level": "Intermediate"
-        },
-        {
-          "startTime": "17:00:00",
-          "endTime": "17:45:00",
-          "allTracks": false,
           "track": "Room 10",
           "title": "Creating a Selenium WebDriver Framework with Page Object",
           "description": "'Creating a Selenium WebDriver Framework with Page Object' it's a presentation addressed to those who have already heard or used Selenium and who want to organize their tests in a clearer manner by using a page object architecture. A demo will also be provided.",
@@ -1327,6 +1334,39 @@
           "speakers": [ "Cristi Bârlădeanu" ],
           "speakingLang": "Romanian",
           "level": "Intermediate"
+        },
+        {
+          "startTime": "17:00:00",
+          "endTime": "17:45:00",
+          "allTracks": false,
+          "track": "Room 6",
+          "title": "How to handle \"Difficult Personalities\" at Work (Part 2)",
+          "description": "Knowing how to interact with your colleagues in difficult situations will define you in your professional life. In this two-part workshop we will see an overview of various difficult personality types, and work on identifying and managing them at work. After the workshop you will be better prepared to avoid conflicts and maintain a pleasant work environment.",
+          "speakers": [ "Petronela State" ],
+          "speakingLang": "Romanian",
+          "level": "Beginner"
+        },
+        {
+          "startTime": "17:00:00",
+          "endTime": "17:45:00",
+          "allTracks": false,
+          "track": "Room 7",
+          "title": "A taste of digital fabrication @ Hackerspace Iasi",
+          "description": "A quick tour of our adventures in digital fabrication with laser cutting and 3D printing and some new directions we'd like to explore.",
+          "speakers": [ "Antonio Caciuc" ],
+          "speakingLang": "Romanian",
+          "level": "Beginner"
+        },
+        {
+          "startTime": "17:00:00",
+          "endTime": "17:45:00",
+          "allTracks": false,
+          "track": "Room 4",
+          "title": "Open space, use your imagination to organize something on the spot. You’re welcome! ",
+          "description": "Thank you!",
+          "speakers": [ "Florin Cardasim" ],
+          "speakingLang": "Romanian",
+          "level": "Beginner"
         },
         {
           "startTime": "17:45:00",
@@ -1452,14 +1492,14 @@
       "company": "Amazon",
       "companyWebsiteUrl": "http://www.amazon.com",
       "jobTitle": "Software Development Manager",
-      "bio": "https://ro.linkedin.com/in/ciprianhodorogea\r\n",
+      "bio": "While failing and sometimes succeeding during the last 15 years, wearing different hats as an entrepreneur, business analyst, and people manager, one thing I learned is this - any success is one step forward on an infinite path and any failure is a window to an undiscovered opportunity",
       "displayOrder": 7
     },
     {
       "name": "Vlad Ungureanu",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/28-vlad_ungureanu.jpg",
       "company": "Pentalog",
-      "companyWebsiteUrl": "http://www.pentalog.ro/",
+      "companyWebsiteUrl": "https://www.pentalog.com/",
       "jobTitle": "Senior Java Developer, Founder of LearnStuff.ro",
       "bio": "I have 10  years of experience developing Java web applications for various companies and businesses. I am a founder and trainer for learnstuff.ro.\r\nAs a trainer and speaker I have held more then 150 presentations in the last two years.\r\nMy experience as a developer consists in more then 27 projects working with various Java based frameworks, JavaScript frameworks and database servers.\r\n\r\n",
       "displayOrder": 7
@@ -1519,15 +1559,6 @@
       "displayOrder": 0
     },
     {
-      "name": "Alexandru Birzanu",
-      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/82-430274_454477817930974_549409943_n.jpg",
-      "company": "GDD Iasi",
-      "companyWebsiteUrl": "https://www.facebook.com/groups/gdd.fii/",
-      "jobTitle": "Game Designer",
-      "bio": "Incredibly passionate about games and how they can be used to provide amazing experiences that couldn't be found elsewhere. With over 3 years of experience in the industry, I hope to help others better understand the hidden wheels that turn behind a game.",
-      "displayOrder": 0
-    },
-    {
       "name": "Alexandru Pavaloi",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/49-eu.jpg",
       "company": "Yonder",
@@ -1543,6 +1574,15 @@
       "companyWebsiteUrl": "http://androidiasi.ro",
       "jobTitle": "Cofounder Android Iasi",
       "bio": "Android has been a passion for me for many years. So much so, that I cofounded Android Iasi and GDG Iasi just to meet other people interested in building Android apps. Speaking at events like Codecamp or teaching Android to other people is something I do a few times every year.",
+      "displayOrder": 0
+    },
+    {
+      "name": "Antonio Caciuc",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/135-ToniCuTrafalet_square_small.jpg",
+      "company": "Hackerspace Iasi",
+      "companyWebsiteUrl": "http://hackerspaceiasi.ro/",
+      "jobTitle": "HackerSpace Pilot",
+      "bio": "Just one of the many people who like to play with technology.\r\nWorking towards a future when the things that make us weak and strange get engineered away.",
       "displayOrder": 0
     },
     {
@@ -1597,15 +1637,6 @@
       "companyWebsiteUrl": "http://www.emag.ro",
       "jobTitle": "Product Owner - Mobile Apps",
       "bio": "(Mobile) friendly person :)",
-      "displayOrder": 0
-    },
-    {
-      "name": "Camelia Codarcea",
-      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/26-pozaCamelia_300_300.jpg",
-      "company": "AgileHub",
-      "companyWebsiteUrl": "http://www.agilehub.ro",
-      "jobTitle": "Cofounder AgileHub,  Trainer and Agile Coach",
-      "bio": "Camelia, one of the three cofounders of AgileHub, is passionate about leadership, public speaking and human interaction.\r\n\r\nHer main activities are coaching one:one as well as guiding and coaching companies and teams into their agile journey.  Creating trust through vulnerability and empathy is something that she really believes in.  \r\n\r\n She is convinced that in the right environment people are eager for excellency, so her work is to help create that environment.\r\n\r\n",
       "displayOrder": 0
     },
     {
@@ -1669,15 +1700,6 @@
       "companyWebsiteUrl": "http://www.softvision.ro",
       "jobTitle": "Line Manager",
       "bio": "Cu peste 10 ani de management in IT, Dan este Line Manager in cadrul SOFTVISION, fiind responsabil de un portofoliu de proiecte dezvoltate pentru clienti din Silicon Valley, precum si de echipele implicate in aceste proiecte. Materialul prezentat la Code Camp va include exemple din situatii reale, aparute in cei aproximativ 5 ani petrecuti in acest context.",
-      "displayOrder": 0
-    },
-    {
-      "name": "Daniel Brânzea",
-      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/102-daniel-branzea.png",
-      "company": "Yonder",
-      "companyWebsiteUrl": "https://tss-yonder.com/",
-      "jobTitle": "Senior Software Developer",
-      "bio": "Enthusiastic about meeting all of you and talking about our common hobby: software development.",
       "displayOrder": 0
     },
     {
@@ -1789,6 +1811,15 @@
       "displayOrder": 0
     },
     {
+      "name": "Marius Ursache",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/134-mariusursache-2015-m.png",
+      "company": "Eternime",
+      "companyWebsiteUrl": "http://eterni.me",
+      "jobTitle": "Founder",
+      "bio": "Learned assembly at 14. First full-time job: cartoonist for a radio station at 17. MD degree. Learned design, built first website in 1996, started first company (Grapefruit) at 22 and won 25+ international design awards. Built a fintech startup (Picard), an AI startup (Eternime) and a startup for startups (DE Toolbox). Teaches and mentors entrepreneurs at MIT, Singularity University & more. Ran a full-marathon in North Korea. Loves traveling to tribal areas and being exposed to culture shocks.",
+      "displayOrder": 0
+    },
+    {
       "name": "Matei Bostan-Vlasov",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/101-1a85275.jpg",
       "company": "UBIS",
@@ -1825,6 +1856,15 @@
       "displayOrder": 0
     },
     {
+      "name": "Petronela State",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/132-DSC_0755.JPG",
+      "company": "Maxcode",
+      "companyWebsiteUrl": "https://www.maxcode.net/",
+      "jobTitle": "Psychologist",
+      "bio": "I am a enthusiastic psychologist, passionate about human resources and eager to share some clues in understanding, interacting and communicating with subject matter experts.",
+      "displayOrder": 0
+    },
+    {
       "name": "Radu Danciu",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/87-radu_danciu.png",
       "company": "Gemini CAD Systems",
@@ -1853,7 +1893,7 @@
     },
     {
       "name": "Raluca Breaur",
-      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/54-Gogo_20150130_8301.jpg",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/54-codecamp-rb.png",
       "company": "Endava",
       "companyWebsiteUrl": "http://www.endava.com/",
       "jobTitle": "Delivery Manager",
@@ -1867,6 +1907,15 @@
       "companyWebsiteUrl": "http://www.rms.ro",
       "jobTitle": "Software Tester",
       "bio": "Raluca has about 10 years testing experience, she is passionate about test automation (Selenium, CodedUI and Protractor) and project delivery methodologies.\r\n",
+      "displayOrder": 0
+    },
+    {
+      "name": "Razvan Girmacea",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/133-razvan-bne-224.jpg",
+      "company": "Cross Promo",
+      "companyWebsiteUrl": "https://cross.promo",
+      "jobTitle": "CEO",
+      "bio": "Entrepreneur with technical background,  determined to take on global challenges. He is willing to risk as long as he learns something from it.  He studied Computer Science in University and finished a Master in System Information in Business.",
       "displayOrder": 0
     },
     {
@@ -1939,15 +1988,6 @@
       "companyWebsiteUrl": "http://agilehub.ro/",
       "jobTitle": "Agile Coach.  Agile transition program coordinator.",
       "bio": "His passion for agility and coaching has helped many teams and clients to maximize the value delivered to end users. Being 16 years in IT, he managed to achieve a multilateral vision of this field through experience as lecturer, programmer in different languages, Scrum Master, manager, agile trainer and coach. In his opinion, agility is about people and their ability to overcome the limits being guided by a set of values.",
-      "displayOrder": 0
-    },
-    {
-      "name": "Vlad Andriescu",
-      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/115-13567027_1341815305835511_904838345551655316_n.jpg",
-      "company": "start-up.ro",
-      "companyWebsiteUrl": "http://start-up.ro",
-      "jobTitle": "editor-in-chief start-up.ro",
-      "bio": "Jurnalist de cinci ani, urmăresc startup-uri de doi ani. ",
       "displayOrder": 0
     },
     {
