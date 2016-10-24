@@ -2,7 +2,7 @@
 
 A demo of using [Microsoft Bot Framework](https://dev.botframework.com/) and [Language Understanding Intelligent Service](http://luis.ai) (LUIS) to produce an intelligent bot.
 
-This bot allows users to find sessions that of interest to them at [Codecamp Romania](http://www.codecamp.ro) events.
+This bot allows users to find sessions that are of interest to them at [Codecamp Romania](http://www.codecamp.ro) events.
 
 ![](images/skype.png)
 
@@ -18,8 +18,8 @@ Follow these steps to set up your own copy of this bot:
 
 4. Open the `BotFrameworkDemo.sln` solution file in Visual Studio 2015 or later.
 
-5. Open the `BotFrameworkDemo/CodeCampDialog.cs` file and point the bot dialog at your imported LUIS model. 
-   * You will find the **LUIS Application ID** in the URL of the application, when editing it inside the LUIS.ai portal. (the URL will be `https://www.luis.ai/application/xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`)
+5. Open the `BotFrameworkDemo/CodeCampDialog.cs` file and point the bot dialog at your imported LUIS model, by editing the parameters for the `LuisModel` attribute as shown in the picture below. 
+   * You will find the **LUIS Application ID** as the GUID in the URL of the application, when editing it inside the LUIS.ai portal. (the URL will be `https://www.luis.ai/application/xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`)
    * You will find your **LUIS Subscription Key** in the [User Settings](https://www.luis.ai/Home/UserSettings) section of the same portal.
 
     ![](images/luisModelConfig.png)
@@ -36,8 +36,9 @@ Follow these steps to set up your own copy of this bot:
 8. Go to [Microsoft Bot Framework](https://dev.botframework.com/) portal and [register a new bot](https://dev.botframework.com/bots/new), then you can enable it for Skype and any other channels you like.
 
 9. To make your bot accessible by other users, you need to:
-    * Update the `Web.config` file of the project to reflect the correct `BotId`, `MicrosoftAppId` and `MicrosoftAppPassword` for the bot you have registered.
+    * Update the `Web.config` file of the project to reflect the correct `BotId`, `MicrosoftAppId` and `MicrosoftAppPassword` for the bot you have registered. You would have created all three values during the previous step, in the Microsoft Bot Framework portal, in the configuration section for your bot.
 
+        ![](images/botregister.png)
         ![](images/webconfig.png)
 
     * Deploy the `BotFrameworkDemo` web application to a public website host - for example [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/). Here is [a tutorial](https://azure.microsoft.com/en-us/documentation/articles/web-sites-dotnet-get-started/). You can get $25 of free Azure per month by signing up for [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
