@@ -269,6 +269,15 @@ namespace BotFrameworkDemo
             context.Wait(this.MessageReceived);
         }
 
+        [LuisIntent("DiscussTech")]
+        public async Task DiscussTech(IDialogContext context, LuisResult result)
+        {
+            var topic = result.Entities[0]?.Entity;
+            await context.PostAsync($"Pfft. {topic} is only used by n00bs and script kiddiez. Haskell is where it's at!");
+
+            context.Wait(this.MessageReceived);
+        }
+
         private async Task SearchFormComplete(IDialogContext context, IAwaitable<SessionSelectionOptions> result)
         {
             try
