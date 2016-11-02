@@ -143,10 +143,9 @@ namespace BotFrameworkDemo
         public async Task ListSchedule(IDialogContext context, LuisResult result)
         {
             var message = "Currently, I can't find any sessions in your schedule.";
-            string[] scheduleSessionsList;
+            string[] scheduleSessionsList = GetUserSchedule(context);
 
-            if (context.UserData.TryGetValue("schedule", out scheduleSessionsList)
-                && scheduleSessionsList?.Length > 0)
+            if (scheduleSessionsList?.Length > 0)
             {
                 message = "Here is your current schedule.\n";
                 var sessions = scheduleSessionsList.Select(sl => CodeCamp.Sessions.FirstOrDefault(s => s.Id == sl)).ToArray();
@@ -187,10 +186,7 @@ namespace BotFrameworkDemo
 
             if (sessionId != null)
             {
-                if (!context.UserData.TryGetValue("schedule", out scheduleSessionsList))
-                {
-                    scheduleSessionsList = new string[] { };
-                }
+                scheduleSessionsList = GetUserSchedule(context);
 
                 if (!scheduleSessionsList.Contains(sessionId))
                 {
@@ -200,7 +196,7 @@ namespace BotFrameworkDemo
                         .OrderBy(s => s.StartTime).ToArray();
                     scheduleSessionsList = sessions.Select(s => s.Id).ToArray();
 
-                    context.UserData.SetValue("schedule", scheduleSessionsList);
+                    SetUserSchedule(context, scheduleSessionsList);
 
                     await context.PostAsync("I've added the session to your schedule.");
                     await ListSchedule(context, result);
@@ -221,23 +217,20 @@ namespace BotFrameworkDemo
         {
             var message = "I can't find the session you want me to remove. Try specifying its schedule index, like **remove 2**.";
             int sessionIndex = -1;
-            string[] scheduleSessionsList;
+            string[] scheduleSessionsList = GetUserSchedule(context);
 
             if (result.Entities != null && result.Entities.Count > 0
                 && int.TryParse(result?.Entities[0]?.Entity, out sessionIndex))
             {
-                if (context.UserData.TryGetValue("schedule", out scheduleSessionsList))
+                if (sessionIndex > 0 && sessionIndex <= scheduleSessionsList.Count())
                 {
-                    if (sessionIndex > 0 && sessionIndex <= scheduleSessionsList.Count())
-                    {
-                        scheduleSessionsList = scheduleSessionsList.Except(
-                            new string[] { scheduleSessionsList[sessionIndex - 1] }).ToArray();
-                        context.UserData.SetValue("schedule", scheduleSessionsList);
+                    scheduleSessionsList = scheduleSessionsList.Except(
+                        new string[] { scheduleSessionsList[sessionIndex - 1] }).ToArray();
+                    context.UserData.SetValue("schedule", scheduleSessionsList);
 
-                        await context.PostAsync("I've removed the session from your schedule.");
-                        await ListSchedule(context, result);
-                        return;
-                    }
+                    await context.PostAsync("I've removed the session from your schedule.");
+                    await ListSchedule(context, result);
+                    return;
                 }
             }
 
@@ -248,7 +241,7 @@ namespace BotFrameworkDemo
         [LuisIntent("Help")]
         public async Task Help(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync(WelcomeMessage);
+            await context.PostAsync(String.Format(WelcomeMessage, CodeCamp.Info.ToShortDisplayString()));
 
             context.Wait(this.MessageReceived);
         }
@@ -292,9 +285,35 @@ namespace BotFrameworkDemo
             context.Wait(MessageReceived);
         }
 
+        private string[] GetUserSchedule(IDialogContext context)
+        {
+            int conferenceId = 0;
+            string[] scheduleSessionsIds = new string[] { };
+
+            context.UserData.TryGetValue("scheduleConferenceId", out conferenceId);
+
+            if (conferenceId != CodeCamp.Info.ConferenceId)
+                ClearUserSchedule(context);
+            else
+                context.UserData.TryGetValue("schedule", out scheduleSessionsIds);
+
+            return scheduleSessionsIds;
+        }
+
+        private void SetUserSchedule(IDialogContext context, string[] scheduleSessionIds)
+        {
+            context.UserData.SetValue("schedule", scheduleSessionIds);
+            context.UserData.SetValue("scheduleConferenceId", CodeCamp.Info.ConferenceId);
+        }
+
+        private void ClearUserSchedule(IDialogContext context)
+        {
+            context.UserData.RemoveValue("schedule");
+        }
+
         public static string WelcomeMessage = @"**Hi!** I'm the **Codecamp Romania Bot (beta)**, it's nice to meet you :)
 
-I can tell you all about what's going on at our next [Codecamp Romania event](http://iasi.codecamp.ro/) in **Iasi** on **October 22nd**. 
+I can tell you all about what's going on at our next [Codecamp Romania event](http://www.codecamp.ro/), which is {0}.
 
 Here are some examples of things you can ask me: 
 
@@ -307,7 +326,7 @@ You can also type **help** to see this message again.
 
 To find out more about me, type **about**.";
 
-        public static string AboutMessage = @"I'm the **[Codecamp Romania](http://www.codecamp.ro/) Bot v0.11 (beta)**
+        public static string AboutMessage = @"I'm the **[Codecamp Romania](http://www.codecamp.ro/) Bot v0.12 (beta)**
 
 
 I'm built using Microsoft's [Bot Framework](https://dev.botframework.com/).  

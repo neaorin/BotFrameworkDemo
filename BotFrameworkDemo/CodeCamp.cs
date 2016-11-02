@@ -12,6 +12,7 @@ namespace BotFrameworkDemo
 {
     public class CodeCamp
     {
+
         static CodeCamp()
         {
             Sessions = new List<Session>();
@@ -19,6 +20,8 @@ namespace BotFrameworkDemo
 
             var json = File.ReadAllText(HttpContext.Current.Server.MapPath(@"~/codecamp.json"));
             var jobj = JObject.Parse(json);
+
+            Info = JsonConvert.DeserializeObject<ConferenceInfo>(json);
 
             foreach (var sessionItem in jobj["schedules"][0]["sessions"])
                 Sessions.Add(JsonConvert.DeserializeObject<Session>(sessionItem.ToString()));
@@ -32,6 +35,8 @@ namespace BotFrameworkDemo
             foreach (var session in Sessions)
                 session.Id = session.Title;
         }
+
+        public static ConferenceInfo Info { get; }
 
         public static List<Session> Sessions { get; }
 
@@ -179,6 +184,49 @@ namespace BotFrameworkDemo
         Intermediate,
         Experienced,
         Advanced
+    }
+
+    [Serializable]
+    public class ConferenceInfo
+    {
+        [JsonProperty("refid")]
+        public int ConferenceId { get; set; }
+
+        [JsonProperty("title")]
+        public string Title { get; set; }
+
+        [JsonProperty("startDate")]
+        public DateTime StartDate { get; set; }
+
+        [JsonProperty("endDate")]
+        public DateTime EndDate { get; set; }
+
+        [JsonProperty("venue")]
+        public ConferenceVenue Venue { get; set; }
+
+        public string ToShortDisplayString()
+        {
+            return String.Format("**{0}**, happening {1} at {2}",
+                Title,
+                StartDate.Date == EndDate.Date ?
+                    String.Format("on **{0}**", StartDate.Date.ToLongDateString()) :
+                    String.Format("between **{0}** and **{1}**", StartDate.Date.ToLongDateString(), EndDate.Date.ToLongDateString()),
+                Venue?.Name
+                );
+        }
+    }
+
+    [Serializable]
+    public class ConferenceVenue
+    {
+        [JsonProperty("name")]
+        public string Name { get; set; }
+
+        [JsonProperty("city")]
+        public string City { get; set; }
+
+        [JsonProperty("country")]
+        public string Country { get; set; }
     }
 
     public static class StringExtensionMethods
