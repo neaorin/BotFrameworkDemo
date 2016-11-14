@@ -42,7 +42,7 @@
   "sponsors": [
     {
       "name": "iSDC",
-      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/77-isdc.jpg",
+      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/77-rsz_isdc.png",
       "websiteUrl": "http://www.isdc.eu/",
       "sponsorshipPackage": "DIAMOND ",
       "displayOrder": 1
@@ -230,18 +230,32 @@
       "displayOrder": 18
     },
     {
+      "name": "Marionette Studio",
+      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/87-marionette.png",
+      "websiteUrl": "http://marionettestudio.com/",
+      "sponsorshipPackage": "Partner Communities",
+      "displayOrder": 18
+    },
+    {
+      "name": "Cartea Daliei",
+      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/114-CarteaDaliei.png",
+      "websiteUrl": "https://www.facebook.com/carteadaliei",
+      "sponsorshipPackage": "Partner Communities",
+      "displayOrder": 19
+    },
+    {
       "name": "PIN2017",
       "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/106-PIN2017.png",
       "websiteUrl": "http://www.pinawards.ro",
       "sponsorshipPackage": "Partner Communities",
-      "displayOrder": 19
+      "displayOrder": 20
     },
     {
       "name": "PINmagazine",
       "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/107-PINmagazine.png",
       "websiteUrl": "http://www.pinmagazine.ro",
       "sponsorshipPackage": "Partner Communities",
-      "displayOrder": 20
+      "displayOrder": 23
     },
     {
       "name": "TechFest Cluj",
@@ -258,6 +272,13 @@
       "displayOrder": 3
     },
     {
+      "name": "summIT",
+      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/116-rsz_logo_summit.jpg",
+      "websiteUrl": "http://sum-mit.org/",
+      "sponsorshipPackage": "Partner Conferences",
+      "displayOrder": 6
+    },
+    {
       "name": "NTT Data",
       "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/91-91-NTT-DATA-descriptor-R-color.png",
       "websiteUrl": "http://www.nttdata.ro",
@@ -270,6 +291,13 @@
       "websiteUrl": "http://www.iquestgroup.com/",
       "sponsorshipPackage": "PLATINUM ",
       "displayOrder": 3
+    },
+    {
+      "name": "Lodgify",
+      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/115-rsz_1logo_lodgify.png",
+      "websiteUrl": "http://www.lodgify.com/",
+      "sponsorshipPackage": "PLATINUM ",
+      "displayOrder": 6
     },
     {
       "name": "Max Relax",
@@ -386,7 +414,7 @@
         {
           "name": "Room 8",
           "capacity": 30,
-          "description": "first floor",
+          "description": "first floor, owned by RGDA",
           "displayOrder": 8
         },
         {
@@ -506,6 +534,17 @@
           "startTime": "10:00:00",
           "endTime": "10:45:00",
           "allTracks": false,
+          "track": "Room 2",
+          "title": "Steps to Continuous Deployment",
+          "description": "Continuous Deployment - A cool thing that few software teams do, a lot of others admire and some hate. \r\nIn this discussion I'd like to go over some steps that are required in order to reach daily releases and share my experience",
+          "speakers": [ "Alex Rus" ],
+          "speakingLang": "English",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "10:00:00",
+          "endTime": "10:45:00",
+          "allTracks": false,
           "track": "Room 10",
           "title": "How to touch you cellphone Android way",
           "description": "Finger up, finger down, move the finger, one finger on the phone, 2 fingers, more fingers, all of them can touch the same phone. \r\n Let’s make the user happy by offering an awesome interaction with his phone in our apps.\r\n We will discuss about The Android Touch System and it’s pitfalls, Touch Event Framework, Custom Touch Handling.\r\n For sure it will be a fun session for the mobile developers on Android and not only",
@@ -523,6 +562,17 @@
           "speakers": [ "Cristina Has" ],
           "speakingLang": "Romanian",
           "level": "Experienced"
+        },
+        {
+          "startTime": "10:00:00",
+          "endTime": "10:45:00",
+          "allTracks": false,
+          "track": "Room 6",
+          "title": "Web Compatibility Testing",
+          "description": "Many users nowadays connect to the web directly from mobile – skipping any desktop experience. So why would you risk using them? Learn from the web-bugs we found and give a fair and beautiful experience to your users!",
+          "speakers": [ "Ioana Chiorean" ],
+          "speakingLang": "English",
+          "level": "Beginner"
         },
         {
           "startTime": "11:00:00",
@@ -551,7 +601,7 @@
           "endTime": "11:45:00",
           "allTracks": false,
           "track": "Room 7",
-          "title": "The Elements of Influence: A Generational Assessment of Leadership and Power",
+          "title": "The Elements of Influence: \u000bA Generational Assessment of Leadership and Power",
           "description": "We will dive in one of the newest surveys run by Center for Leadership Studies - The Elements of Influence: A Generational Assessment of Leadership and Power. The workshop will focus on leadership as any attempt to influence. Leadership behavior is one of the primary driving forces for productivity, engagement and retention. \r\n",
           "speakers": [ "Adrian Rîndaşu" ],
           "speakingLang": "Romanian",
@@ -583,17 +633,6 @@
           "startTime": "11:00:00",
           "endTime": "11:45:00",
           "allTracks": false,
-          "track": "Room 2",
-          "title": "Steps to Continuous Deployment",
-          "description": "Continuous Deployment - A cool thing that few software teams do, a lot of others admire and some hate. \r\nIn this discussion I'd like to go over some steps that are required in order to reach daily releases and share my experience",
-          "speakers": [ "Alex Rus" ],
-          "speakingLang": "English",
-          "level": "Intermediate"
-        },
-        {
-          "startTime": "11:00:00",
-          "endTime": "11:45:00",
-          "allTracks": false,
           "track": "Room 1",
           "title": "Build an Intelligent Bot to Interact with your Users",
           "description": "Bots are all the rage these days. But if you need one that's capable to understand your users' natural language, so it can figure out what they WANT and not just what they say, then you're going to need some pretty strong AI behind it. Come to this session to find out how you can use Microsoft Bot Framework together with Language Understanding Intelligent Service (luis.ai)  to build an intelligent bot for Skype, Slack, Facebook, SMS and more.",
@@ -606,8 +645,8 @@
           "endTime": "11:45:00",
           "allTracks": false,
           "track": "Room 3",
-          "title": "A New Ddirection in Modern Web Apps",
-          "description": "The latest JavaScript frameworks, for UI apps, have taken a different approach. Component based architectures, unidirectional data flows or new ways of defining routes are some of those changes. Which direction are they taking us? Let's have a chat to explore this together.",
+          "title": "A New Direction in Modern Web Apps",
+          "description": "Are the differences between the latest JavaScript frameworks that big? But what are the similarities between them?\r\nThere's a shift on the way JavaScript applications are built towards unidirectional data flow, component based architecture and maybe functional programming. \r\nLet's explore the common path they take, the concepts behind and what advantages they may bring.",
           "speakers": [ "Alex Pausan" ],
           "speakingLang": "English",
           "level": "Intermediate"
@@ -618,8 +657,30 @@
           "allTracks": false,
           "track": "Room 9",
           "title": "Workshop : Exploiting a product's wormholes ",
-          "description": "There are many reasons why a product can become a real success or failure. Get ready and embark with us on a journey through product wormholes, right up to the encounter points with your product’s archenemies: inutility, cancellation, litigation, bankruptcy. We'll take a look on how apparently disconnected events in your product lifecycle tie in together and influence the end result. The workshop explores how past decisions, actions and events influence the product’s present value. Join us on holodeck to learn about some major factors that influence the product fabric, and identify the counter maneuvers that help you keep the product on course. ",
+          "description": "There are many reasons why a product can become a real success or failure. Get ready and embark with us on a journey through product wormholes, right up to the encounter points with your product’s archenemies: inutility, cancellation, litigation, bankruptcy. We'll take a look on how apparently disconnected events in your product lifecycle tie in together and influence the end result. The workshop explores how past decisions, actions and events influence the product’s present value. Join us on holodeck to learn about some major factors that influence the product fabric, and identify the counter maneuvers that help you keep the product on course. \r\n\r\nRegistrations open!\r\nhttps://goo.gl/forms/RdJbrbhfwDRxYtd52",
           "speakers": [ "Corina Cilibiu", "Iavi Rotberg" ],
+          "speakingLang": "English",
+          "level": "Experienced"
+        },
+        {
+          "startTime": "11:00:00",
+          "endTime": "11:45:00",
+          "allTracks": false,
+          "track": "Room 6",
+          "title": "DevTools Deep Dive",
+          "description": "No, Firefox DevTools does not mean Firebug. Mozilla created the Firefox Developer Edition and we’ll talk about all the goodness that we baked into it. We’ll talk about the developer tools currently there and how to use them efficiently.",
+          "speakers": [ "Alex Lakatos" ],
+          "speakingLang": "English",
+          "level": "Beginner"
+        },
+        {
+          "startTime": "11:00:00",
+          "endTime": "11:45:00",
+          "allTracks": false,
+          "track": "Room 2",
+          "title": "Quality Driven Approach for Evaluating Software Architectures",
+          "description": "What makes a technical solution good, or even good enough? There are no good or bad architectures, only architectures that fit the goals more or less, and what are the risks when they don't. I propose to start talking about architectures , and especially their evaluation in terms of quality attributes, the tradeoffs between them and trying to get fit for purpose. Let’s explore together what architectural tradeoffs are, how they relate to quality attributes and how do you reach a fit for purpose state while keeping your customers happy.",
+          "speakers": [ "Dan Danciu" ],
           "speakingLang": "English",
           "level": "Experienced"
         },
@@ -653,6 +714,17 @@
           "title": "Brewing Eisbock with Raspberry PI and Windows 10 IoT",
           "description": "This presentation focuses on real-life IoT system that supports brewing eisbock beer. Sample device is built on Raspberry PI and Windows 10 IoT. It includes also temperature sensors to measure beer and ambient temperature. There is Windows 10 Universal Application that allows to control the process and read metrics from Raspberry PI. Data from Raspberry PI will be later visualized using charts. The presentation goes through all steps of building such solution.\r\nPresentation page: http://gunnarpeipman.com/presentations/brewing-eisbock-with-raspberry-pi-and-windows-10-iot/",
           "speakers": [ "Gunnar Peipman" ],
+          "speakingLang": "English",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "12:00:00",
+          "endTime": "12:45:00",
+          "allTracks": false,
+          "track": "Room 6",
+          "title": "UX Design Challenges for Internet of Things",
+          "description": "I will talk about a research I did in order to examine one of the interaction design challenges that come along\r\nwith the rapid development of Internet of Things (IoT) field: the fact that once they become connected to internet, we are no longer required to physically interact with the objects around us. The results of the research will reveal that for interacting with objects remotely there is a need for richer interactions, that go beyond the screen and the mobile design patterns, currently imposed to us.",
+          "speakers": [ "Ciprian Amaritei" ],
           "speakingLang": "English",
           "level": "Intermediate"
         },
@@ -706,7 +778,7 @@
           "allTracks": false,
           "track": "Room 9",
           "title": "Workshop (continued) : Exploiting a product's wormholes",
-          "description": "There are many reasons why a product can become a real success or failure. Get ready and embark with us on a journey through product wormholes, right up to the encounter points with your product’s archenemies: inutility, cancellation, litigation, bankruptcy. We'll take a look on how apparently disconnected events in your product lifecycle tie in together and influence the end result. The workshop explores how past decisions, actions and events influence the product’s present value. Join us on holodeck to learn about some major factors that influence the product fabric, and identify the counter maneuvers that help you keep the product on course. ",
+          "description": "There are many reasons why a product can become a real success or failure. Get ready and embark with us on a journey through product wormholes, right up to the encounter points with your product’s archenemies: inutility, cancellation, litigation, bankruptcy. We'll take a look on how apparently disconnected events in your product lifecycle tie in together and influence the end result. The workshop explores how past decisions, actions and events influence the product’s present value. Join us on holodeck to learn about some major factors that influence the product fabric, and identify the counter maneuvers that help you keep the product on course. \r\n\r\nRegistrations open!\r\nhttps://goo.gl/forms/RdJbrbhfwDRxYtd52",
           "speakers": [ "Corina Cilibiu", "Iavi Rotberg" ],
           "speakingLang": "English",
           "level": "Experienced"
@@ -716,11 +788,11 @@
           "endTime": "12:45:00",
           "allTracks": false,
           "track": "Room 7",
-          "title": "Îți asumi riscul să nu riști?",
-          "description": "O scurtă istorie a valutelor și o descriere a principiilor care guvernează actualul sistem monetar vor crea contextul necesar pentru prezentarea modului în care funcționează Bitcoin. În continuare va depinde de noi să găsim echilibrul între riscuri și oportunități în deciziile pe care le luăm.",
-          "speakers": [ "Ciprian Hodorogea" ],
+          "title": "Cybersecurity: How to make money in an ever interconnected world",
+          "description": "The presentation will focus on real life examples where we exploit system vulnerabilities to get unauthorised access to systems and data.",
+          "speakers": [ "Mihai Rada" ],
           "speakingLang": "Romanian",
-          "level": "Intermediate"
+          "level": "Experienced"
         },
         {
           "startTime": "12:45:00",
@@ -732,6 +804,17 @@
           "speakers": null,
           "speakingLang": null,
           "level": null
+        },
+        {
+          "startTime": "14:00:00",
+          "endTime": "14:45:00",
+          "allTracks": false,
+          "track": "Room 6",
+          "title": "Human-Machine Interactions",
+          "description": "Artificial Intelligence in action.",
+          "speakers": [ "Cristina Morariu" ],
+          "speakingLang": "English",
+          "level": "Intermediate"
         },
         {
           "startTime": "14:00:00",
@@ -781,39 +864,6 @@
           "startTime": "14:00:00",
           "endTime": "14:45:00",
           "allTracks": false,
-          "track": "Room 7",
-          "title": "How to convice your stakeholders to invest in test automation",
-          "description": "1. Track\r\nMy session sits best on the following areas: software testing, test automation, promoting test automation, test automation metrics.\r\n2. Session Summary\r\nTest automation! Everybody understands it’s importance but nobody is willing to invest!\r\nI had a really hard time when I had to convince everybody from my organization that we have to start doing test automation, that we need resources for it and that we have to involve everybody in the process and not only testers.\r\nBut I didn’t give up and I gathered and gathered arguments and metrics till I convinced them.\r\nI would like to share this experience with CodeComp community and help them with some ideas for how to convince their peers and stakeholders to implement test automation.\r\n\r\n3. Session Take Away\r\nMy audience can learn from this session:\r\n- arguments for promoting test automation at all levels( developers, testers, project managers, product owners, IT managers).\r\n- Metrics or statistics to use in the test automation lifecycle (in order to monitor the efficiency of test automation in your organization and in order to monitor if test automation is really happening in your organization).\r\n4. Intended Audience\r\nGeneral audience (all roles from software development industry).\r\n5. Previous Speaking Engagements\r\nTabara de Testare Bucuresti.\r\n",
-          "speakers": [ "Dana Aonofriesei" ],
-          "speakingLang": "English",
-          "level": "Beginner"
-        },
-        {
-          "startTime": "14:00:00",
-          "endTime": "14:45:00",
-          "allTracks": false,
-          "track": "Room 6",
-          "title": "UX design challanges for Internet of Things",
-          "description": "I will talk about a research I did in order to examine one of the interaction design challenges that come along\r\nwith the rapid development of Internet of Things (IoT) field: the fact that once they become connected to internet, we are no longer required to physically interact with the objects around us. The results of the research will reveal that for interacting with objects remotely there is a need for richer interactions, that go beyond the screen and the mobile design patterns, currently imposed to us.",
-          "speakers": [ "Ciprian Amaritei" ],
-          "speakingLang": "Romanian",
-          "level": "Intermediate"
-        },
-        {
-          "startTime": "14:00:00",
-          "endTime": "14:45:00",
-          "allTracks": false,
-          "track": "Room 2",
-          "title": "Creating a CI/CD pipeline for a Java EE application in the cloud",
-          "description": "Developing a web application using Java Enterprise Edition platform is something we have done for decades; deploying it to an application server is also something very common. Why stop here? Let’s employ the cloud and a CI/CD pipeline to automate the whole deployment experience.",
-          "speakers": [ "Bogdan Marian" ],
-          "speakingLang": "Romanian",
-          "level": "Advanced"
-        },
-        {
-          "startTime": "14:00:00",
-          "endTime": "14:45:00",
-          "allTracks": false,
           "track": "Room 10",
           "title": "AI for fun and profit",
           "description": "A introduction in state of the art AI algorithms and some fun examples in how these new type of algorithm can be used across industry.",
@@ -822,26 +872,48 @@
           "level": "Intermediate"
         },
         {
-          "startTime": "15:00:00",
-          "endTime": "15:45:00",
+          "startTime": "14:00:00",
+          "endTime": "14:45:00",
           "allTracks": false,
-          "track": "Room 6",
-          "title": "Human-Machine Interactions",
-          "description": "Artificial Intelligence in action.",
-          "speakers": [ "Cristina Morariu" ],
+          "track": "Room 7",
+          "title": "Îți asumi riscul să nu riști?",
+          "description": "O scurtă istorie a valutelor și o descriere a principiilor care guvernează actualul sistem monetar vor crea contextul necesar pentru prezentarea modului în care funcționează Bitcoin. În continuare va depinde de noi să găsim echilibrul între riscuri și oportunități în deciziile pe care le luăm.",
+          "speakers": [ "Ciprian Hodorogea" ],
+          "speakingLang": "Romanian",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "14:00:00",
+          "endTime": "14:45:00",
+          "allTracks": false,
+          "track": "Room 8",
+          "title": "[1]  Indie is Trendy | [2]  Games…. more than just fun?!",
+          "description": "[Part 1: 14:00 - 14:25] \r\nIndependent game development is one of the hottest trends right now within the game industry. In this session, Raluca will talk about latest trends in indie games in terms of market, communities and technology.\r\n\r\n[Part 2: 14:25 - 14:50]  \r\nLet’s talk about the “serious\" element in games and what it actually means. Oana will be our host.\r\n\r\n\r\n",
+          "speakers": [ "Raluca Apostol", "Oana Ciherean" ],
+          "speakingLang": "English",
+          "level": "Beginner"
+        },
+        {
+          "startTime": "14:00:00",
+          "endTime": "14:45:00",
+          "allTracks": false,
+          "track": "Room 2",
+          "title": "The CTO Handoff: Best Practices For Handing Off ",
+          "description": "Best practices for leaving a client, company or product organized and ready for hand off to another CTO for various reasons. Learn tips and best practices, documentation hacks, tech tracking as well as some real-life hard lessons learned. This session is good for developers and non-technical founders. ",
+          "speakers": [ "Ellie Cachette" ],
           "speakingLang": "English",
           "level": "Intermediate"
         },
         {
-          "startTime": "15:00:00",
-          "endTime": "15:45:00",
+          "startTime": "14:00:00",
+          "endTime": "14:45:00",
           "allTracks": false,
-          "track": "Room 7",
-          "title": "Bringing change:  patterns and people",
-          "description": "In the last few years more and more comapnies begin their journey in Changing the way they work, trying to be more productive, more client-orietend, more pro-active, to offer a better environment for their employees. More and more companies start their journey in the Agile Transformation.\r\n\r\nThough each company has its own specific challenges and needs, some issues are raised:\r\n  - Can there be some common patterns and actions they need to take in order to  get where they need? \r\n  - Where do they actually want to get to? \r\n  - What do they want to transition into?\r\n  - What are the steps they need to have in mind \r\n  - What kind of people they need to focus on to move move the company forward?\r\n  - How can those steps be implemented?\r\n\r\nIn this talk, based on my experience, I will focus on the patters for change, the teams a company needs to create and the profile of people that can move these teams and actions that need to be taken to advance in the desired direction.  ",
-          "speakers": [ "Camelia Codarcea" ],
+          "track": "Room 9",
+          "title": "Workshop: SaaS Execution Map - Using a tool for digital product discovery",
+          "description": "If you're a Business Analyst, Product Owner, Product Manager, Founder, Partner, Consultant .... if you have any stake in building digital products from 0 to 1 then you were most likely asked at some point: What will it take to build this? How much time will you need? What skill set do you need in the team? What do you need to succeed?\r\nJoin us and find a way to bring clarity in the initial planning and execution phase of a new product. Even if you are already on your way, we will discover together a natural extension to Business Model Canvas that enables us to stay focused on the prize and avoid the common pitfalls of building digital products.   ",
+          "speakers": [ "Florin Cardasim", "Mihai Pintilie" ],
           "speakingLang": "English",
-          "level": "Experienced"
+          "level": "Intermediate"
         },
         {
           "startTime": "15:00:00",
@@ -859,7 +931,7 @@
           "endTime": "15:45:00",
           "allTracks": false,
           "track": "Room 10",
-          "title": "Ionic 2 ",
+          "title": "Dear Mobile, I'll use Ionic 2. Sincerely, a web dev...",
           "description": "Mobile app developing is cool...except if you're a front-end developer. You know we're different, right? We love JS and the freedom in brings, not that Java, Objective-C or C# crap! This might be a downside in being able to build mobile apps, or it may be our biggest asset!\r\n\r\nSo, dear front-end enthusiast, I invite you to find out more about hybrid app development using the brand new Ionic 2 framework. ",
           "speakers": [ "Alexandru Pavaloi" ],
           "speakingLang": "English",
@@ -891,12 +963,34 @@
           "startTime": "15:00:00",
           "endTime": "15:45:00",
           "allTracks": false,
+          "track": "Room 6",
+          "title": "Security architectures for the IoT",
+          "description": "IoT applications are taking off with more devices being connected to the Internet every month. As IoT systems grow, so does the concern about their security. An attack on an IoT system that is in use by a population group or community can cause serious social, economic and political disruption. Using the actual example of a smart metering implementation, we will look at how an IoT system can be protected and what technologies and open standards are available to do that.",
+          "speakers": [ "Ovidiu Ratiu" ],
+          "speakingLang": "English",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "15:00:00",
+          "endTime": "15:45:00",
+          "allTracks": false,
           "track": "Room 3",
           "title": "Machine Learning and Javascript",
           "description": "A quick introduction into Machine Learning. Fast prototyping of ML models with Javascript, most widespread algorithms and a short exposition for some examples/libraries.",
           "speakers": [ "Adi Fatol" ],
           "speakingLang": "English",
           "level": "Intermediate"
+        },
+        {
+          "startTime": "15:00:00",
+          "endTime": "15:45:00",
+          "allTracks": false,
+          "track": "Room 2",
+          "title": "Creating a CI/CD pipeline for a Java EE application in the cloud",
+          "description": "Developing a web application using Java Enterprise Edition platform is something we have done for decades; deploying it to an application server is also something very common. Why stop here? Let’s employ the cloud and a CI/CD pipeline to automate the whole deployment experience.",
+          "speakers": [ "Bogdan Marian" ],
+          "speakingLang": "Romanian",
+          "level": "Advanced"
         },
         {
           "startTime": "15:00:00",
@@ -910,6 +1004,28 @@
           "level": "Intermediate"
         },
         {
+          "startTime": "15:00:00",
+          "endTime": "15:45:00",
+          "allTracks": false,
+          "track": "Room 7",
+          "title": "Software Suicide Squad - why (even) the Joker is important",
+          "description": "Alternative perspective on villains? Let’s find out!",
+          "speakers": [ "Andrei Dumitrescu", "Marius Baghiu" ],
+          "speakingLang": "Romanian",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "15:00:00",
+          "endTime": "15:45:00",
+          "allTracks": false,
+          "track": "Room 8",
+          "title": "How to break a heart into 1000 pieces? Emotions as the key of This War of Mine marketing campaign. ",
+          "description": "It's easy to spend 1 000 000 dollars on a marketing campaign of your game and get some good results out of it. It gets tricky though, when you don't have that kind of money and you still want to succeed. During this talk I will explain, how we created the campaign for This War of Mine. How we used emotions and symbolisms instead of 6 figures budget. And how it worked for us in the end.",
+          "speakers": [ "Karol Zajaczkowski" ],
+          "speakingLang": "English",
+          "level": "Intermediate"
+        },
+        {
           "startTime": "15:45:00",
           "endTime": "16:00:00",
           "allTracks": true,
@@ -919,6 +1035,17 @@
           "speakers": null,
           "speakingLang": null,
           "level": null
+        },
+        {
+          "startTime": "16:00:00",
+          "endTime": "16:45:00",
+          "allTracks": false,
+          "track": "Room 7",
+          "title": "Bringing change:  patterns and people",
+          "description": "In the last few years more and more comapnies begin their journey in Changing the way they work, trying to be more productive, more client-orietend, more pro-active, to offer a better environment for their employees. More and more companies start their journey in the Agile Transformation.\r\n\r\nThough each company has its own specific challenges and needs, some issues are raised:\r\n  - Can there be some common patterns and actions they need to take in order to  get where they need? \r\n  - Where do they actually want to get to? \r\n  - What do they want to transition into?\r\n  - What are the steps they need to have in mind \r\n  - What kind of people they need to focus on to move move the company forward?\r\n  - How can those steps be implemented?\r\n\r\nIn this talk, based on my experience, I will focus on the patters for change, the teams a company needs to create and the profile of people that can move these teams and actions that need to be taken to advance in the desired direction.  ",
+          "speakers": [ "Camelia Codarcea" ],
+          "speakingLang": "English",
+          "level": "Experienced"
         },
         {
           "startTime": "16:00:00",
@@ -941,6 +1068,17 @@
           "speakers": [ "Radu Vunvulea" ],
           "speakingLang": "Romanian",
           "level": "Intermediate"
+        },
+        {
+          "startTime": "16:00:00",
+          "endTime": "16:45:00",
+          "allTracks": false,
+          "track": "Room 6",
+          "title": "How to convice your stakeholders to invest in test automation",
+          "description": "1. Track\r\nMy session sits best on the following areas: software testing, test automation, promoting test automation, test automation metrics.\r\n2. Session Summary\r\nTest automation! Everybody understands it’s importance but nobody is willing to invest!\r\nI had a really hard time when I had to convince everybody from my organization that we have to start doing test automation, that we need resources for it and that we have to involve everybody in the process and not only testers.\r\nBut I didn’t give up and I gathered and gathered arguments and metrics till I convinced them.\r\nI would like to share this experience with CodeComp community and help them with some ideas for how to convince their peers and stakeholders to implement test automation.\r\n\r\n3. Session Take Away\r\nMy audience can learn from this session:\r\n- arguments for promoting test automation at all levels( developers, testers, project managers, product owners, IT managers).\r\n- Metrics or statistics to use in the test automation lifecycle (in order to monitor the efficiency of test automation in your organization and in order to monitor if test automation is really happening in your organization).\r\n4. Intended Audience\r\nGeneral audience (all roles from software development industry).\r\n5. Previous Speaking Engagements\r\nTabara de Testare Bucuresti.\r\n",
+          "speakers": [ "Dana Aonofriesei" ],
+          "speakingLang": "English",
+          "level": "Beginner"
         },
         {
           "startTime": "16:00:00",
@@ -992,7 +1130,7 @@
           "allTracks": false,
           "track": "Room 5",
           "title": "Inovare, necesitate versus trend",
-          "description": "Propun dezbaterea unui subiect de interes si anume zona de inovare in contextual unei piete dinamice, dominate de cautarea de lucuri noi intr-un ternem foarte scurt\r\nCateva cuvinte cheie: Inovare, inginerie, digital disruptuion, Agile, cloud computing, fog computing.",
+          "description": "Propun dezbaterea unui subiect de interes si anume zona de inovare in contextual unei piete dinamice, dominate de cautarea de lucuri noi intr-un termen foarte scurt\r\nCateva cuvinte cheie: Inovare, inginerie, digital disruptuion, Agile, cloud computing, fog computing.",
           "speakers": [ "Ciprian Todea" ],
           "speakingLang": "Romanian",
           "level": "Experienced"
@@ -1001,12 +1139,12 @@
           "startTime": "16:00:00",
           "endTime": "16:45:00",
           "allTracks": false,
-          "track": "Room 7",
-          "title": "Cybersecurity in an ever interconnected world",
-          "description": "The presentation will focus on real life examples where we exploit system vulnerabilities to get unauthorised access to systems and data.",
-          "speakers": [ "Mihai Rada", "Diana Lefter" ],
-          "speakingLang": "Romanian",
-          "level": "Experienced"
+          "track": "Room 8",
+          "title": "[1] Could WebGL shape the future of game development? | [2] Introduction to the 3D Game Art Pipeline.",
+          "description": "[Part 1: 16:00 - 16:30]\r\nThe WebGL API enables developers to leverage the graphic hardware acceleration power to create complex 3D games and applications in Javascript. Will the extended support across browsers and the emerging WebGL frameworks change the way games are made? Let's find out together with  Bogdan & Adrian!\r\n\r\n[Part 2: 16:30 - 16:55]\r\nDoru will have a talk centered on how production of 3D Art is done for games, from concept to game assets. Some of the topics I’ll be covering are: concepting, block-out, basic modelling, material definition and lighting. The presentation will also touch on the tools and techniques that are used for creating AAA assets for games.\r\n ",
+          "speakers": [ "Bogdan Apostol", "Doru Buț", "Adrian Pironescu" ],
+          "speakingLang": "English",
+          "level": "Beginner"
         },
         {
           "startTime": "17:00:00",
@@ -1014,7 +1152,7 @@
           "allTracks": false,
           "track": "Room 9",
           "title": "Dealing with Stakeholders - What Matters the Most?",
-          "description": "What is the most important thing about stakeholders management? What does the theory say and how does reality speak for itself.",
+          "description": "What is the most important thing about dealing with stakeholders ? What tricks do you need to make in order to keep them on your side and how can you please everyone?",
           "speakers": [ "Delora Balomirean" ],
           "speakingLang": "Romanian",
           "level": "Intermediate"
@@ -1056,10 +1194,43 @@
           "startTime": "17:00:00",
           "endTime": "17:45:00",
           "allTracks": false,
+          "track": "Room 3",
+          "title": "The future of JavaScript - Open discussion panel",
+          "description": "This will be an open discussion panel where several community leaders and experts will discuss about the future of JavaScript.",
+          "speakers": [ "Vlad \"Reign\" Zelinschi" ],
+          "speakingLang": "English",
+          "level": "Beginner"
+        },
+        {
+          "startTime": "17:00:00",
+          "endTime": "17:45:00",
+          "allTracks": false,
+          "track": "Room 7",
+          "title": "Kafka Streams: New kid in stream processing town",
+          "description": "We’d like to share with you our (rather short) experience with Kafka Streams, the new Java library for building distributed stream processing apps using Apache Kafka.\r\nWe’ll try to explain the concepts behind it, work through some examples and point out some important features and shortcomings.",
+          "speakers": [ "Maria Abramiuc", "Iulian Tanasescu" ],
+          "speakingLang": "Romanian",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "17:00:00",
+          "endTime": "17:45:00",
+          "allTracks": false,
           "track": "Room 6",
-          "title": "Security architectures for the IoT",
-          "description": "IoT applications are taking off with more devices being connected to the Internet every month. As IoT systems grow, so does the concern about their security. An attack on an IoT system that is in use by a population group or community can cause serious social, economic and political disruption. Using the actual example of a smart metering implementation, we will look at how an IoT system can be protected and what technologies and open standards are available to do that.",
-          "speakers": [ "Ovidiu Ratiu" ],
+          "title": " Build a SaaS-based infrastructure that fits your platform's needs",
+          "description": "In a world where access to ready-made services is increasing every years, the need to develop and integrate custom software architecture components is getting pushed to edge cases. For a lot of applications being developed you can build an entire stack out of SaaS components and still achieve the performance criteria without the hassle that comes with scaling.\r\nBut where and how should you start?",
+          "speakers": [ "Paul Sticea" ],
+          "speakingLang": "Romanian",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "17:00:00",
+          "endTime": "17:45:00",
+          "allTracks": false,
+          "track": "Room 8",
+          "title": "Robust AI for Fast Action Games",
+          "description": "This presentation will describe the architecture and techniques we use to deliver challenging AI in our upcoming game Second Hand: Frankie's Revenge. We will discuss multi-agent coordination, dynamic pacing and behavior built to handle fast paced action.",
+          "speakers": [ "Radu Cristea" ],
           "speakingLang": "English",
           "level": "Intermediate"
         },
@@ -1067,12 +1238,23 @@
           "startTime": "17:00:00",
           "endTime": "17:45:00",
           "allTracks": false,
-          "track": "Room 3",
-          "title": "The future of JavaScript - Open discussion panel",
-          "description": "This will be an open discussion panel where several community leaders and experts will discuss about the future of JavaScript.",
-          "speakers": [ "Vlad \"Reign\" Zelinschi" ],
+          "track": "Room 10",
+          "title": "Augmented Reality for Industry 4.0",
+          "description": "Industry 4.0 comes with interconnected machines using IoT, cloud computing and machine learning (beside many other things). We at iQuest are working on an end to end IoT solution architecture which includes gateways for devices, IoT hubs, maintenance case predictions, real time business intelligence and augmented reality support for devices maintenance and predictive maintenance.  Additionally, we are testing Augmented Reality to provide a better experience and support for field engineers doing devices maintenance work.\r\nThis session will present high level an example IoT architecture, then will focus on details regarding how to implement holographic and object augmentation experiences in devices maintenance using Microsoft Hololens, Unity, Visual Studio and the PTC Vuforia platform. \r\n",
+          "speakers": [ "Molnár Tibor" ],
           "speakingLang": "English",
-          "level": "Beginner"
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "17:00:00",
+          "endTime": "17:45:00",
+          "allTracks": false,
+          "track": "Room 2",
+          "title": "Security in Agile Environments ",
+          "description": "Agile environments usually break product development work into small increments with continuous deployments to production. The fast pace also affects the security approach by limiting the time the security departments have to test the code and recommend a fix. \r\nSecurity needs to hook itself on various iterations in the development lifecycle for them to be effective in creating secure products and decrease business costs for fixing the bugs. My talk is just an example of how can this be achieved, with its challenges and benefits. \r\n",
+          "speakers": [ "Cosmin Huruiala" ],
+          "speakingLang": "Romanian",
+          "level": "Intermediate"
         },
         {
           "startTime": "17:45:00",
@@ -1110,6 +1292,15 @@
       "displayOrder": 18
     },
     {
+      "name": "Iulian Tanasescu",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/60-iulian.tanasescu.vlad.jpg",
+      "company": "TiVo",
+      "companyWebsiteUrl": "https://www.tivo.com/",
+      "jobTitle": "Software engineer",
+      "bio": "Software engineer with an experience gained in a couple of industries and in different countries, my main interests are clean code, open source software and more recently distributed systems.",
+      "displayOrder": 14
+    },
+    {
       "name": "Silviu Niculita",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/41-Silviu.jpg",
       "company": "TSS Yonder",
@@ -1117,6 +1308,15 @@
       "jobTitle": "Head of Technology",
       "bio": "Silviu Niculita is a passionate software developer and technologist focused on solving hard business problems with cutting-edge technology.\r\n\r\nFor the last 8 years he has managed teams building and operating high-performance enterprise systems from hardware architecture to design, development, quality assurance and support.\r\n\r\nSilviu’s areas of interest are around how small teams can be most effective in building real software: high-quality, secure systems at the highest limits of robustness, pe",
       "displayOrder": 10
+    },
+    {
+      "name": "Vlad \"Reign\" Zelinschi",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/29-Reign.jpg",
+      "company": "3PillarGlobal",
+      "companyWebsiteUrl": "http://www.3pillarglobal.com/",
+      "jobTitle": "Technical Lead, GDE",
+      "bio": "Reign is a pragmatic frontend engineer, Google Developer Expert and an avid caffeine consumer. He loves surrounding himself with ever smiling people and he's constantly pushing his limits in order to become a better professional. It's worth saying that his two full sleeve tattoos are not the direct consequence of him being present in the IT industry for more than 5 years now. He is currently employed as a as a Technical Lead, striving to make the world a better place.",
+      "displayOrder": 8
     },
     {
       "name": "Ciprian Hodorogea",
@@ -1155,6 +1355,24 @@
       "displayOrder": 4
     },
     {
+      "name": "Ellie Cachette",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/154-closeup2.png",
+      "company": "Bookstr",
+      "companyWebsiteUrl": "http://www.bookstr.com",
+      "jobTitle": "CTO, Bookstr",
+      "bio": "Ellie Cachette is CTO of Bookstr, a large book discovery platform.  Ellie has a background as an mobile app developer as well as technical project manager and is also the author of Guide to Software Development Agreements. She also teaches at ImpactHub RO Bucharest and Cluj.",
+      "displayOrder": 3
+    },
+    {
+      "name": "Florin Cardasim",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/16-Florin.Cardasim.png.jpg",
+      "company": "Strongbytes",
+      "companyWebsiteUrl": "http://www.strongbytes.ro",
+      "jobTitle": "IT Trainer & Consultant",
+      "bio": "Florin is a software architect and Agile coach. Beyond his technical skills, he gained a broad experience as a trainer for companies and speaker in conferences and community events.\r\nPassionate by technology and by working with people to grow amazing things. Focused on people, quality and on-time delivery, while carefully looking to foster innovation and unleash the fun out of the software development.",
+      "displayOrder": 1
+    },
+    {
       "name": "Adi Fatol",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/143-9HzssfjX.jpg",
       "company": "Arobs Transilvania",
@@ -1164,12 +1382,30 @@
       "displayOrder": 0
     },
     {
+      "name": "Adrian Pironescu",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/158-0dce1623.jpg",
+      "company": "Marionette Studio ",
+      "companyWebsiteUrl": "http://marionettestudio.com",
+      "jobTitle": "Senior Software Engineer",
+      "bio": "Adrian is Development Lead at Endava, Co-Founder and CTO at Marionette Studio - the first Online Animation Software for 2D Games. Adrian is a senior software engineer with a strong passion for web development and open technologies.",
+      "displayOrder": 0
+    },
+    {
       "name": "Adrian Rîndaşu",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/78-Fotografie Adi Rindasu.jpg",
       "company": "EDUROM",
       "companyWebsiteUrl": "http://www.edurom.ro/",
       "jobTitle": "Managing Partner",
       "bio": "Adrian co founded Edurom in 2002. Since then, he developed and delivered training and consultancy programs for various companies in the software development industry. He is running Belbin & Situational Leadership trainings for the IT&C clients of Edurom.",
+      "displayOrder": 0
+    },
+    {
+      "name": "Alex Lakatos",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/160-alex.lakatos.png",
+      "company": "Mozilla",
+      "companyWebsiteUrl": "http://mozilla.ro",
+      "jobTitle": "Mozilla Tech Speaker",
+      "bio": "Alex Lakatos has been a Mozilla Representative Mentor and contributor to the Mozilla project for the past five years, based in London. JavaScript developer building on the open web, he has been pushing its boundaries every day. You can check out his github profile or get in touch on twitter. When he’s not programming, he likes to travel the world, so it’s likely you’ll bump into him in an airport lounge.",
       "displayOrder": 0
     },
     {
@@ -1236,6 +1472,15 @@
       "displayOrder": 0
     },
     {
+      "name": "Andrei Dumitrescu",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/163-Avatar.jpg",
+      "company": "SOFTVISION",
+      "companyWebsiteUrl": "https://www.softvision.ro",
+      "jobTitle": "Line Manager",
+      "bio": "Member of SOFTVISION \"squad\" for 10 years now. I started as a Java developer....and the rest is history ",
+      "displayOrder": 0
+    },
+    {
       "name": "Andrei Frincu",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/114-2e75780.jpg",
       "company": "Endava",
@@ -1263,6 +1508,15 @@
       "displayOrder": 0
     },
     {
+      "name": "Bogdan Apostol",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/95-bogdan.jpg",
+      "company": "Marionette Studio",
+      "companyWebsiteUrl": "http://marionettestudio.com",
+      "jobTitle": "Senior Software Engineer",
+      "bio": "Bogdan is a Senior Software Engineer and Founder at FreshCreative, PhD Student in Computer Vision and Image Processing, Co-Founder and CEO of Marionette Studio. The passion for technology has always been the driving factor for him. Bogdan is a researcher and a software engineer interested in creating innovation.",
+      "displayOrder": 0
+    },
+    {
       "name": "Bogdan Balomirean",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/42-BB-codecamp.jpg",
       "company": "Endava",
@@ -1274,7 +1528,7 @@
     {
       "name": "Bogdan Marian",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/144-Poza.jpg",
-      "company": "iQuest",
+      "company": "iQuest Technologies",
       "companyWebsiteUrl": "http://www.iquestgroup.com/en/",
       "jobTitle": "Senior Software Engineer",
       "bio": "Java & .NET developer since 2004.",
@@ -1300,11 +1554,11 @@
     },
     {
       "name": "Ciprian Amaritei",
-      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/118-me_thinking.jpg",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/118-poza-mea.jpg",
       "company": "Eloquentix / Endava",
       "companyWebsiteUrl": "http://www.ciprianamaritei.com",
       "jobTitle": "Senior UX/UI Designer",
-      "bio": "I have been working in the IT Software industry for 10 years. Last 7 years I spent developing web and mobile apps and providing design consultancy on different areas as: information architecture, prototyping, visual, interaction and mobile design.\r\nCurrently, I am consultant for Eloquentix and part time employee for Endava.\r\nI have a MSc. in Interaction Design and  Bachelor in Engineering. Besides that I have different courses and trainings across Europe in Human Computer Interaction area.",
+      "bio": "Passionate designer, UX enthusiast & avid traveler.",
       "displayOrder": 0
     },
     {
@@ -1318,7 +1572,7 @@
     },
     {
       "name": "Codruta Bunea",
-      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/111-codru2.jpg",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/111-11215116_1203332189693649_8963710444017980639_n-3.jpg",
       "company": "Yonder",
       "companyWebsiteUrl": "http://tss-yonder.com/",
       "jobTitle": "Test Consultant",
@@ -1332,6 +1586,15 @@
       "companyWebsiteUrl": null,
       "jobTitle": "Business Analyst",
       "bio": "Business Analysis with a smile",
+      "displayOrder": 0
+    },
+    {
+      "name": "Cosmin Huruiala",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/120-image.jpg",
+      "company": "Betfair",
+      "companyWebsiteUrl": "https://www.betfair.ro/ro",
+      "jobTitle": "Security Engagement Partner",
+      "bio": "I am a security professional focused on finding the best secure solution for the business initiatives. I have worked in the field for the last 6 years in different companies like Telekom, Electronic Arts and Betfair. My responsibilities varied between coordinating the implementation of 2FA VPN systems, red teaming or security evangelist for the company business areas. Besides security, my areas of interest are public speaking, negotiation and mechanical watches. \r\n",
       "displayOrder": 0
     },
     {
@@ -1362,6 +1625,15 @@
       "displayOrder": 0
     },
     {
+      "name": "Dan Danciu",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/167-me 300.jpeg",
+      "company": "ISDC",
+      "companyWebsiteUrl": "http://www.isdc.eu",
+      "jobTitle": "Software Architect",
+      "bio": "Dan Danciu is a model whenever it comes to talking about passion for technology; no matter that we talk about architecture, design, big data, continuous delivery, user experience, practices in general or any other aspect of technology; he always has something to say and adds value in the discussion. Although he calls himself a true engineer, therefore a technical person, Dan pays attention to what makes a great team, towards practices, and being a dedicated agile advocate",
+      "displayOrder": 0
+    },
+    {
       "name": "Dana Aonofriesei",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/52-profil photo.PNG",
       "company": "Capgemini",
@@ -1380,21 +1652,21 @@
       "displayOrder": 0
     },
     {
-      "name": "Diana Lefter",
-      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/153-linkedin.jpg",
-      "company": "KPMG Romania",
-      "companyWebsiteUrl": "https://portal.ema.kworld.kpmg.com/cee/romania/Pages/default.aspx",
-      "jobTitle": " IT Consultant, Trainer and Coach",
-      "bio": "With more than 18  years of experience in  the IT industry in US and Canada,  out of which 14 with KPMG ITS Global, Diana recently joined KPMG Romania. With an  excellent blend of technical and soft skills and  a strong record of executing complex projects implementations, her key area of expertise are: Project/Product Management, QA Management ( performance testing focus). She is also a trainer and  coach, actively involved in the IT community.",
-      "displayOrder": 0
-    },
-    {
       "name": "Dolores Pente",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/108-14358896_10210442561122793_8960859737637704130_n.jpg",
       "company": "Altom Consulting",
       "companyWebsiteUrl": null,
       "jobTitle": "Software Tester",
       "bio": "Dolly Pente is a software tester. Working with Altom has facilitated her induction into the context driven and exploratory testing. She is continuously trying to improve her abilities by learning and exploring new fields that can help her evolve both on a professional and personal level.  Dolly is an active member of the community Tabara de Testare and she enjoys attending different local conferences and meetups. ",
+      "displayOrder": 0
+    },
+    {
+      "name": "Doru Buț",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/156-385da1f.jpg",
+      "company": "Evozon Game Studio",
+      "companyWebsiteUrl": "http://studio.evozon.com/",
+      "jobTitle": "Environment Artist",
+      "bio": "I am a self-taught  3D artist with 6+ years experience.\r\nI’m part of Evozon Game Studio working on a AAA art project . Previously I’ve worked for Gameloft, developing titles such as Asphalt, Nova, The Dark Knight Rises, Total Conquest. ",
       "displayOrder": 0
     },
     {
@@ -1443,6 +1715,24 @@
       "displayOrder": 0
     },
     {
+      "name": "Ioana Chiorean",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/23-12745666_10153717337808941_4247578816004860675_n.jpg",
+      "company": "Mozilla / SOFTVISION",
+      "companyWebsiteUrl": "https://mozilla.org",
+      "jobTitle": "QA TL / Reps Module Owner",
+      "bio": "Ioana has more than 6 years testing experience with a specialization in mobile apps and  she is leading a small team of testers in an outsourcing company. In her free time she contributes to Open Source projects being a Module Owner for Mozilla Representatives.",
+      "displayOrder": 0
+    },
+    {
+      "name": "Karol Zajaczkowski",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/166-karol.jpg",
+      "company": "11 bit studios",
+      "companyWebsiteUrl": "https://www.11bitstudios.com",
+      "jobTitle": "PR & Marketing Manager",
+      "bio": "PR & Marketing Manager at 11 bit studios, in Poland.",
+      "displayOrder": 0
+    },
+    {
       "name": "Laurentiu Stamate",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/127-Untitled.png",
       "company": "Microsoft Student Partners UPB",
@@ -1488,12 +1778,39 @@
       "displayOrder": 0
     },
     {
+      "name": "Maria Abramiuc",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/57-me.png",
+      "company": "TiVo",
+      "companyWebsiteUrl": "https://www.tivo.com/",
+      "jobTitle": "Software Engineer",
+      "bio": "Maria leads the development of a new generation metadata pipeline in TiVo. She is passionate about simple and efficient designs and she believes we humans are capable of achieving more than we can imagine.",
+      "displayOrder": 0
+    },
+    {
+      "name": "Marius Baghiu",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/165-DSC_0176-Edit-3.jpg",
+      "company": "SOFTVISION",
+      "companyWebsiteUrl": "https://www.softvision.ro",
+      "jobTitle": "Line Manager",
+      "bio": "Interested in supervillans with no respect for the status quo.",
+      "displayOrder": 0
+    },
+    {
       "name": "Marius Bandre",
-      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/128-IMAG0621 (1).jpg",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/128-mbandre.jpg",
       "company": "SOFTVISION",
       "companyWebsiteUrl": null,
       "jobTitle": "Project Manager",
       "bio": "A guy that wears many hats (husband, father, manager, computer science geek, colleague, friend) with the ambition to play the right role for every context.",
+      "displayOrder": 0
+    },
+    {
+      "name": "Mihai Pintilie",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/157-Mihai.jpg",
+      "company": "Thinslices",
+      "companyWebsiteUrl": "http://www.thinslices.com",
+      "jobTitle": "Product Consultant",
+      "bio": "Mihai is a passionate, committed and highly focused Product Consultant with over 13 years experience in the industry and comprehensive knowledge and understanding of product development process.",
       "displayOrder": 0
     },
     {
@@ -1515,6 +1832,24 @@
       "displayOrder": 0
     },
     {
+      "name": "Molnár Tibor",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/147-Tibor_Molnar.jpg",
+      "company": "iQuest Technologies",
+      "companyWebsiteUrl": "http://www.iquestgroup.com",
+      "jobTitle": "Software Architect",
+      "bio": "Software architect at iQuest Technologies specialized in end to end delivery using Microsoft and JavaScript technologies with experience in different industry verticals: banking, life science, retail etc. Working with .Net technologies since the 1.0 beta version (2001). Experience with different solution types: web applications, enterprise application integration, document management, records management, content management, portals, business process management, OCR etc.\r\n",
+      "displayOrder": 0
+    },
+    {
+      "name": "Oana Ciherean",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/159-13315332_1308930649162560_4340193485493463777_n.jpg",
+      "company": "Cartea Daliei",
+      "companyWebsiteUrl": "https://www.facebook.com/carteadaliei/",
+      "jobTitle": "Co-Founder Cartea Daliei",
+      "bio": "Oana is the founder of Cartea Daliei, the first organization to introduce digital game-based learning as a teaching method in Romanian schools. She is also a project manager at Evozon Game Studio. Before all that, Oana was a software engineer working with Microsoft Technologies.",
+      "displayOrder": 0
+    },
+    {
       "name": "Ovidiu Ratiu",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/129-RatiuO2.jpg",
       "company": "Control Data Systems SRL",
@@ -1524,12 +1859,30 @@
       "displayOrder": 0
     },
     {
+      "name": "Paul Sticea",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/155-33_Paul.jpg",
+      "company": "Teamfluent",
+      "companyWebsiteUrl": "https://www.teamfluent.com",
+      "jobTitle": "Software Developer",
+      "bio": "Develops dreams into reality; can't be bothered with nonsense.",
+      "displayOrder": 0
+    },
+    {
       "name": "Popa Elena-Georgeta",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/113-^2F9A9C4DBEED837E45553450A3D237C99D773D1598FF398F99^pimgpsh_fullsize_distr.jpg",
       "company": "Altom Consulting",
       "companyWebsiteUrl": null,
       "jobTitle": "Software Tester",
-      "bio": "Elena has been working as a software tester for the past 4 years in different companies and contexts.",
+      "bio": "Elena has been working as a tester for the past 4 years. During this time she had the opportunity to work on projects in various fields with different methodologies and technologies.\r\nShe’s interested in learning and experimenting with new learning techniques.",
+      "displayOrder": 0
+    },
+    {
+      "name": "Radu Cristea",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/162-av (2).jpg",
+      "company": "Rikodu",
+      "companyWebsiteUrl": "http://www.rikodu.com/",
+      "jobTitle": "Tech Director",
+      "bio": "Radu is a veteran software developer, having seen and worked with codebases large and small. Besides the \"normal\" coding he does for financial trading, he is a seasoned game developer. He puts his years of industry programming experience to use as a Tech Director for Rikodu, where they are working on their first game!",
       "displayOrder": 0
     },
     {
@@ -1551,12 +1904,21 @@
       "displayOrder": 0
     },
     {
+      "name": "Raluca Apostol",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/94-raluca-apostol.jpg",
+      "company": "Marionette Studio ",
+      "companyWebsiteUrl": "http://marionettestudio.com",
+      "jobTitle": "Senior Developer",
+      "bio": "Raluca is a Development Consultant and Scrum Master at Endava Iasi, PhD Researcher in Machine Learning Algorithms and Co-Founder and Chief Product Officer of Marionette Studio, the first Online Animation Software for 2D Games. She loves innovation and non-conventional problem solving. She thinks that everything is possible, you just need to set a goal, set some milestones and start working right away.",
+      "displayOrder": 0
+    },
+    {
       "name": "Rares Vasilescu",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/121-RV.jpg",
       "company": "SDL",
       "companyWebsiteUrl": "http://www.sdl.com",
       "jobTitle": "VP Development",
-      "bio": "Software builder by practice, human by design.\r\nPassionate about solving actual problems through software, self learner but also with a PhD in Computer Science.\r\nGeek, and also into management..,\r\nC++ rocks! And did I mention that the greatest success we had with Java teams?",
+      "bio": "Software builder by practice, human by design.\r\nPassionate about solving actual problems through software, self learner but also with a PhD in Computer Science.\r\nGeek, and also into management..,\r\nC++ rocks! ",
       "displayOrder": 0
     },
     {
@@ -1571,19 +1933,10 @@
     {
       "name": "Stefan Tabaranu",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/149-stefan_.jpg",
-      "company": "AIrisVision",
-      "companyWebsiteUrl": "http://airisvision.com",
-      "jobTitle": "Founder",
+      "company": "AI",
+      "companyWebsiteUrl": null,
+      "jobTitle": "Arhitect",
       "bio": "In the it industry for more than 12 years developing projects for different customers and different industries. In the last couple of years I really loved to develop computer vision application and later on AI system which are able to understand the world from a language and visual perspective. \r\n",
-      "displayOrder": 0
-    },
-    {
-      "name": "Vlad \"Reign\" Zelinschi",
-      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/29-Reign.jpg",
-      "company": "3PillarGlobal",
-      "companyWebsiteUrl": "http://www.3pillarglobal.com/",
-      "jobTitle": "Technical Lead, GDE",
-      "bio": "Reign is a pragmatic frontend engineer, Google Developer Expert and an avid caffeine consumer. He loves surrounding himself with ever smiling people and he's constantly pushing his limits in order to become a better professional. It's worth saying that his two full sleeve tattoos are not the direct consequence of him being present in the IT industry for more than 5 years now. He is currently employed as a as a Technical Lead, striving to make the world a better place.",
       "displayOrder": 0
     }
   ]
