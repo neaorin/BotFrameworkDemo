@@ -41,13 +41,6 @@
   ],
   "sponsors": [
     {
-      "name": "iSDC",
-      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/77-rsz_isdc.png",
-      "websiteUrl": "http://www.isdc.eu/",
-      "sponsorshipPackage": "DIAMOND ",
-      "displayOrder": 1
-    },
-    {
       "name": "Softvision",
       "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/69-softvision2.png",
       "websiteUrl": "http://www.softvision.ro/",
@@ -60,6 +53,20 @@
       "websiteUrl": "http://www.microsoft.ro/",
       "sponsorshipPackage": "DIAMOND ",
       "displayOrder": 3
+    },
+    {
+      "name": "iSDC",
+      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/77-rsz_isdc.png",
+      "websiteUrl": "http://www.isdc.eu/",
+      "sponsorshipPackage": "DIAMOND ",
+      "displayOrder": 4
+    },
+    {
+      "name": "Endava",
+      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/39-Endava_logo_jpg.png",
+      "websiteUrl": "http://www.endava.com/",
+      "sponsorshipPackage": "DIAMOND ",
+      "displayOrder": 6
     },
     {
       "name": "SDL",
@@ -135,6 +142,13 @@
       "name": "RGDA",
       "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/19-RGDA.png",
       "websiteUrl": "http://www.rgda.ro/",
+      "sponsorshipPackage": "Partner Communities",
+      "displayOrder": 5
+    },
+    {
+      "name": "ImpactHub Cluj-Napoca",
+      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/117-ImpactHubCluj.jpg",
+      "websiteUrl": "http://cluj.impacthub.ro",
       "sponsorshipPackage": "Partner Communities",
       "displayOrder": 5
     },
@@ -300,6 +314,13 @@
       "displayOrder": 6
     },
     {
+      "name": "Edurom",
+      "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/44-edurom-logo2.png",
+      "websiteUrl": "http://www.edurom.ro/",
+      "sponsorshipPackage": "PLATINUM ",
+      "displayOrder": 8
+    },
+    {
       "name": "Max Relax",
       "logoUrl": "https://codecampro.blob.core.windows.net/partners-photos/111-max-relax -logo.png",
       "websiteUrl": "http://maxrelax.ro/",
@@ -396,7 +417,7 @@
         {
           "name": "Room 5",
           "capacity": 80,
-          "description": "first floor",
+          "description": "first floor, owned by PM Elite",
           "displayOrder": 5
         },
         {
@@ -534,6 +555,17 @@
           "startTime": "10:00:00",
           "endTime": "10:45:00",
           "allTracks": false,
+          "track": "Room 5",
+          "title": "Making remote work work",
+          "description": "Tips, tools and stories about my journey from working in an aquarium to leading remote development teams in fluffy slippers.\r\nDon't lie about it, you've thought about this but... decisions, decisions... is remote work for you,  does it even work, how does it work?   ",
+          "speakers": [ "Costea Bogdan" ],
+          "speakingLang": "English",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "10:00:00",
+          "endTime": "10:45:00",
+          "allTracks": false,
           "track": "Room 2",
           "title": "Steps to Continuous Deployment",
           "description": "Continuous Deployment - A cool thing that few software teams do, a lot of others admire and some hate. \r\nIn this discussion I'd like to go over some steps that are required in order to reach daily releases and share my experience",
@@ -556,34 +588,12 @@
           "startTime": "10:00:00",
           "endTime": "10:45:00",
           "allTracks": false,
-          "track": "Room 5",
-          "title": "We're agile, now what? - From doing scrum to scaling well",
-          "description": "There is quite a difference between having rolled out scrum and having a framework that will help an organization really become agile. The presentation will cover topics such as the importance of cross-functional teams, pros & cons of feature vs component teams as well as the importance of limiting WIP to allow scrum to scale for larger organizations.",
-          "speakers": [ "Cristina Has" ],
-          "speakingLang": "Romanian",
-          "level": "Experienced"
-        },
-        {
-          "startTime": "10:00:00",
-          "endTime": "10:45:00",
-          "allTracks": false,
           "track": "Room 6",
           "title": "Web Compatibility Testing",
           "description": "Many users nowadays connect to the web directly from mobile – skipping any desktop experience. So why would you risk using them? Learn from the web-bugs we found and give a fair and beautiful experience to your users!",
           "speakers": [ "Ioana Chiorean" ],
           "speakingLang": "English",
           "level": "Beginner"
-        },
-        {
-          "startTime": "11:00:00",
-          "endTime": "11:45:00",
-          "allTracks": false,
-          "track": "Room 5",
-          "title": "Ownership in SDLC",
-          "description": "The presentation is aimed for anyone who is passionate about processes and project management.\r\nWe will analyse a project through it’s lifecycle and discuss about ownership at each step of the way. \r\nMore than that, we’ll go through the lessons learned and check some cool tips and tricks that can make your project an awesome one.\r\n",
-          "speakers": [ "Cristina Morariu" ],
-          "speakingLang": "English",
-          "level": "Intermediate"
         },
         {
           "startTime": "11:00:00",
@@ -601,7 +611,7 @@
           "endTime": "11:45:00",
           "allTracks": false,
           "track": "Room 7",
-          "title": "The Elements of Influence: \u000bA Generational Assessment of Leadership and Power",
+          "title": "The Elements of Influence: A Generational Assessment of Leadership and Power",
           "description": "We will dive in one of the newest surveys run by Center for Leadership Studies - The Elements of Influence: A Generational Assessment of Leadership and Power. The workshop will focus on leadership as any attempt to influence. Leadership behavior is one of the primary driving forces for productivity, engagement and retention. \r\n",
           "speakers": [ "Adrian Rîndaşu" ],
           "speakingLang": "Romanian",
@@ -677,6 +687,17 @@
           "startTime": "11:00:00",
           "endTime": "11:45:00",
           "allTracks": false,
+          "track": "Room 5",
+          "title": "Software Suicide Squad - why (even) the Joker is important",
+          "description": "Alternative perspective on villains? Let’s find out!",
+          "speakers": [ "Andrei Dumitrescu", "Marius Baghiu" ],
+          "speakingLang": "Romanian",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "11:00:00",
+          "endTime": "11:45:00",
+          "allTracks": false,
           "track": "Room 2",
           "title": "Quality Driven Approach for Evaluating Software Architectures",
           "description": "What makes a technical solution good, or even good enough? There are no good or bad architectures, only architectures that fit the goals more or less, and what are the risks when they don't. I propose to start talking about architectures , and especially their evaluation in terms of quality attributes, the tradeoffs between them and trying to get fit for purpose. Let’s explore together what architectural tradeoffs are, how they relate to quality attributes and how do you reach a fit for purpose state while keeping your customers happy.",
@@ -743,17 +764,6 @@
           "startTime": "12:00:00",
           "endTime": "12:45:00",
           "allTracks": false,
-          "track": "Room 5",
-          "title": "Making remote work work",
-          "description": "Tips, tools and stories about my journey from working in an aquarium to leading remote development teams in fluffy slippers.\r\nDon't lie about it, you've thought about this but... decisions, decisions... is remote work for you,  does it even work, how does it work?   ",
-          "speakers": [ "Costea Bogdan" ],
-          "speakingLang": "English",
-          "level": "Intermediate"
-        },
-        {
-          "startTime": "12:00:00",
-          "endTime": "12:45:00",
-          "allTracks": false,
           "track": "Room 3",
           "title": "Progressive Web Apps - The future",
           "description": "Progressive Web Apps are the new cool kid on the block and I think they're here to make a wave. They take advantage of new technologies to bring the best of mobile sites and native applications to users. They're reliable, fast, engaging and designed to work offline first. In this session we we tackle the basics of PWAs, what sets them apart, why the need and how we could implement something like this ourselves.  So get ready for some interesting talks about the future of the web!",
@@ -776,6 +786,17 @@
           "startTime": "12:00:00",
           "endTime": "12:45:00",
           "allTracks": false,
+          "track": "Room 5",
+          "title": "We're agile, now what? - From doing scrum to scaling well",
+          "description": "There is quite a difference between having rolled out scrum and having a framework that will help an organization really become agile. The presentation will cover topics such as the importance of cross-functional teams, pros & cons of feature vs component teams as well as the importance of limiting WIP to allow scrum to scale for larger organizations.",
+          "speakers": [ "Cristina Has" ],
+          "speakingLang": "Romanian",
+          "level": "Experienced"
+        },
+        {
+          "startTime": "12:00:00",
+          "endTime": "12:45:00",
+          "allTracks": false,
           "track": "Room 9",
           "title": "Workshop (continued) : Exploiting a product's wormholes",
           "description": "There are many reasons why a product can become a real success or failure. Get ready and embark with us on a journey through product wormholes, right up to the encounter points with your product’s archenemies: inutility, cancellation, litigation, bankruptcy. We'll take a look on how apparently disconnected events in your product lifecycle tie in together and influence the end result. The workshop explores how past decisions, actions and events influence the product’s present value. Join us on holodeck to learn about some major factors that influence the product fabric, and identify the counter maneuvers that help you keep the product on course. \r\n\r\nRegistrations open!\r\nhttps://goo.gl/forms/RdJbrbhfwDRxYtd52",
@@ -790,7 +811,7 @@
           "track": "Room 7",
           "title": "Cybersecurity: How to make money in an ever interconnected world",
           "description": "The presentation will focus on real life examples where we exploit system vulnerabilities to get unauthorised access to systems and data.",
-          "speakers": [ "Mihai Rada" ],
+          "speakers": [ "Mihai Rada", "Diana Lefter" ],
           "speakingLang": "Romanian",
           "level": "Experienced"
         },
@@ -864,17 +885,6 @@
           "startTime": "14:00:00",
           "endTime": "14:45:00",
           "allTracks": false,
-          "track": "Room 10",
-          "title": "AI for fun and profit",
-          "description": "A introduction in state of the art AI algorithms and some fun examples in how these new type of algorithm can be used across industry.",
-          "speakers": [ "Stefan Tabaranu" ],
-          "speakingLang": "Romanian",
-          "level": "Intermediate"
-        },
-        {
-          "startTime": "14:00:00",
-          "endTime": "14:45:00",
-          "allTracks": false,
           "track": "Room 7",
           "title": "Îți asumi riscul să nu riști?",
           "description": "O scurtă istorie a valutelor și o descriere a principiilor care guvernează actualul sistem monetar vor crea contextul necesar pentru prezentarea modului în care funcționează Bitcoin. În continuare va depinde de noi să găsim echilibrul între riscuri și oportunități în deciziile pe care le luăm.",
@@ -897,6 +907,17 @@
           "startTime": "14:00:00",
           "endTime": "14:45:00",
           "allTracks": false,
+          "track": "Room 10",
+          "title": "Augmented Reality for Industry 4.0",
+          "description": "Industry 4.0 comes with interconnected machines using IoT, cloud computing and machine learning (beside many other things). We at iQuest are working on an end to end IoT solution architecture which includes gateways for devices, IoT hubs, maintenance case predictions, real time business intelligence and augmented reality support for devices maintenance and predictive maintenance.  Additionally, we are testing Augmented Reality to provide a better experience and support for field engineers doing devices maintenance work.\r\nThis session will present high level an example IoT architecture, then will focus on details regarding how to implement holographic and object augmentation experiences in devices maintenance using Microsoft Hololens, Unity, Visual Studio and the PTC Vuforia platform. \r\n",
+          "speakers": [ "Molnár Tibor" ],
+          "speakingLang": "English",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "14:00:00",
+          "endTime": "14:45:00",
+          "allTracks": false,
           "track": "Room 2",
           "title": "The CTO Handoff: Best Practices For Handing Off ",
           "description": "Best practices for leaving a client, company or product organized and ready for hand off to another CTO for various reasons. Learn tips and best practices, documentation hacks, tech tracking as well as some real-life hard lessons learned. This session is good for developers and non-technical founders. ",
@@ -909,9 +930,20 @@
           "endTime": "14:45:00",
           "allTracks": false,
           "track": "Room 9",
-          "title": "Workshop: SaaS Execution Map - Using a tool for digital product discovery",
+          "title": "Workshop: Ignite Your Product – a thoughtful discovery process",
           "description": "If you're a Business Analyst, Product Owner, Product Manager, Founder, Partner, Consultant .... if you have any stake in building digital products from 0 to 1 then you were most likely asked at some point: What will it take to build this? How much time will you need? What skill set do you need in the team? What do you need to succeed?\r\nJoin us and find a way to bring clarity in the initial planning and execution phase of a new product. Even if you are already on your way, we will discover together a natural extension to Business Model Canvas that enables us to stay focused on the prize and avoid the common pitfalls of building digital products.   ",
           "speakers": [ "Florin Cardasim", "Mihai Pintilie" ],
+          "speakingLang": "English",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "15:00:00",
+          "endTime": "15:45:00",
+          "allTracks": false,
+          "track": "Room 7",
+          "title": "Ownership in SDLC",
+          "description": "The presentation is aimed for anyone who is passionate about processes and project management.\r\nWe will analyse a project through it’s lifecycle and discuss about ownership at each step of the way. \r\nMore than that, we’ll go through the lessons learned and check some cool tips and tricks that can make your project an awesome one.\r\n",
+          "speakers": [ "Cristina Morariu" ],
           "speakingLang": "English",
           "level": "Intermediate"
         },
@@ -922,20 +954,9 @@
           "track": "Room 5",
           "title": "Decisions. How to manage them",
           "description": "Management of teams, projects, daily life rely heavily on the process of making decisions. \r\nHow you are taking decisions, how you manage the process together with you team, what can you do to make things faster and more efficient you can learn from two experienced managers and entrepreneurs: Laura Birhala and Gabi Manole",
-          "speakers": [ "Gabriel Manole" ],
+          "speakers": [ "Gabriel Manole", "Laura Birhala" ],
           "speakingLang": "English",
           "level": "Experienced"
-        },
-        {
-          "startTime": "15:00:00",
-          "endTime": "15:45:00",
-          "allTracks": false,
-          "track": "Room 10",
-          "title": "Dear Mobile, I'll use Ionic 2. Sincerely, a web dev...",
-          "description": "Mobile app developing is cool...except if you're a front-end developer. You know we're different, right? We love JS and the freedom in brings, not that Java, Objective-C or C# crap! This might be a downside in being able to build mobile apps, or it may be our biggest asset!\r\n\r\nSo, dear front-end enthusiast, I invite you to find out more about hybrid app development using the brand new Ionic 2 framework. ",
-          "speakers": [ "Alexandru Pavaloi" ],
-          "speakingLang": "English",
-          "level": "Intermediate"
         },
         {
           "startTime": "15:00:00",
@@ -996,10 +1017,10 @@
           "startTime": "15:00:00",
           "endTime": "15:45:00",
           "allTracks": false,
-          "track": "Room 1",
-          "title": "Dockerizing an ASP .NET Core app with VSTS, Docker Cloud and Azure",
-          "description": "In this session we will take a look at how to run ASP .NET Core apps inside Docker, then deploy it to a VM in Azure using Docker Cloud.\r\n\r\nWe will also see how to create a fully automated CI/CD flow using GitHub, Visual Studio Team Services and Docker Hub.",
-          "speakers": [ "Radu Matei" ],
+          "track": "Room 10",
+          "title": "AI for fun and profit",
+          "description": "A introduction in state of the art AI algorithms and some fun examples in how these new type of algorithm can be used across industry.",
+          "speakers": [ "Stefan Tabaranu" ],
           "speakingLang": "Romanian",
           "level": "Intermediate"
         },
@@ -1007,10 +1028,10 @@
           "startTime": "15:00:00",
           "endTime": "15:45:00",
           "allTracks": false,
-          "track": "Room 7",
-          "title": "Software Suicide Squad - why (even) the Joker is important",
-          "description": "Alternative perspective on villains? Let’s find out!",
-          "speakers": [ "Andrei Dumitrescu", "Marius Baghiu" ],
+          "track": "Room 1",
+          "title": "Dockerizing an ASP .NET Core app with VSTS, Docker Cloud and Azure",
+          "description": "In this session we will take a look at how to run ASP .NET Core apps inside Docker, then deploy it to a VM in Azure using Docker Cloud.\r\n\r\nWe will also see how to create a fully automated CI/CD flow using GitHub, Visual Studio Team Services and Docker Hub.",
+          "speakers": [ "Radu Matei" ],
           "speakingLang": "Romanian",
           "level": "Intermediate"
         },
@@ -1172,6 +1193,17 @@
           "startTime": "17:00:00",
           "endTime": "17:45:00",
           "allTracks": false,
+          "track": "Room 10",
+          "title": "Dear Mobile, I'll use Ionic 2. Sincerely, a web dev...",
+          "description": "Mobile app developing is cool...except if you're a front-end developer. You know we're different, right? We love JS and the freedom in brings, not that Java, Objective-C or C# crap! This might be a downside in being able to build mobile apps, or it may be our biggest asset!\r\n\r\nSo, dear front-end enthusiast, I invite you to find out more about hybrid app development using the brand new Ionic 2 framework. ",
+          "speakers": [ "Alexandru Pavaloi" ],
+          "speakingLang": "English",
+          "level": "Intermediate"
+        },
+        {
+          "startTime": "17:00:00",
+          "endTime": "17:45:00",
+          "allTracks": false,
           "track": "Room 1",
           "title": "Spice up your apps with Vision and Speech APIs from Microsoft Cognitive Services",
           "description": "We managed to build a smart, contextually aware device that understands user’s needs and delivers valuable information about the world around, takes out the frustration of going to new places or meeting new people and ultimately allows a person with sight loss to be more independent, with greater sense of mobility and empowerment. We used Vision API, OCR API and Text To Speech API from Microsoft Cognitive Services.",
@@ -1196,8 +1228,8 @@
           "allTracks": false,
           "track": "Room 3",
           "title": "The future of JavaScript - Open discussion panel",
-          "description": "This will be an open discussion panel where several community leaders and experts will discuss about the future of JavaScript.",
-          "speakers": [ "Vlad \"Reign\" Zelinschi" ],
+          "description": "This will be an open discussion panel where several community leaders and experts will discuss about the future of JavaScript.\r\n\r\nAlex Moldovan (JavaScript Ninja @ Fortech) - moderator, Paul Brie (Head of JS @ Evozon) - participant, \r\nVlad Nicula (JavaScript Consultant) - participant, Adrian Magdas (Co-Founder @ Crafting Software) - participant\r\n",
+          "speakers": [ "Alex Moldovan" ],
           "speakingLang": "English",
           "level": "Beginner"
         },
@@ -1238,17 +1270,6 @@
           "startTime": "17:00:00",
           "endTime": "17:45:00",
           "allTracks": false,
-          "track": "Room 10",
-          "title": "Augmented Reality for Industry 4.0",
-          "description": "Industry 4.0 comes with interconnected machines using IoT, cloud computing and machine learning (beside many other things). We at iQuest are working on an end to end IoT solution architecture which includes gateways for devices, IoT hubs, maintenance case predictions, real time business intelligence and augmented reality support for devices maintenance and predictive maintenance.  Additionally, we are testing Augmented Reality to provide a better experience and support for field engineers doing devices maintenance work.\r\nThis session will present high level an example IoT architecture, then will focus on details regarding how to implement holographic and object augmentation experiences in devices maintenance using Microsoft Hololens, Unity, Visual Studio and the PTC Vuforia platform. \r\n",
-          "speakers": [ "Molnár Tibor" ],
-          "speakingLang": "English",
-          "level": "Intermediate"
-        },
-        {
-          "startTime": "17:00:00",
-          "endTime": "17:45:00",
-          "allTracks": false,
           "track": "Room 2",
           "title": "Security in Agile Environments ",
           "description": "Agile environments usually break product development work into small increments with continuous deployments to production. The fast pace also affects the security approach by limiting the time the security departments have to test the code and recommend a fix. \r\nSecurity needs to hook itself on various iterations in the development lifecycle for them to be effective in creating secure products and decrease business costs for fixing the bugs. My talk is just an example of how can this be achieved, with its challenges and benefits. \r\n",
@@ -1272,8 +1293,8 @@
           "endTime": "05:00:00",
           "allTracks": true,
           "track": null,
-          "title": "Networking and After Party - Partners, Speakers, The Entire Codecamp Community @ TBD",
-          "description": null,
+          "title": "After Party - The Entire Codecamp Community @ Euforia Music Hall Cluj",
+          "description": "fb/EuphoriaMusicHall",
           "speakers": null,
           "speakingLang": null,
           "level": null
@@ -1627,7 +1648,7 @@
     {
       "name": "Dan Danciu",
       "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/167-me 300.jpeg",
-      "company": "ISDC",
+      "company": "ISDC– A Member of the Endava Group",
       "companyWebsiteUrl": "http://www.isdc.eu",
       "jobTitle": "Software Architect",
       "bio": "Dan Danciu is a model whenever it comes to talking about passion for technology; no matter that we talk about architecture, design, big data, continuous delivery, user experience, practices in general or any other aspect of technology; he always has something to say and adds value in the discussion. Although he calls himself a true engineer, therefore a technical person, Dan pays attention to what makes a great team, towards practices, and being a dedicated agile advocate",
@@ -1649,6 +1670,15 @@
       "companyWebsiteUrl": "http://www.endava.com/",
       "jobTitle": "Business Analyst",
       "bio": "Delora Balomirean has worked in the role of Business Analyst and Product Owner for over 7 years, on different IT projects for a number of companies coming from different business areas. Her domain experience covers Customer Relationship Management (CRM) and Enterprise Resource Management (ERP). She is a certified PSPO and had worked both in an Agile and Waterfall environment.",
+      "displayOrder": 0
+    },
+    {
+      "name": "Diana Lefter",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/153-linkedin.jpg",
+      "company": "KPMG Romania",
+      "companyWebsiteUrl": "https://portal.ema.kworld.kpmg.com/cee/romania/Pages/default.aspx",
+      "jobTitle": " IT Consultant, Trainer and Coach",
+      "bio": "With more than 18  years of experience in  the IT industry in US and Canada,  out of which 14 with KPMG ITS Global, Diana recently joined KPMG Romania. With an  excellent blend of technical and soft skills and  a strong record of executing complex projects implementations, her key area of expertise are: Project/Product Management, QA Management ( performance testing focus). She is also a trainer and  coach, actively involved in the IT community.",
       "displayOrder": 0
     },
     {
@@ -1730,6 +1760,15 @@
       "companyWebsiteUrl": "https://www.11bitstudios.com",
       "jobTitle": "PR & Marketing Manager",
       "bio": "PR & Marketing Manager at 11 bit studios, in Poland.",
+      "displayOrder": 0
+    },
+    {
+      "name": "Laura Birhala",
+      "photoUrl": "https://codecampro.blob.core.windows.net/speakers-photos/168-Laura.jpg",
+      "company": "summIT Romania",
+      "companyWebsiteUrl": "http://sum-mit.org",
+      "jobTitle": null,
+      "bio": "Laura discovers daily new things about learning, education and community building. She is co-founder of summIT Romania, the conference where managers and leaders from Romanian companies come to learn and be inspired by great speakers and international trend setters. In 2017 stay tuned to experience ”Disruptive Leadership”.",
       "displayOrder": 0
     },
     {
