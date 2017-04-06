@@ -19,8 +19,8 @@ Follow these steps to set up your own copy of this bot:
 4. Open the `BotFrameworkDemo.sln` solution file in Visual Studio 2015 or later.
 
 5. Open the `BotFrameworkDemo/CodeCampDialog.cs` file and point the bot dialog at your imported LUIS model, by editing the parameters for the `LuisModel` attribute as shown in the picture below. 
-   * You will find the **LUIS Application ID** as the GUID in the URL of the application, when editing it inside the LUIS.ai portal. (the URL will be `https://www.luis.ai/application/xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`)
-   * You will find your **LUIS Subscription Key** in the [User Settings](https://www.luis.ai/Home/UserSettings) section of the same portal.
+   * You will find the **Application ID** as the GUID in the URL of the application, when editing it inside the LUIS.ai portal. (the URL will be `https://www.luis.ai/application/xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`)
+   * For the **key** to use, see the [Manage your keys](https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Manage-Keys) section.
 
     ![](images/luisModelConfig.png)
 

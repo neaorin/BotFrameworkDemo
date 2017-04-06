@@ -1,9 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using BotFrameworkDemo.App_Start;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.ExceptionHandling;
 
 namespace BotFrameworkDemo
 {
@@ -32,6 +34,8 @@ namespace BotFrameworkDemo
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Services.Add(typeof(IExceptionLogger), new AiExceptionLogger());
         }
     }
 }

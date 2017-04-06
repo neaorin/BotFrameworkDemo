@@ -13,7 +13,7 @@ using System.Web;
 
 namespace BotFrameworkDemo
 {
-    [LuisModel("542001cd-7816-4c42-a304-d604bc945384", "905a0f41c2334e6992b5ca1e8bce6375")]
+    [LuisModel("<application guid>", "<subscription key>")]
     [Serializable]
     public class CodeCampDialog : LuisDialog<string>
     {
@@ -317,7 +317,7 @@ I can tell you all about what's going on at our next [Codecamp Romania event](ht
 
 Here are some examples of things you can ask me: 
 
-* *When is **Florin Cardasim** speaking?*
+* *When is **Radu Matei** speaking?*
 * *Are there any sessions on **Agile**?*
 * *Is anybody from **Microsoft** doing a session?*
 * *Just help me choose some sessions!*
