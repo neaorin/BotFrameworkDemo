@@ -1,11 +1,15 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.IdentityModel.Protocols;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Web;
 
 namespace BotFrameworkDemo
@@ -16,9 +20,25 @@ namespace BotFrameworkDemo
         static CodeCamp()
         {
             Sessions = new List<Session>();
-            Speakers = new List<Speaker>();            
+            Speakers = new List<Speaker>();
 
-            var json = File.ReadAllText(HttpContext.Current.Server.MapPath(@"~/codecamp.json"));
+            string json = null;
+            var confScheduleUrl = ConfigurationManager.AppSettings["ConferenceScheduleUrl"];
+
+            if (string.IsNullOrEmpty(confScheduleUrl))
+            {
+                json = File.ReadAllText(HttpContext.Current.Server.MapPath(@"~/codecamp.json"));
+            }
+            else
+            {
+                using (var client = new HttpClient())
+                {
+                    var uri = new Uri(confScheduleUrl);
+                    var response = Task.Run(() => client.GetAsync(uri)).Result;
+                    json = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
+                }
+            }
+            
             var jobj = JObject.Parse(json);
 
             Info = JsonConvert.DeserializeObject<ConferenceInfo>(json);
