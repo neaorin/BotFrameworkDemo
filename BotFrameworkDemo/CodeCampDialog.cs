@@ -13,7 +13,7 @@ using System.Web;
 
 namespace BotFrameworkDemo
 {
-    [LuisModel("<application guid>", "<subscription key>")]
+    [ConfiguredLuisModel]
     [Serializable]
     public class CodeCampDialog : LuisDialog<string>
     {

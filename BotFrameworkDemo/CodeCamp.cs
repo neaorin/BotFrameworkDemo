@@ -43,7 +43,7 @@ namespace BotFrameworkDemo
 
             Info = JsonConvert.DeserializeObject<ConferenceInfo>(json);
 
-            foreach (var sessionItem in jobj["schedules"][0]["sessions"])
+            foreach (var sessionItem in jobj["schedules"].Last()["sessions"])
                 Sessions.Add(JsonConvert.DeserializeObject<Session>(sessionItem.ToString()));
             foreach (var speakerItem in jobj["speakers"])
                 Speakers.Add(JsonConvert.DeserializeObject<Speaker>(speakerItem.ToString()));
@@ -63,6 +63,10 @@ namespace BotFrameworkDemo
         public static List<Speaker> Speakers { get; }
 
         public static List<Topic> Topics { get; }
+
+        public static List<Schedule> Schedules { get; }
+
+        public static bool IsMultiDay { get { return Schedules?.Count > 1; } }
 
         public static IEnumerable<Session> FindSessions(string[] speakerNames = null, string[] topics = null, string companyName = null, LevelTypes level = LevelTypes.Any)
         {
@@ -98,6 +102,13 @@ namespace BotFrameworkDemo
         {
             return CodeCamp.Speakers.Where(s => s.Name.ContainsIgnoreCase(speakerName));
         }
+    }
+
+    [Serializable]
+    public class Schedule
+    {
+        [JsonProperty("date")]
+        public DateTime Date { get; set; }
     }
 
     [Serializable]
